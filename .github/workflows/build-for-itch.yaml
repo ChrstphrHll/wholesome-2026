@@ -82,9 +82,6 @@ jobs:
           echo export $EXPORT_TYPE
           mkdir export
           godot --headless --path . --export-${EXPORT_TYPE} "Web" export/index.html
-          # godot --headless --path . --export-${EXPORT_TYPE} "Linux" exports/linux/${ITCHIO_GAME}.x86_64
-          # godot --headless --path . --export-${EXPORT_TYPE} "macOS" exports/macos/${ITCHIO_GAME}.zip
-          # godot --headless --path . --export-${EXPORT_TYPE} "Windows" exports/windows/${ITCHIO_GAME}.exe
           #find exports -name '*'
 
       - name: Cache butler files
@@ -114,15 +111,4 @@ jobs:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
         if: steps.export.outcome == 'success' && env.ITCHIO_USERNAME && env.ITCHIO_GAME && env.BUTLER_API_KEY
         run: |
-          if [ -f exports/web/index.html ]; then
-            ./butler push exports/web/ ${ITCHIO_USERNAME}/${ITCHIO_GAME}:HTML5
-          fi
-          if [ -f exports/linux/${ITCHIO_GAME}.x86_64 ]; then
-            ./butler push exports/linux/ ${ITCHIO_USERNAME}/${ITCHIO_GAME}:linux
-          fi
-          if [ -f exports/macos/${ITCHIO_GAME}.zip ]; then
-            ./butler push exports/macos/ ${ITCHIO_USERNAME}/${ITCHIO_GAME}:macos
-          fi
-          if [ -f exports/windows/${ITCHIO_GAME}.exe ]; then
-            ./butler push exports/windows/ ${ITCHIO_USERNAME}/${ITCHIO_GAME}:windows
-          fi
+          ./butler push export/ ${ITCHIO_USERNAME}/${ITCHIO_GAME}:HTML5
