@@ -13,13 +13,19 @@ position = Vector2(354, 182)
 texture = ExtResource("1_ig7tw")
 
 [node name="Icon3" type="Sprite2D" parent="." unique_id=1698277474]
-position = Vector2(420, 445)
+position = Vector2(478.00003, 500.00003)
 rotation = 0.23746003
-scale = Vector2(5.015625, 1)
+scale = Vector2(5.015625, 2.7989216)
 texture = ExtResource("1_ig7tw")
 
-[node name="Icon4" type="Sprite2D" parent="." unique_id=816257730]
-position = Vector2(622, 472)
-rotation = -0.08438858
-scale = Vector2(5.015625, 1)
+[node name="Icon4" type="Sprite2D" parent="." unique_id=1106833735]
+position = Vector2(638, 61)
+rotation = 0.12355126
+scale = Vector2(1.1116015, 0.1982052)
+texture = ExtResource("1_ig7tw")
+
+[node name="Icon5" type="Sprite2D" parent="." unique_id=1177201473]
+position = Vector2(339, 52.00003)
+rotation = -0.10351895
+scale = Vector2(1.094563, 0.1272163)
 texture = ExtResource("1_ig7tw")
