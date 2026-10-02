@@ -1,31 +1,87 @@
 [gd_scene format=3 uid="uid://d1j0rr77xt3v7"]
 
-[ext_resource type="Texture2D" uid="uid://bw7e1tfre14tq" path="res://icon.svg" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://cecprltpmifqn" path="res://game/main.gd" id="1_xtpaf"]
+[ext_resource type="Texture2D" uid="uid://cd47fcrjidwyu" path="res://assets/horse.jpg" id="2_xtpaf"]
 
 [node name="main" type="Node2D" unique_id=72457361]
+script = ExtResource("1_xtpaf")
+metadata/_edit_vertical_guides_ = [1153.0, 0.0, -1152.0]
+metadata/_edit_horizontal_guides_ = [0.0, -648.0, 647.0]
 
-[node name="Icon" type="Sprite2D" parent="." unique_id=1515611776]
-position = Vector2(639, 199)
-texture = ExtResource("1_ig7tw")
+[node name="Menu" type="Node2D" parent="." unique_id=229454387]
+position = Vector2(0, -648)
 
-[node name="Icon2" type="Sprite2D" parent="." unique_id=1975444907]
-position = Vector2(354, 182)
-texture = ExtResource("1_ig7tw")
+[node name="ColorRect" type="ColorRect" parent="Menu" unique_id=2023703737]
+offset_right = 1153.0
+offset_bottom = 647.0
+color = Color(1, 1, 0.6156863, 1)
 
-[node name="Icon3" type="Sprite2D" parent="." unique_id=1698277474]
-position = Vector2(478.00003, 500.00003)
-rotation = 0.23746003
-scale = Vector2(5.015625, 2.7989216)
-texture = ExtResource("1_ig7tw")
+[node name="RichTextLabel" type="RichTextLabel" parent="Menu" unique_id=222257333]
+offset_left = 211.0
+offset_top = 119.0
+offset_right = 993.0
+offset_bottom = 230.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 72
+bbcode_enabled = true
+text = "[wave amp=50.0 freq=5.0 connected=1]Horse Dress Up Game[/wave]"
 
-[node name="Icon4" type="Sprite2D" parent="." unique_id=1106833735]
-position = Vector2(638, 61)
-rotation = 0.12355126
-scale = Vector2(1.1116015, 0.1982052)
-texture = ExtResource("1_ig7tw")
+[node name="Button" type="Button" parent="Menu" unique_id=343275629]
+offset_left = 365.0
+offset_top = 321.0
+offset_right = 738.0
+offset_bottom = 402.0
+text = "Play"
 
-[node name="Icon5" type="Sprite2D" parent="." unique_id=1177201473]
-position = Vector2(339, 52.00003)
-rotation = -0.10351895
-scale = Vector2(1.094563, 0.1272163)
-texture = ExtResource("1_ig7tw")
+[node name="Horse" type="Sprite2D" parent="Menu" unique_id=1579420382]
+position = Vector2(211, 402.00012)
+scale = Vector2(0.16333333, 0.16333334)
+texture = ExtResource("2_xtpaf")
+flip_h = true
+
+[node name="Horse2" type="Sprite2D" parent="Menu" unique_id=695621828]
+position = Vector2(888, 440.00012)
+scale = Vector2(0.17666666, 0.17666669)
+texture = ExtResource("2_xtpaf")
+
+[node name="Desk" type="Node2D" parent="." unique_id=839386804]
+
+[node name="ColorRect2" type="ColorRect" parent="Desk" unique_id=1845445542]
+offset_right = 1153.0
+offset_bottom = 647.0
+color = Color(1, 1, 0.6156863, 1)
+
+[node name="PhotoWall" type="Node2D" parent="." unique_id=1930109288]
+position = Vector2(-1152, 0)
+
+[node name="ColorRect2" type="ColorRect" parent="PhotoWall" unique_id=535456687]
+offset_right = 1153.0
+offset_bottom = 647.0
+color = Color(1, 1, 0.6156863, 1)
+
+[node name="DressUp" type="Node2D" parent="." unique_id=1531325856]
+position = Vector2(1152, 0)
+
+[node name="ColorRect2" type="ColorRect" parent="DressUp" unique_id=1459426241]
+offset_right = 1153.0
+offset_bottom = 647.0
+color = Color(1, 1, 0.6156863, 1)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1320608787]
+offset = Vector2(0, -648)
+anchor_mode = 0
+limit_enabled = false
+limit_left = 0
+limit_top = 0
+limit_right = 1152
+limit_bottom = 648
+
+[node name="MoveCamera" type="Button" parent="." unique_id=902810798]
+offset_left = 985.0
+offset_top = 548.0
+offset_right = 1098.0
+offset_bottom = 579.0
+text = "move camera"
+
+[connection signal="pressed" from="Menu/Button" to="." method="_move_screen" binds= ["desk"]]
+[connection signal="pressed" from="MoveCamera" to="." method="_on_move_camera_pressed"]
