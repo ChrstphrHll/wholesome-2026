@@ -1,14 +1,27 @@
 class_name ClothingItem
 extends Resource
 
-@export var health: int
-@export var sub_resource: Resource
-@export var strings: PackedStringArray
+enum ClothingType {
+	Hat,
+	Top,
+	Bottom,
+	Shoe,
+	Accessory
+}
 
-# Make sure that every parameter has a default value.
-# Otherwise, there will be problems with creating and editing
-# your resource via the inspector.
-func _init(p_health = 0, p_sub_resource = null, p_strings = []):
-	health = p_health
-	sub_resource = p_sub_resource
-	strings = p_strings
+@export var name: String
+@export var image: CompressedTexture2D
+@export var type: ClothingType
+
+@export var goth: float = 0
+@export var cutesy: float = 0
+@export var chic: float = 0
+@export var athletic: float = 0
+@export var formal: float = 0
+@export var wacky: float = 0
+@export var rugged: float = 0
+@export var preppy: float = 0
+
+var equipped = false
+
+var id = ResourceUID.create_id()
