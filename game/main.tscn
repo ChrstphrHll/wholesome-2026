@@ -3,13 +3,8 @@
 [ext_resource type="Script" uid="uid://cecprltpmifqn" path="res://game/main.gd" id="1_xtpaf"]
 [ext_resource type="Texture2D" uid="uid://cd47fcrjidwyu" path="res://assets/horse.jpg" id="2_xtpaf"]
 [ext_resource type="Texture2D" uid="uid://c82bt5n7jpyti" path="res://assets/brown_horse_trim.png" id="3_5un7r"]
-[ext_resource type="Texture2D" uid="uid://dhxjxsxkvlet1" path="res://assets/jacket_placeholder_2.webp" id="3_vop5m"]
-[ext_resource type="Texture2D" uid="uid://drobyujo00wea" path="res://assets/jacket_placeholder.webp" id="4_5un7r"]
 [ext_resource type="PackedScene" uid="uid://b5pceuhay505a" path="res://dialog/balloon.tscn" id="4_xkbyp"]
 [ext_resource type="Resource" uid="uid://dyi0vqkb7ki4" path="res://generic_horse.dialogue" id="5_lx3aj"]
-[ext_resource type="PackedScene" uid="uid://d37dacdkkfjhp" path="res://game/clothes_toggle.tscn" id="6_wjctj"]
-[ext_resource type="Texture2D" uid="uid://iveu7674u635" path="res://assets/shirt_cutesy.png" id="7_itumj"]
-[ext_resource type="Texture2D" uid="uid://tvqo57nynvnp" path="res://assets/hat1.webp" id="7_xkbyp"]
 
 [node name="main" type="Node2D" unique_id=72457361]
 script = ExtResource("1_xtpaf")
@@ -114,6 +109,7 @@ position = Vector2(1152, 0)
 offset_right = 1153.0
 offset_bottom = 647.0
 color = Color(1, 1, 0.6156863, 1)
+metadata/_edit_lock_ = true
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="DressUp" unique_id=1021011893]
 offset_left = 52.0
@@ -125,72 +121,127 @@ theme_override_font_sizes/normal_font_size = 39
 bbcode_enabled = true
 text = "[wave amp=50.0 freq=5.0 connected=1]dress up[/wave]"
 
-[node name="Jackets" type="RichTextLabel" parent="DressUp" unique_id=1803370986]
-offset_left = 655.0
-offset_top = 66.0
-offset_right = 730.0
-offset_bottom = 93.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 19
-bbcode_enabled = true
-text = "Jackets"
-
 [node name="Horse" type="Sprite2D" parent="DressUp" unique_id=584501774]
-position = Vector2(481.00003, 329.00003)
+position = Vector2(866.6465, 412.31)
 scale = Vector2(0.28450713, 0.25369984)
 texture = ExtResource("3_5un7r")
 
-[node name="Hat" type="Marker2D" parent="DressUp/Horse" unique_id=1594184294]
-position = Vector2(-291.7326, -496.65002)
+[node name="TabContainer" type="TabContainer" parent="DressUp" unique_id=183496887]
+offset_left = 93.0
+offset_top = 113.0
+offset_right = 562.0
+offset_bottom = 606.0
+current_tab = 0
 
-[node name="Top" type="Marker2D" parent="DressUp/Horse" unique_id=682042949]
-position = Vector2(-126.5347, -63.066742)
-scale = Vector2(0.99999994, 1)
+[node name="Hats" type="Control" parent="DressUp/TabContainer" unique_id=1549855114]
+layout_mode = 2
+metadata/_tab_index = 0
 
-[node name="Pants" type="Marker2D" parent="DressUp/Horse" unique_id=2046318914]
-position = Vector2(84.35635, 185.25812)
+[node name="ScrollContainer" type="ScrollContainer" parent="DressUp/TabContainer/Hats" unique_id=773062710]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Shoes" type="Marker2D" parent="DressUp/Horse" unique_id=1801665386]
-position = Vector2(7.0296936, 524.24146)
+[node name="HatsGridContainer" type="GridContainer" parent="DressUp/TabContainer/Hats/ScrollContainer" unique_id=937211845]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 4
 
-[node name="Off" type="Marker2D" parent="DressUp/Horse" unique_id=137299824]
-position = Vector2(3005.997, -531.44354)
+[node name="Shirts" type="Control" parent="DressUp/TabContainer" unique_id=1293741375]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
 
-[node name="RedJacket" type="Button" parent="DressUp" unique_id=819170704]
-offset_left = 670.0
-offset_top = 110.0
-offset_right = 705.0
-offset_bottom = 141.0
-text = "red"
+[node name="ScrollContainer" type="ScrollContainer" parent="DressUp/TabContainer/Shirts" unique_id=582029257]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Cotopaxi" type="Button" parent="DressUp" unique_id=1028783467]
-offset_left = 730.0
-offset_top = 110.0
-offset_right = 772.0
-offset_bottom = 141.0
-text = "coto
-"
+[node name="TopsGridContainer" type="GridContainer" parent="DressUp/TabContainer/Shirts/ScrollContainer" unique_id=540623855]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+columns = 4
 
-[node name="Cotopaxi2" type="Sprite2D" parent="DressUp" unique_id=1904715554]
-position = Vector2(1238, 360)
-scale = Vector2(0.10124997, 0.10124997)
-texture = ExtResource("3_vop5m")
+[node name="Pants" type="Control" parent="DressUp/TabContainer" unique_id=1807833747]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
 
-[node name="ShirtCutesy" type="Sprite2D" parent="DressUp" unique_id=1562863758]
-position = Vector2(481, 330.99997)
-scale = Vector2(0.285, 0.285)
-texture = ExtResource("7_itumj")
+[node name="ScrollContainer" type="ScrollContainer" parent="DressUp/TabContainer/Pants" unique_id=278716072]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="RedJacket2" type="Sprite2D" parent="DressUp" unique_id=448917301]
-position = Vector2(1235, 232.00003)
-rotation = -0.7853982
-scale = Vector2(0.047833327, 0.047833327)
-texture = ExtResource("4_5un7r")
+[node name="BottomsGridContainer" type="GridContainer" parent="DressUp/TabContainer/Pants/ScrollContainer" unique_id=112420813]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+columns = 4
 
-[node name="ClothesToggle" parent="DressUp" unique_id=1383011338 instance=ExtResource("6_wjctj")]
-position = Vector2(690, 429)
-title = "Hat1"
-image = ExtResource("7_xkbyp")
+[node name="Shoes" type="Control" parent="DressUp/TabContainer" unique_id=841859354]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="DressUp/TabContainer/Shoes" unique_id=85474056]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ShoesGridContainer" type="GridContainer" parent="DressUp/TabContainer/Shoes/ScrollContainer" unique_id=1239066478]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+columns = 4
+
+[node name="Accessories" type="Control" parent="DressUp/TabContainer" unique_id=1235810253]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 4
+
+[node name="ScrollContainer" type="ScrollContainer" parent="DressUp/TabContainer/Accessories" unique_id=1075427534]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AccessoriesGridContainer" type="GridContainer" parent="DressUp/TabContainer/Accessories/ScrollContainer" unique_id=385760226]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+columns = 4
+
+[node name="ColorRect" type="ColorRect" parent="DressUp" unique_id=1802641472]
+offset_left = 660.0
+offset_top = 128.0
+offset_right = 1014.0
+offset_bottom = 218.0
+
+[node name="Label" type="Label" parent="DressUp/ColorRect" unique_id=1298548012]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 13.0
+offset_right = 316.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Horse commenting on the clothes here"
 
 [node name="MoveCamera" type="Button" parent="." unique_id=902810798]
 offset_left = 985.0
@@ -204,6 +255,4 @@ text = "move camera"
 [connection signal="pressed" from="debug/HBoxContainer/Button3" to="." method="_move_screen" binds= ["dress_up"]]
 [connection signal="pressed" from="debug/HBoxContainer/Button4" to="." method="_move_screen" binds= ["photo_wall"]]
 [connection signal="pressed" from="Menu/Button" to="." method="_move_screen" binds= ["desk"]]
-[connection signal="pressed" from="DressUp/RedJacket" to="." method="_on_jacket_pressed" binds= [NodePath("DressUp/RedJacket2")]]
-[connection signal="pressed" from="DressUp/Cotopaxi" to="." method="_on_jacket_pressed" binds= [NodePath("DressUp/Cotopaxi2")]]
 [connection signal="pressed" from="MoveCamera" to="." method="_on_move_camera_pressed"]
