@@ -5,11 +5,47 @@
 [ext_resource type="Texture2D" uid="uid://c82bt5n7jpyti" path="res://assets/brown_horse_trim.png" id="3_5un7r"]
 [ext_resource type="Texture2D" uid="uid://dhxjxsxkvlet1" path="res://assets/jacket_placeholder_2.webp" id="3_vop5m"]
 [ext_resource type="Texture2D" uid="uid://drobyujo00wea" path="res://assets/jacket_placeholder.webp" id="4_5un7r"]
+[ext_resource type="PackedScene" uid="uid://b5pceuhay505a" path="res://dialog/balloon.tscn" id="4_xkbyp"]
+[ext_resource type="Resource" uid="uid://dyi0vqkb7ki4" path="res://generic_horse.dialogue" id="5_lx3aj"]
+[ext_resource type="PackedScene" uid="uid://d37dacdkkfjhp" path="res://game/clothes_toggle.tscn" id="6_wjctj"]
+[ext_resource type="Texture2D" uid="uid://iveu7674u635" path="res://assets/shirt_cutesy.png" id="7_itumj"]
+[ext_resource type="Texture2D" uid="uid://tvqo57nynvnp" path="res://assets/hat1.webp" id="7_xkbyp"]
 
 [node name="main" type="Node2D" unique_id=72457361]
 script = ExtResource("1_xtpaf")
 metadata/_edit_vertical_guides_ = [1153.0, 0.0, -1152.0]
 metadata/_edit_horizontal_guides_ = [0.0, -648.0, 647.0]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1320608787]
+position = Vector2(1154.2382, 4.2749786)
+anchor_mode = 0
+limit_enabled = false
+limit_left = 0
+limit_top = 0
+limit_right = 1152
+limit_bottom = 648
+
+[node name="debug" type="CanvasLayer" parent="." unique_id=197581472]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="debug" unique_id=610103683]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="debug/HBoxContainer" unique_id=824678220]
+layout_mode = 2
+text = "main"
+
+[node name="Button2" type="Button" parent="debug/HBoxContainer" unique_id=1917927861]
+layout_mode = 2
+text = "desk"
+
+[node name="Button3" type="Button" parent="debug/HBoxContainer" unique_id=1061094378]
+layout_mode = 2
+text = "dress"
+
+[node name="Button4" type="Button" parent="debug/HBoxContainer" unique_id=539522221]
+layout_mode = 2
+text = "photos"
 
 [node name="Menu" type="Node2D" parent="." unique_id=229454387]
 position = Vector2(0, -648)
@@ -53,6 +89,15 @@ texture = ExtResource("2_xtpaf")
 offset_right = 1153.0
 offset_bottom = 647.0
 color = Color(1, 1, 0.6156863, 1)
+
+[node name="BrownHorseTrim" type="Sprite2D" parent="Desk" unique_id=2028178170]
+self_modulate = Color(1, 0.50980395, 1, 1)
+position = Vector2(763, 240)
+scale = Vector2(0.21010387, 0.21010387)
+texture = ExtResource("3_5un7r")
+
+[node name="ExampleBalloon" parent="Desk" unique_id=38036521 instance=ExtResource("4_xkbyp")]
+dialogue_resource = ExtResource("5_lx3aj")
 
 [node name="PhotoWall" type="Node2D" parent="." unique_id=1930109288]
 position = Vector2(-1152, 0)
@@ -127,24 +172,25 @@ text = "coto
 "
 
 [node name="Cotopaxi2" type="Sprite2D" parent="DressUp" unique_id=1904715554]
-position = Vector2(944, 421)
+position = Vector2(1238, 360)
 scale = Vector2(0.10124997, 0.10124997)
 texture = ExtResource("3_vop5m")
 
+[node name="ShirtCutesy" type="Sprite2D" parent="DressUp" unique_id=1562863758]
+position = Vector2(481, 330.99997)
+scale = Vector2(0.285, 0.285)
+texture = ExtResource("7_itumj")
+
 [node name="RedJacket2" type="Sprite2D" parent="DressUp" unique_id=448917301]
-position = Vector2(998.00024, 275.99997)
+position = Vector2(1235, 232.00003)
 rotation = -0.7853982
 scale = Vector2(0.047833327, 0.047833327)
 texture = ExtResource("4_5un7r")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1320608787]
-position = Vector2(1154.2382, 4.2749786)
-anchor_mode = 0
-limit_enabled = false
-limit_left = 0
-limit_top = 0
-limit_right = 1152
-limit_bottom = 648
+[node name="ClothesToggle" parent="DressUp" unique_id=1383011338 instance=ExtResource("6_wjctj")]
+position = Vector2(690, 429)
+title = "Hat1"
+image = ExtResource("7_xkbyp")
 
 [node name="MoveCamera" type="Button" parent="." unique_id=902810798]
 offset_left = 985.0
@@ -153,6 +199,10 @@ offset_right = 1098.0
 offset_bottom = 579.0
 text = "move camera"
 
+[connection signal="pressed" from="debug/HBoxContainer/Button" to="." method="_move_screen" binds= ["menu"]]
+[connection signal="pressed" from="debug/HBoxContainer/Button2" to="." method="_move_screen" binds= ["desk"]]
+[connection signal="pressed" from="debug/HBoxContainer/Button3" to="." method="_move_screen" binds= ["dress_up"]]
+[connection signal="pressed" from="debug/HBoxContainer/Button4" to="." method="_move_screen" binds= ["photo_wall"]]
 [connection signal="pressed" from="Menu/Button" to="." method="_move_screen" binds= ["desk"]]
 [connection signal="pressed" from="DressUp/RedJacket" to="." method="_on_jacket_pressed" binds= [NodePath("DressUp/RedJacket2")]]
 [connection signal="pressed" from="DressUp/Cotopaxi" to="." method="_on_jacket_pressed" binds= [NodePath("DressUp/Cotopaxi2")]]
