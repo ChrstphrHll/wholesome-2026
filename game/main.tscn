@@ -2,6 +2,9 @@
 
 [ext_resource type="Script" uid="uid://cecprltpmifqn" path="res://game/main.gd" id="1_xtpaf"]
 [ext_resource type="Texture2D" uid="uid://cd47fcrjidwyu" path="res://assets/horse.jpg" id="2_xtpaf"]
+[ext_resource type="Texture2D" uid="uid://dfyvh83doblmv" path="res://assets/brown_horse.png" id="3_5un7r"]
+[ext_resource type="Texture2D" uid="uid://dhxjxsxkvlet1" path="res://assets/jacket_placeholder_2.webp" id="3_vop5m"]
+[ext_resource type="Texture2D" uid="uid://drobyujo00wea" path="res://assets/jacket_placeholder.webp" id="4_5un7r"]
 
 [node name="main" type="Node2D" unique_id=72457361]
 script = ExtResource("1_xtpaf")
@@ -67,8 +70,75 @@ offset_right = 1153.0
 offset_bottom = 647.0
 color = Color(1, 1, 0.6156863, 1)
 
+[node name="RichTextLabel2" type="RichTextLabel" parent="DressUp" unique_id=1021011893]
+offset_left = 52.0
+offset_top = 33.0
+offset_right = 421.0
+offset_bottom = 110.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 39
+bbcode_enabled = true
+text = "[wave amp=50.0 freq=5.0 connected=1]dress up[/wave]"
+
+[node name="Jackets" type="RichTextLabel" parent="DressUp" unique_id=1803370986]
+offset_left = 655.0
+offset_top = 66.0
+offset_right = 730.0
+offset_bottom = 93.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 19
+bbcode_enabled = true
+text = "Jackets"
+
+[node name="Horse" type="Sprite2D" parent="DressUp" unique_id=584501774]
+position = Vector2(444.78885, 390.0106)
+scale = Vector2(0.28450713, 0.25369984)
+texture = ExtResource("3_5un7r")
+
+[node name="Hat" type="Marker2D" parent="DressUp/Horse" unique_id=1594184294]
+position = Vector2(-83.61417, -847.5)
+
+[node name="Top" type="Marker2D" parent="DressUp/Horse" unique_id=682042949]
+position = Vector2(35.890694, -496.69162)
+scale = Vector2(0.99999994, 1)
+
+[node name="Pants" type="Marker2D" parent="DressUp/Horse" unique_id=2046318914]
+position = Vector2(338.16785, -299.60837)
+
+[node name="Shoes" type="Marker2D" parent="DressUp/Horse" unique_id=1801665386]
+position = Vector2(176.48479, 177.33325)
+
+[node name="Off" type="Marker2D" parent="DressUp/Horse" unique_id=137299824]
+position = Vector2(3005.997, -531.44354)
+
+[node name="RedJacket" type="Button" parent="DressUp" unique_id=819170704]
+offset_left = 670.0
+offset_top = 110.0
+offset_right = 705.0
+offset_bottom = 141.0
+text = "red"
+
+[node name="Cotopaxi" type="Button" parent="DressUp" unique_id=1028783467]
+offset_left = 730.0
+offset_top = 110.0
+offset_right = 772.0
+offset_bottom = 141.0
+text = "coto
+"
+
+[node name="Cotopaxi2" type="Sprite2D" parent="DressUp" unique_id=1904715554]
+position = Vector2(944, 421)
+scale = Vector2(0.10124997, 0.10124997)
+texture = ExtResource("3_vop5m")
+
+[node name="RedJacket2" type="Sprite2D" parent="DressUp" unique_id=448917301]
+position = Vector2(998.00024, 275.99997)
+rotation = -0.7853982
+scale = Vector2(0.047833327, 0.047833327)
+texture = ExtResource("4_5un7r")
+
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1320608787]
-offset = Vector2(0, -648)
+position = Vector2(1154.2382, 4.2749786)
 anchor_mode = 0
 limit_enabled = false
 limit_left = 0
@@ -84,4 +154,6 @@ offset_bottom = 579.0
 text = "move camera"
 
 [connection signal="pressed" from="Menu/Button" to="." method="_move_screen" binds= ["desk"]]
+[connection signal="pressed" from="DressUp/RedJacket" to="." method="_on_jacket_pressed" binds= [NodePath("DressUp/RedJacket2")]]
+[connection signal="pressed" from="DressUp/Cotopaxi" to="." method="_on_jacket_pressed" binds= [NodePath("DressUp/Cotopaxi2")]]
 [connection signal="pressed" from="MoveCamera" to="." method="_on_move_camera_pressed"]
