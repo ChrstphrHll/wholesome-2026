@@ -3,8 +3,13 @@
 [ext_resource type="Script" uid="uid://cecprltpmifqn" path="res://game/main.gd" id="1_xtpaf"]
 [ext_resource type="Texture2D" uid="uid://cd47fcrjidwyu" path="res://assets/horse.jpg" id="2_xtpaf"]
 [ext_resource type="Texture2D" uid="uid://c82bt5n7jpyti" path="res://assets/brown_horse_trim.png" id="3_5un7r"]
+[ext_resource type="Texture2D" uid="uid://bxy43u5o12o77" path="res://assets/desk.webp" id="4_wjctj"]
 [ext_resource type="PackedScene" uid="uid://b5pceuhay505a" path="res://dialog/balloon.tscn" id="4_xkbyp"]
-[ext_resource type="Resource" uid="uid://dyi0vqkb7ki4" path="res://generic_horse.dialogue" id="5_lx3aj"]
+[ext_resource type="Resource" uid="uid://dyi0vqkb7ki4" path="res://dialog/generic_horse.dialogue" id="5_lx3aj"]
+[ext_resource type="Texture2D" uid="uid://beym05mtor5rg" path="res://assets/MonitorLCDlcd.svg.webp" id="5_xkbyp"]
+[ext_resource type="Texture2D" uid="uid://bndptqrgs2pww" path="res://assets/space.webp" id="8_lx3aj"]
+[ext_resource type="Texture2D" uid="uid://yy20714jjc" path="res://assets/beach.jpg" id="9_itumj"]
+[ext_resource type="Texture2D" uid="uid://c4qxlq4yg4a0y" path="res://assets/tripod.webp" id="10_itumj"]
 
 [node name="main" type="Node2D" unique_id=72457361]
 script = ExtResource("1_xtpaf")
@@ -85,14 +90,34 @@ offset_right = 1153.0
 offset_bottom = 647.0
 color = Color(1, 1, 0.6156863, 1)
 
-[node name="BrownHorseTrim" type="Sprite2D" parent="Desk" unique_id=2028178170]
-self_modulate = Color(1, 0.50980395, 1, 1)
+[node name="LobbyHorse" type="Sprite2D" parent="Desk" unique_id=2028178170]
+visible = false
 position = Vector2(763, 240)
 scale = Vector2(0.21010387, 0.21010387)
 texture = ExtResource("3_5un7r")
 
-[node name="ExampleBalloon" parent="Desk" unique_id=38036521 instance=ExtResource("4_xkbyp")]
+[node name="Desk2" type="Sprite2D" parent="Desk" unique_id=763450014]
+position = Vector2(309, 632.00006)
+scale = Vector2(1.4000001, 1.4000001)
+texture = ExtResource("4_wjctj")
+flip_h = true
+
+[node name="MonitorLcDlcd_svg" type="Sprite2D" parent="Desk" unique_id=1688992873]
+position = Vector2(223.00002, 336)
+scale = Vector2(1.3340001, 1.0661436)
+texture = ExtResource("5_xkbyp")
+
+[node name="DeskBalloon" parent="Desk" unique_id=38036521 instance=ExtResource("4_xkbyp")]
 dialogue_resource = ExtResource("5_lx3aj")
+
+[node name="NextClient" type="Button" parent="Desk" unique_id=951989095]
+offset_left = 80.0
+offset_top = 245.0
+offset_right = 355.56653
+offset_bottom = 353.24762
+rotation = 0.007068038
+text = "Next Client
+"
 
 [node name="PhotoWall" type="Node2D" parent="." unique_id=1930109288]
 position = Vector2(-1152, 0)
@@ -101,6 +126,66 @@ position = Vector2(-1152, 0)
 offset_right = 1153.0
 offset_bottom = 647.0
 color = Color(1, 1, 0.6156863, 1)
+
+[node name="Space" type="Sprite2D" parent="PhotoWall" unique_id=966234832]
+position = Vector2(313.375, 256.8125)
+scale = Vector2(0.26750004, 0.2673323)
+texture = ExtResource("8_lx3aj")
+
+[node name="Beach" type="Sprite2D" parent="PhotoWall" unique_id=2128673957]
+position = Vector2(313, 273.99982)
+scale = Vector2(0.36416668, 0.36416668)
+texture = ExtResource("9_itumj")
+
+[node name="Panel" type="Panel" parent="PhotoWall" unique_id=1103831408]
+offset_left = 761.0
+offset_top = 137.0
+offset_right = 1108.0
+offset_bottom = 431.0
+
+[node name="MarginContainer" type="MarginContainer" parent="PhotoWall/Panel" unique_id=635081197]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PhotoWall/Panel/MarginContainer" unique_id=12646006]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2" unique_id=1459803846]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer" unique_id=1577746861]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/VBoxContainer" unique_id=254773564]
+layout_mode = 2
+text = "Backgrounds"
+
+[node name="Beach" type="Button" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/VBoxContainer" unique_id=2064933721]
+layout_mode = 2
+text = "Beach"
+
+[node name="Space" type="Button" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/VBoxContainer" unique_id=1739323624]
+layout_mode = 2
+text = "Space"
+
+[node name="ChangeOutfit" type="Button" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2" unique_id=816284960]
+layout_mode = 2
+text = "Change Outfit"
+
+[node name="TakePhoto" type="Button" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2" unique_id=18193390]
+layout_mode = 2
+text = "Say Apple!"
 
 [node name="DressUp" type="Node2D" parent="." unique_id=1531325856]
 position = Vector2(1152, 0)
@@ -243,16 +328,25 @@ offset_bottom = 36.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Horse commenting on the clothes here"
 
-[node name="MoveCamera" type="Button" parent="." unique_id=902810798]
-offset_left = 985.0
-offset_top = 548.0
-offset_right = 1098.0
-offset_bottom = 579.0
-text = "move camera"
+[node name="Done" type="Button" parent="DressUp" unique_id=1067218762]
+offset_left = 1013.0
+offset_top = 51.0
+offset_right = 1067.0
+offset_bottom = 82.0
+text = "Done!"
 
-[connection signal="pressed" from="debug/HBoxContainer/Button" to="." method="_move_screen" binds= ["menu"]]
-[connection signal="pressed" from="debug/HBoxContainer/Button2" to="." method="_move_screen" binds= ["desk"]]
-[connection signal="pressed" from="debug/HBoxContainer/Button3" to="." method="_move_screen" binds= ["dress_up"]]
-[connection signal="pressed" from="debug/HBoxContainer/Button4" to="." method="_move_screen" binds= ["photo_wall"]]
-[connection signal="pressed" from="Menu/Button" to="." method="_move_screen" binds= ["desk"]]
-[connection signal="pressed" from="MoveCamera" to="." method="_on_move_camera_pressed"]
+[node name="Tripod" type="Sprite2D" parent="DressUp" unique_id=1027008530]
+position = Vector2(-1627.0001, 563)
+scale = Vector2(0.093, 0.093)
+texture = ExtResource("10_itumj")
+
+[connection signal="pressed" from="debug/HBoxContainer/Button" to="." method="_move_screen" binds= [0]]
+[connection signal="pressed" from="debug/HBoxContainer/Button2" to="." method="_move_screen" binds= [1]]
+[connection signal="pressed" from="debug/HBoxContainer/Button3" to="." method="_move_screen" binds= [2]]
+[connection signal="pressed" from="debug/HBoxContainer/Button4" to="." method="_move_screen" binds= [3]]
+[connection signal="pressed" from="Menu/Button" to="." method="_move_screen" binds= [1]]
+[connection signal="pressed" from="Desk/NextClient" to="." method="call_next_client"]
+[connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/VBoxContainer/Beach" to="." method="_on_beach_pressed"]
+[connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/VBoxContainer/Space" to="." method="_on_space_pressed"]
+[connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/ChangeOutfit" to="." method="_on_change_outfit_pressed"]
+[connection signal="pressed" from="DressUp/Done" to="." method="_on_dress_up_finished"]

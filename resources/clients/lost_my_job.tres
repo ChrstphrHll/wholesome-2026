@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Client" format=3 uid="uid://dtcetsp80d73p"]
+
+[ext_resource type="Resource" uid="uid://dyi0vqkb7ki4" path="res://dialog/generic_horse.dialogue" id="1_tim2n"]
+[ext_resource type="Script" uid="uid://4yufbpnlxpb0" path="res://resources/client.gd" id="1_uakr1"]
+[ext_resource type="Texture2D" uid="uid://c82bt5n7jpyti" path="res://assets/brown_horse_trim.png" id="2_judff"]
+
+[resource]
+script = ExtResource("1_uakr1")
+name = "Clint"
+image = ExtResource("2_judff")
+dialogue_file = ExtResource("1_tim2n")
+metadata/_custom_type_script = "uid://4yufbpnlxpb0"
