@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cecprltpmifqn" path="res://game/main.gd" id="1_xtpaf"]
 [ext_resource type="Texture2D" uid="uid://cd47fcrjidwyu" path="res://assets/horse.jpg" id="2_xtpaf"]
-[ext_resource type="Texture2D" uid="uid://dfyvh83doblmv" path="res://assets/brown_horse.png" id="3_5un7r"]
+[ext_resource type="Texture2D" uid="uid://c82bt5n7jpyti" path="res://assets/brown_horse_trim.png" id="3_5un7r"]
 [ext_resource type="Texture2D" uid="uid://dhxjxsxkvlet1" path="res://assets/jacket_placeholder_2.webp" id="3_vop5m"]
 [ext_resource type="Texture2D" uid="uid://drobyujo00wea" path="res://assets/jacket_placeholder.webp" id="4_5un7r"]
 
@@ -91,22 +91,22 @@ bbcode_enabled = true
 text = "Jackets"
 
 [node name="Horse" type="Sprite2D" parent="DressUp" unique_id=584501774]
-position = Vector2(444.78885, 390.0106)
+position = Vector2(481.00003, 329.00003)
 scale = Vector2(0.28450713, 0.25369984)
 texture = ExtResource("3_5un7r")
 
 [node name="Hat" type="Marker2D" parent="DressUp/Horse" unique_id=1594184294]
-position = Vector2(-83.61417, -847.5)
+position = Vector2(-291.7326, -496.65002)
 
 [node name="Top" type="Marker2D" parent="DressUp/Horse" unique_id=682042949]
-position = Vector2(35.890694, -496.69162)
+position = Vector2(-126.5347, -63.066742)
 scale = Vector2(0.99999994, 1)
 
 [node name="Pants" type="Marker2D" parent="DressUp/Horse" unique_id=2046318914]
-position = Vector2(338.16785, -299.60837)
+position = Vector2(84.35635, 185.25812)
 
 [node name="Shoes" type="Marker2D" parent="DressUp/Horse" unique_id=1801665386]
-position = Vector2(176.48479, 177.33325)
+position = Vector2(7.0296936, 524.24146)
 
 [node name="Off" type="Marker2D" parent="DressUp/Horse" unique_id=137299824]
 position = Vector2(3005.997, -531.44354)
