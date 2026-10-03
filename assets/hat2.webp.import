@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfyvh83doblmv"
-path="res://.godot/imported/brown_horse.png-07e272806d212a051a3cf85ad770dd60.ctex"
+uid="uid://bcgnwgjo2wixo"
+path="res://.godot/imported/hat2.webp-886fdfc2d66fcbb9d56a839bb89f3105.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/brown_horse.png"
-dest_files=["res://.godot/imported/brown_horse.png-07e272806d212a051a3cf85ad770dd60.ctex"]
+source_file="res://assets/hat2.webp"
+dest_files=["res://.godot/imported/hat2.webp-886fdfc2d66fcbb9d56a839bb89f3105.ctex"]
 
 [params]
 
