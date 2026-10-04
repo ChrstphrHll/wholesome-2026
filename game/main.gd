@@ -259,6 +259,7 @@ func _select_clothing_item(item_id: int):
 		
 	var sprite = Sprite2D.new()
 	sprite.texture = item.image
+	sprite.z_index = item.get_z_index()
 	item.current_sprite = sprite
 	equipped_clothes[item.type] = item
 	check_item_dialog_triggers(item)
