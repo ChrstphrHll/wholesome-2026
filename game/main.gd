@@ -11,7 +11,7 @@ var active_client: Client
 
 const LOBBY_SCALE = Vector2(0.4, 0.4)
 const DRESS_UP_SCALE = Vector2(0.4, 0.4)
-const PHOTO_SCALE = Vector2(-0.4, 0.4)
+const PHOTO_SCALE = Vector2(-0.3, 0.3)
 
 const POLAROID = preload("res://components/polaroid.tscn")
 
@@ -128,7 +128,7 @@ func call_next_client():
 
 func bring_client_into_lobby(sprite: AnimatedSprite2D):
 	lobby_horse = sprite
-	lobby_horse.global_position = $Desk/Marker2D.global_position
+	lobby_horse.position = $Desk/Marker2D.position
 	lobby_horse.scale = LOBBY_SCALE
 	desk.add_child(lobby_horse)
 
@@ -143,6 +143,7 @@ func client_end_screen():
 	show_dialog("post_photo_high")
 	await listen_for_dialog_end()
 	remove_lobby_horse()
+	equipped_clothes = {}
 	client_queue.pop_front()
 	active_client = client_queue.front()
 	if not active_client:
@@ -204,7 +205,7 @@ func populate_closet():
 
 func put_client_into_dressing_room(sprite: AnimatedSprite2D):
 	dress_up_horse = sprite
-	dress_up_horse.global_position = $DressUp/Marker2D.global_position
+	dress_up_horse.position = $DressUp/Marker2D.position
 	dress_up_horse.scale = DRESS_UP_SCALE
 	dress_up.add_child(dress_up_horse)
 
@@ -218,12 +219,10 @@ func _select_clothing_item(item_id: int):
 		equipped_item.current_sprite.queue_free()
 		equipped_item.current_sprite = null
 		equipped_clothes.erase(item.type)
-		equipped_item.equipped = false
 		
 		if item.id == equipped_item.id:
 			return
 		
-	item.equipped = true
 	var sprite = Sprite2D.new()
 	sprite.texture = item.image
 	item.current_sprite = sprite
@@ -246,9 +245,10 @@ func get_clothing_item_from_id(id: int):
 
 
 func _on_dress_up_finished():
-	photo_horse = dress_up_horse.duplicate()
-
+	put_client_into_photo_booth(dress_up_horse.duplicate())
 	_move_screen(Location.PHOTO_WALL)
+	await get_tree().create_timer(2).timeout
+	dress_up_horse.queue_free()
 
 
 #endregion
@@ -298,7 +298,9 @@ func _on_space_pressed():
 
 
 func _on_change_outfit_pressed():
+	put_client_into_dressing_room(photo_horse.duplicate())
 	_move_screen(Location.DRESS_UP)
+	await get_tree().create_timer(2).timeout
 	photo_horse.queue_free()
 
 

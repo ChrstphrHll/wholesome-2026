@@ -465,6 +465,7 @@ bbcode_enabled = true
 text = "[wave amp=50.0 freq=5.0 connected=1]dress up[/wave]"
 
 [node name="Horse" type="AnimatedSprite2D" parent="DressUp" unique_id=243598187]
+visible = false
 position = Vector2(861, 385.00003)
 scale = Vector2(0.40604344, 0.36207587)
 sprite_frames = SubResource("SpriteFrames_ynx3y")
