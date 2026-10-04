@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cs86uh73uqp4a"
-path="res://.godot/imported/studio_entry_static.png-5ba5cde07ebe278502013e05cba67c58.ctex"
+uid="uid://7yecy52jpsav"
+path="res://.godot/imported/studio_entry_clouds_pink_complete.png-3d300c6dec1b7f30c848350f9491b13c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/studio_entry_static.png"
-dest_files=["res://.godot/imported/studio_entry_static.png-5ba5cde07ebe278502013e05cba67c58.ctex"]
+source_file="res://assets/backgrounds/studio_entry_clouds_pink_complete.png"
+dest_files=["res://.godot/imported/studio_entry_clouds_pink_complete.png-3d300c6dec1b7f30c848350f9491b13c.ctex"]
 
 [params]
 

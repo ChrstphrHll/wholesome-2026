@@ -6,6 +6,7 @@
 
 [resource]
 script = ExtResource("1_uakr1")
+cutesy = Array[int]([1])
 name = "Clint"
 image = ExtResource("2_judff")
 dialogue_file = ExtResource("1_tim2n")

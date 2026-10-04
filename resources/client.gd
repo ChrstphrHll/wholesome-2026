@@ -2,17 +2,26 @@ class_name Client
 extends Resource
 
 
-@export var goth: int = 0
-@export var cutesy: int = 0
-@export var chic: int = 0
-@export var athletic: int = 0
-@export var formal: int = 0
-@export var wacky: int = 0
-@export var rugged: int = 0
-@export var preppy: int = 0
+@export var goth: Array[int] = []
+@export var cutesy: Array[int] = []
+@export var chic: Array[int] = []
+@export var athletic: Array[int] = []
+@export var formal: Array[int] = []
+@export var wacky: Array[int] = []
+@export var rugged: Array[int] = []
+@export var preppy: Array[int] = []
 
 
-var dialog_info = {}
+var seen_info = {
+	"goth": 0,
+	"cutesy": 0,
+	"chic": 0,
+	"athletic": 0,
+	"formal": 0,
+	"wacky": 0,
+	"rugged": 0,
+	"preppy": 0
+}
 
 
 @export var name: String
@@ -21,45 +30,8 @@ var dialog_info = {}
 @export var dialogue_file: DialogueResource
 
 
-func _init():
-	dialog_info["goth"] = {
-		"total": goth,
-		"current": 0
-	}
-	dialog_info["cutesy"] = {
-		"total": cutesy,
-		"current": 0
-	}
-	dialog_info["chic"] = {
-		"total": chic,
-		"current": 0
-	}
-	dialog_info["athletic"] = {
-		"total": athletic,
-		"current": 0
-	}
-	dialog_info["formal"] = {
-		"total": formal,
-		"current": 0
-	}
-	dialog_info["wacky"] = {
-		"total": wacky,
-		"current": 0
-	}
-	dialog_info["rugged"] = {
-		"total": rugged,
-		"current": 0
-	}
-	dialog_info["preppy"] = {
-		"total": preppy,
-		"current": 0
-	}
-
-
 func check_clothing_triggers(item: ClothingItem):
-	print("cheking triggers", item.name)
 	var stat = item.get_most_significant_stat()
-	print("most significant stat", stat)
 	if not stat:
 		return ""
 	
@@ -68,11 +40,42 @@ func check_clothing_triggers(item: ClothingItem):
 
 func get_dialog_cue(stat: String):
 	print("looking for dialog cue for ", stat)
-	var stat_info = dialog_info[stat]
+	seen_info[stat] = seen_info[stat] + 1
+	var times_seen_stat = seen_info[stat]
+	var next_trigger = get_stat_next_trigger(stat)
 	
-	if stat_info.current == stat_info.total:
+	if not next_trigger:
 		return ""
 	
-	var cue = stat + str(stat_info.current)
-	stat_info.current += 1
-	return cue
+	if times_seen_stat == next_trigger:
+		var cue = stat + str(times_seen_stat)
+		print("you should play the dialog at cue ", cue)
+		return cue
+	
+	return ""
+
+
+func get_stat_next_trigger(stat: String):
+	match stat:
+		"goth":
+			return next_stat_trigger(goth)
+		"cutesy":
+			return next_stat_trigger(cutesy)
+		"chic":
+			return next_stat_trigger(chic)
+		"athletic":
+			return next_stat_trigger(athletic)
+		"formal":
+			return next_stat_trigger(formal)
+		"wacky":
+			return next_stat_trigger(wacky)
+		"rugged":
+			return next_stat_trigger(rugged)
+		"preppy":
+			return next_stat_trigger(preppy)
+
+
+func next_stat_trigger(triggers: Array[int]):
+	if triggers.size() == 0:
+		return false
+	return triggers[0]
