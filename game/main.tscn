@@ -465,31 +465,12 @@ offset_left = 46.0
 offset_top = 111.0
 offset_right = 562.0
 offset_bottom = 576.0
-current_tab = 0
-
-[node name="Hats" type="Control" parent="DressUp/TabContainer" unique_id=1549855114]
-layout_mode = 2
-metadata/_tab_index = 0
-
-[node name="ScrollContainer" type="ScrollContainer" parent="DressUp/TabContainer/Hats" unique_id=773062710]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="HatsGridContainer" type="GridContainer" parent="DressUp/TabContainer/Hats/ScrollContainer" unique_id=937211845]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-columns = 4
+current_tab = 2
 
 [node name="Shirts" type="Control" parent="DressUp/TabContainer" unique_id=1293741375]
 visible = false
 layout_mode = 2
-metadata/_tab_index = 1
+metadata/_tab_index = 0
 
 [node name="ScrollContainer" type="ScrollContainer" parent="DressUp/TabContainer/Shirts" unique_id=582029257]
 layout_mode = 1
@@ -508,7 +489,7 @@ columns = 4
 [node name="Pants" type="Control" parent="DressUp/TabContainer" unique_id=1807833747]
 visible = false
 layout_mode = 2
-metadata/_tab_index = 2
+metadata/_tab_index = 1
 
 [node name="ScrollContainer" type="ScrollContainer" parent="DressUp/TabContainer/Pants" unique_id=278716072]
 layout_mode = 1
@@ -522,6 +503,25 @@ grow_vertical = 2
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
+columns = 4
+
+[node name="Hats" type="Control" parent="DressUp/TabContainer" unique_id=1549855114]
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="DressUp/TabContainer/Hats" unique_id=773062710]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HatsGridContainer" type="GridContainer" parent="DressUp/TabContainer/Hats/ScrollContainer" unique_id=937211845]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 columns = 4
 
 [node name="Shoes" type="Control" parent="DressUp/TabContainer" unique_id=841859354]

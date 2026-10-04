@@ -46,10 +46,11 @@ func generate_sprite_sheet():
 	var sprite = AnimatedSprite2D.new()
 	var sprite_frames = SpriteFrames.new()
 	sprite_frames.add_animation("blinking")
-	sprite_frames.add_frame("blinking", image, 20.0)
+	sprite_frames.add_frame("blinking", image, 50.0)
 	sprite_frames.add_frame("blinking", forth_closed)
 	sprite_frames.add_frame("blinking", three_forths_closed)
 	sprite_frames.add_frame("blinking", closed)
+	sprite_frames.set_animation_speed("blinking", 17)
 	sprite_frames.set_animation_loop("blinking", true)
 	sprite_frames.set_animation_loop_mode("blinking", SpriteFrames.LOOP_PINGPONG)
 	
@@ -63,7 +64,7 @@ func generate_sprite_sheet():
 	sprite_frames.add_frame("talking", talking, 60)
 	
 	sprite.sprite_frames = sprite_frames
-	sprite.animation = "blinking"
+	sprite.autoplay = "blinking"
 	
 	return sprite
 

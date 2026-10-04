@@ -45,6 +45,10 @@ func _ready():
 	populate_backdrops()
 	
 	load_clients()
+	var test: AnimatedSprite2D = active_client.generate_sprite_sheet()
+	test.position = Vector2(600, 600)
+	test.autoplay = "blinking"
+	menu.add_child(test)
 	
 	DialogueManager.dialogue_ended.connect(reset_animations)
 
@@ -115,9 +119,9 @@ func animate(animation: String):
 func reset_animations(resource_that_stopped):
 	print("resetting animations")
 	if lobby_horse:
-		lobby_horse.animation = "blinking"
+		lobby_horse.play("blinking")
 	if dress_up_horse:
-		dress_up_horse.animation = "blinking"
+		lobby_horse.play("blinking")
 
 
 func show_dialog(tag: String):
@@ -176,6 +180,7 @@ func client_end_screen():
 	show_dialog(score_trigger)
 	await listen_for_dialog_end()
 	remove_lobby_horse()
+	photo_horse.queue_free()
 	equipped_clothes = {}
 	client_queue.pop_front()
 	active_client = client_queue.front()
