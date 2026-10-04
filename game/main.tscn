@@ -373,19 +373,20 @@ theme_override_constants/margin_bottom = 4
 [node name="VBoxContainer2" type="VBoxContainer" parent="PhotoWall/Panel/MarginContainer" unique_id=12646006]
 layout_mode = 2
 
+[node name="Label" type="Label" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2" unique_id=254773564]
+layout_mode = 2
+text = "Backgrounds"
+
 [node name="ScrollContainer" type="ScrollContainer" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2" unique_id=1459803846]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Backdrops" type="VBoxContainer" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer" unique_id=1577746861]
+[node name="Backdrops" type="GridContainer" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer" unique_id=927548681]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-
-[node name="Label" type="Label" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/Backdrops" unique_id=254773564]
-layout_mode = 2
-text = "Backgrounds"
+columns = 4
 
 [node name="Beach" type="Button" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/Backdrops" unique_id=2064933721]
 layout_mode = 2

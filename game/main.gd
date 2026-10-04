@@ -270,9 +270,16 @@ func load_backdrop_options():
 
 func populate_backdrops():
 	for backdrop in backdrops.values():
-		var button = Button.new()
-		button.text = backdrop.name
+		var button = TextureButton.new()
+		button.texture_normal = backdrop.image
+		button.size_flags_horizontal = Control.SIZE_EXPAND
+		button.custom_minimum_size = Vector2(100, 100)
+		button.ignore_texture_size = true
+		button.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_COVERED
+		
 		button.pressed.connect(_on_backdrop_pressed.bind(backdrop.id))
+		
+		
 		$%Backdrops.add_child(button)
 
 
