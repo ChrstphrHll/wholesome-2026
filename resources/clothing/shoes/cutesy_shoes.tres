@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://bpp24b5vt1ftr"]
+
+[ext_resource type="Texture2D" uid="uid://bkc6t51xxmvwg" path="res://assets/clothing/shoes/shoes_cutesy.png" id="1_88qu0"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_h5i48"]
+
+[resource]
+script = ExtResource("1_h5i48")
+name = "Bow Shoes"
+image = ExtResource("1_88qu0")
+type = 3
+cutesy = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"
