@@ -1,7 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://ck44x8ws06yq7"]
 
+[ext_resource type="Texture2D" uid="uid://blb2ok4iwi2df" path="res://assets/clothing/wrist/watch.png" id="1_12chh"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_nfbqi"]
 
 [resource]
 script = ExtResource("1_nfbqi")
+name = "Watch"
+image = ExtResource("1_12chh")
+type = 5
+chic = 1.0
+formal = 5.0
+preppy = 1.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://dx6nse3hyqr0s"]
+
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_hjj6f"]
+[ext_resource type="Texture2D" uid="uid://c0g6dmenegpc5" path="res://assets/clothing/neck/bolotie.png" id="1_k2y7g"]
+
+[resource]
+script = ExtResource("1_hjj6f")
+name = "Bolo Tie"
+image = ExtResource("1_k2y7g")
+type = 4
+formal = 1.0
+rugged = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

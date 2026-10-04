@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://c4fth3i5wedc6"]
+
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_63d3a"]
+[ext_resource type="Texture2D" uid="uid://cy1op1pqhs74o" path="res://assets/clothing/neck/sillytie.png" id="1_n7b01"]
+
+[resource]
+script = ExtResource("1_63d3a")
+name = "Rubber Ducky Tie"
+image = ExtResource("1_n7b01")
+type = 4
+formal = 1.0
+wacky = 5.0
+preppy = 0.5
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

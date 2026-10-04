@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://chtuuuwexg3oq"]
+
+[ext_resource type="Texture2D" uid="uid://b8reh43dmgklk" path="res://assets/clothing/neck/formaltie.png" id="1_qwx6b"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_uu2e4"]
+
+[resource]
+script = ExtResource("1_uu2e4")
+name = "Business Tie"
+image = ExtResource("1_qwx6b")
+type = 4
+formal = 5.0
+preppy = 2.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

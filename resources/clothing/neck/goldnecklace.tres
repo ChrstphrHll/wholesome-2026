@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://dwuqg5t7dk2jm"]
+
+[ext_resource type="Texture2D" uid="uid://d4gx33tu8a8xv" path="res://assets/clothing/neck/goldnecklace.png" id="1_q5egh"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_vw7f3"]
+
+[resource]
+script = ExtResource("1_vw7f3")
+name = "Gold Necklace"
+image = ExtResource("1_q5egh")
+type = 4
+chic = 5.0
+formal = 2.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

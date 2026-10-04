@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://btc00pb54mb3o"]
+
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_31pii"]
+[ext_resource type="Texture2D" uid="uid://yi3nbct512jw" path="res://assets/clothing/neck/bandana_3.png" id="1_bg5ny"]
+
+[resource]
+script = ExtResource("1_31pii")
+name = "Peach Bandana"
+image = ExtResource("1_bg5ny")
+type = 4
+rugged = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

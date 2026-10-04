@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://bk5gekjv78hxj"]
+
+[ext_resource type="Texture2D" uid="uid://cr4ccysnuumd6" path="res://assets/clothing/neck/bandana_2.png" id="1_be05h"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_yxgsq"]
+
+[resource]
+script = ExtResource("1_yxgsq")
+name = "Yellow Bandana"
+image = ExtResource("1_be05h")
+type = 4
+rugged = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

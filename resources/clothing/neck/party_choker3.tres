@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://cypi3meujd5gk"]
+
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_c6igf"]
+[ext_resource type="Texture2D" uid="uid://bkq0uy27xtpnr" path="res://assets/clothing/neck/partychoker_3.png" id="1_ea7r3"]
+
+[resource]
+script = ExtResource("1_c6igf")
+name = "Pink Choker"
+image = ExtResource("1_ea7r3")
+type = 4
+wacky = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

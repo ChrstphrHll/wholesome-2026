@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://rkjewcmyn08x"]
+
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_2au7c"]
+[ext_resource type="Texture2D" uid="uid://cln5w8vjmfpqn" path="res://assets/clothing/neck/sillynecklace.png" id="1_4whh8"]
+
+[resource]
+script = ExtResource("1_2au7c")
+name = "Colorful Necklace"
+image = ExtResource("1_4whh8")
+type = 4
+wacky = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"
