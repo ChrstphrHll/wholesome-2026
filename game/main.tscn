@@ -246,7 +246,7 @@ metadata/_edit_vertical_guides_ = [1153.0, 0.0, -1152.0, -1152.0]
 metadata/_edit_horizontal_guides_ = [0.0, -648.0, 647.0, 1292.0]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1320608787]
-position = Vector2(1154.2382, 4.2749786)
+position = Vector2(-0.01133728, -647.0202)
 anchor_mode = 0
 limit_enabled = false
 limit_left = 0
@@ -321,12 +321,6 @@ texture = ExtResource("3_g6fv7")
 position = Vector2(576, 324)
 texture = ExtResource("4_g6fv7")
 
-[node name="LobbyHorse" type="Sprite2D" parent="Desk" unique_id=2028178170]
-visible = false
-position = Vector2(888.125, 343.30927)
-scale = Vector2(0.3968366, 0.39683664)
-texture = ExtResource("3_5un7r")
-
 [node name="NextClient" type="Button" parent="Desk" unique_id=951989095]
 offset_left = 120.817726
 offset_top = 282.78854
@@ -339,6 +333,9 @@ text = "Next Client
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Desk" unique_id=210240691]
 libraries/ = SubResource("AnimationLibrary_tv0fx")
 autoplay = &"clouds"
+
+[node name="Marker2D" type="Marker2D" parent="Desk" unique_id=1458107529]
+position = Vector2(904, 300)
 
 [node name="ShopBell" type="AudioStreamPlayer2D" parent="Desk" unique_id=287976306]
 unique_name_in_owner = true
@@ -376,19 +373,20 @@ theme_override_constants/margin_bottom = 4
 [node name="VBoxContainer2" type="VBoxContainer" parent="PhotoWall/Panel/MarginContainer" unique_id=12646006]
 layout_mode = 2
 
+[node name="Label" type="Label" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2" unique_id=254773564]
+layout_mode = 2
+text = "Backgrounds"
+
 [node name="ScrollContainer" type="ScrollContainer" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2" unique_id=1459803846]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Backdrops" type="VBoxContainer" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer" unique_id=1577746861]
+[node name="Backdrops" type="GridContainer" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer" unique_id=927548681]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-
-[node name="Label" type="Label" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/Backdrops" unique_id=254773564]
-layout_mode = 2
-text = "Backgrounds"
+columns = 4
 
 [node name="Beach" type="Button" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/Backdrops" unique_id=2064933721]
 layout_mode = 2
@@ -468,6 +466,7 @@ bbcode_enabled = true
 text = "[wave amp=50.0 freq=5.0 connected=1]dress up[/wave]"
 
 [node name="Horse" type="AnimatedSprite2D" parent="DressUp" unique_id=243598187]
+visible = false
 position = Vector2(861, 385.00003)
 scale = Vector2(0.40604344, 0.36207587)
 sprite_frames = SubResource("SpriteFrames_ynx3y")
@@ -603,6 +602,9 @@ offset_right = 551.0
 offset_bottom = 625.0
 text = "Done!"
 
+[node name="Marker2D" type="Marker2D" parent="DressUp" unique_id=1518708543]
+position = Vector2(858, 386)
+
 [node name="Cork" type="Node2D" parent="." unique_id=1331599127]
 
 [node name="ColorRect" type="ColorRect" parent="Cork" unique_id=1588079676]
@@ -638,6 +640,7 @@ grow_vertical = 2
 libraries/ = SubResource("AnimationLibrary_li27q")
 
 [node name="Main Music" type="AudioStreamPlayer2D" parent="." unique_id=1502217667]
+position = Vector2(566, 269)
 stream = ExtResource("21_le3en")
 autoplay = true
 
