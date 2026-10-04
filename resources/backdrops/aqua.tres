@@ -1,8 +1,12 @@
 [gd_resource type="Resource" script_class="Backdrop" format=3 uid="uid://bgfu3k2uiaywy"]
 
+[ext_resource type="Texture2D" uid="uid://dpqwq6rld4dkh" path="res://assets/backdrops/aqua_frame1.png" id="1_4j48y"]
 [ext_resource type="Script" uid="uid://dcrtc0ph32c3e" path="res://resources/backdrop.gd" id="1_gu2p2"]
+[ext_resource type="Texture2D" uid="uid://su5p1r2no2ve" path="res://assets/backdrops/aqua_frame2.png" id="2_35bjb"]
+[ext_resource type="Texture2D" uid="uid://ox43ye2fo01" path="res://assets/backdrops/aqua_frame3.png" id="3_eh6yj"]
 
 [resource]
 script = ExtResource("1_gu2p2")
 name = "Undersea"
+image = Array[CompressedTexture2D]([ExtResource("1_4j48y"), ExtResource("2_35bjb"), ExtResource("3_eh6yj")])
 metadata/_custom_type_script = "uid://dcrtc0ph32c3e"
