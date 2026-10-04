@@ -77,6 +77,7 @@ func check_clothing_triggers(item: ClothingItem):
 	var special_item_cue = check_special_item_trigger(item)
 	
 	if special_item_cue:
+		special_item_shown = true
 		return special_item_cue
 	
 	var stat = item.get_most_significant_stat()

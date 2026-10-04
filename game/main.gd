@@ -45,6 +45,9 @@ func _ready():
 	populate_backdrops()
 	
 	load_clients()
+	
+	DialogueManager.dialogue_ended.connect(reset_animations)
+
 
 
 func load_clients():
@@ -108,6 +111,14 @@ func animate(animation: String):
 		lobby_horse.animation = animation
 	if dress_up_horse:
 		dress_up_horse.animation = animation
+
+func reset_animations(resource_that_stopped):
+	print("resetting animations")
+	if lobby_horse:
+		lobby_horse.animation = "blinking"
+	if dress_up_horse:
+		dress_up_horse.animation = "blinking"
+
 
 func show_dialog(tag: String):
 	DialogueManager.show_dialogue_balloon_scene(balloon, active_client.dialogue_file, tag, [self])
