@@ -108,7 +108,7 @@ func client_end_screen():
 
 func load_clothes():
 	var base_directory = "res://resources/clothing/"
-	var sub_dirs = ["pants/", "shirts/", "shoes/"]
+	var sub_dirs = ["pants/", "shirts/", "shoes/", "hats/", "neck/", "wrist/"]
 	
 	for sub_dir in sub_dirs:
 		var clothes_raw = ResourceLoader.list_directory(base_directory + sub_dir)
@@ -117,7 +117,6 @@ func load_clothes():
 			var full_path = base_directory + sub_dir + clothing_item_path
 			var item = ResourceLoader.load(full_path)
 			all_clothing[item.id] = item
-	print(all_clothing)
 
 
 func get_closet_tab_container(item: ClothingItem):
@@ -138,7 +137,6 @@ func get_closet_tab_container(item: ClothingItem):
 
 func populate_closet():
 	print("loading closet")
-	print(all_clothing)
 	for clothing_item in all_clothing.values():
 		var button = Button.new()
 		var texture = TextureRect.new()
@@ -147,7 +145,10 @@ func populate_closet():
 		texture.custom_minimum_size = Vector2(100, 100)
 		texture.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		texture.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		texture.texture = clothing_item.image
+		if clothing_item.cropped_icon:
+			texture.texture = clothing_item.cropped_icon
+		else:
+			texture.texture = clothing_item.image
 		button.add_child(texture)
 		get_closet_tab_container(clothing_item).add_child(button)
 		print(clothing_item)
