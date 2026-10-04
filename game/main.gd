@@ -3,6 +3,9 @@ extends Node2D
 var all_clothing: Dictionary[int, ClothingItem] = {}
 var equipped_clothes: Dictionary[ClothingItem.ClothingType, ClothingItem]
 
+var backdrops = {}
+var activeBackdrop: Backdrop
+
 var client_queue: Array[Client] = [ResourceLoader.load("res://resources/clients/lost_my_job.tres")]
 var active_client: Client = client_queue[0]
 
@@ -33,6 +36,9 @@ var photo_horse
 func _ready():
 	load_clothes()
 	populate_closet()
+	
+	load_backdrop_options()
+	populate_backdrops()
 
 
 func move_sprite_to_point(sprite: Sprite2D, target_position: Vector2):
@@ -207,6 +213,22 @@ func _on_dress_up_finished():
 
 
 #region Photo Booth
+
+
+func load_backdrop_options():
+	var base_directory = "res://resources/backdrops/"
+	
+
+	var backdrops_raw = ResourceLoader.list_directory(base_directory)
+
+	for backdrop_path in backdrops_raw:
+		var full_path = base_directory + backdrop_path
+		var item = ResourceLoader.load(full_path)
+		backdrops[item.id] = item
+
+
+func populate_backdrops():
+	pass
 
 
 func _on_beach_pressed():

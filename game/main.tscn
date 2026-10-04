@@ -9,6 +9,7 @@
 [ext_resource type="Resource" uid="uid://d4mu6aiuwt8sm" path="res://dialog/lost_my_job.dialogue" id="7_g6fv7"]
 [ext_resource type="Texture2D" uid="uid://bndptqrgs2pww" path="res://assets/space.webp" id="8_lx3aj"]
 [ext_resource type="Texture2D" uid="uid://yy20714jjc" path="res://assets/beach.jpg" id="9_itumj"]
+[ext_resource type="Texture2D" uid="uid://bl6reti1trc1i" path="res://assets/backgrounds/dress_up_screen.png" id="10_frwyw"]
 [ext_resource type="Texture2D" uid="uid://ec04q87wt0qy" path="res://assets/brown_horse/brown_horse_1.4_close.png" id="10_g6fv7"]
 [ext_resource type="Texture2D" uid="uid://c4qxlq4yg4a0y" path="res://assets/tripod.webp" id="10_itumj"]
 [ext_resource type="Texture2D" uid="uid://co44jtluoifsr" path="res://assets/brown_horse/brown_horse_3.4_close.png" id="11_frwyw"]
@@ -435,6 +436,10 @@ offset_left = 1.0
 offset_right = 1154.0
 offset_bottom = 647.0
 color = Color(1, 1, 0.6156863, 1)
+
+[node name="DressUpScreen" type="Sprite2D" parent="DressUp" unique_id=614881949]
+position = Vector2(577, 324)
+texture = ExtResource("10_frwyw")
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="DressUp" unique_id=1021011893]
 offset_left = 52.0

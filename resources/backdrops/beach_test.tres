@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Backdrop" format=3 uid="uid://cb4ehyvpqbxbp"]
+
+[ext_resource type="Texture2D" uid="uid://yy20714jjc" path="res://assets/beach.jpg" id="1_hecaa"]
+[ext_resource type="Script" uid="uid://dcrtc0ph32c3e" path="res://resources/backdrop.gd" id="1_jq5a7"]
+
+[resource]
+script = ExtResource("1_jq5a7")
+name = "Beach"
+image = ExtResource("1_hecaa")
+metadata/_custom_type_script = "uid://dcrtc0ph32c3e"
