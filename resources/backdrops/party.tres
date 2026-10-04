@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Backdrop" format=3 uid="uid://bnli3igcckhjm"]
+
+[ext_resource type="Script" uid="uid://dcrtc0ph32c3e" path="res://resources/backdrop.gd" id="1_3pfm4"]
+[ext_resource type="Texture2D" uid="uid://drqshh1ui8onl" path="res://assets/backdrops/party_frame1.png" id="1_fg57d"]
+[ext_resource type="Texture2D" uid="uid://n1ru05u3jduf" path="res://assets/backdrops/party_frame2.png" id="2_qsrdy"]
+[ext_resource type="Texture2D" uid="uid://d3iqjre5eeo8k" path="res://assets/backdrops/party_frame3.png" id="3_7ya0l"]
+
+[resource]
+script = ExtResource("1_3pfm4")
+name = "Party"
+image = Array[CompressedTexture2D]([ExtResource("1_fg57d"), ExtResource("2_qsrdy"), ExtResource("3_7ya0l")])
+metadata/_custom_type_script = "uid://dcrtc0ph32c3e"

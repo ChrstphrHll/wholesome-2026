@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Backdrop" format=3 uid="uid://t4sk08tfl2qs"]
+
+[ext_resource type="Script" uid="uid://dcrtc0ph32c3e" path="res://resources/backdrop.gd" id="1_28exg"]
+[ext_resource type="Texture2D" uid="uid://od8kk082gfig" path="res://assets/backdrops/westernbg.png" id="1_gylaa"]
+
+[resource]
+script = ExtResource("1_28exg")
+name = "Western"
+image = Array[CompressedTexture2D]([ExtResource("1_gylaa")])
+metadata/_custom_type_script = "uid://dcrtc0ph32c3e"
