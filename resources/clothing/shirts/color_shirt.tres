@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://yw2n166kkg3g"]
+
+[ext_resource type="Texture2D" uid="uid://b6repq7sm0xh" path="res://assets/clothing/shirts/color_shirt.png" id="1_nfdlh"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_ssu28"]
+
+[resource]
+script = ExtResource("1_ssu28")
+name = "Yellow and Pink Top"
+image = ExtResource("1_nfdlh")
+type = 1
+athletic = 1.0
+wacky = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

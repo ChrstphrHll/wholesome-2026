@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://c2jodhq52vd6j"]
+
+[ext_resource type="Texture2D" uid="uid://le3v337e6x21" path="res://assets/clothing/shirts/shirt_western.png" id="1_hc7b1"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_y7w0e"]
+
+[resource]
+script = ExtResource("1_y7w0e")
+name = "Pink Western Top"
+image = ExtResource("1_hc7b1")
+type = 1
+rugged = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

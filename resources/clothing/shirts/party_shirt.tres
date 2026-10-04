@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://cy57p6cimficy"]
+
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_l7lun"]
+[ext_resource type="Texture2D" uid="uid://cd7taifrjt1ci" path="res://assets/clothing/shirts/party_shirt.png" id="1_vlk1a"]
+
+[resource]
+script = ExtResource("1_l7lun")
+name = "Purple Mesh Shirt"
+image = ExtResource("1_vlk1a")
+type = 1
+wacky = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

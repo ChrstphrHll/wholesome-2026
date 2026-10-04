@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://cnpoyq05s0rok"]
+
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_1ry7f"]
+[ext_resource type="Texture2D" uid="uid://df7p0lpnwda7y" path="res://assets/clothing/shirts/chic_shirt.png" id="1_uor1q"]
+
+[resource]
+script = ExtResource("1_1ry7f")
+name = "White Cardigan"
+image = ExtResource("1_uor1q")
+type = 1
+chic = 5.0
+formal = 1.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

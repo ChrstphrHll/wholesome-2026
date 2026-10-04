@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://denqkulk7e5du"]
+
+[ext_resource type="Texture2D" uid="uid://ckbu0lwavq4fv" path="res://assets/clothing/shirts/shirt_sporty_alt2.png" id="1_5abi7"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_c27or"]
+
+[resource]
+script = ExtResource("1_c27or")
+name = "Pink Performance Shirt"
+image = ExtResource("1_5abi7")
+type = 1
+athletic = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"
