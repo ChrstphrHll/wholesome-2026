@@ -10,7 +10,8 @@ enum ClothingType {
 	Top,
 	Bottom,
 	Shoe,
-	Accessory
+	NeckAccessory,
+	WristAccessory,
 }
 
 @export var name: String
@@ -30,20 +31,9 @@ var most_significant_stat: String
 var equipped = false
 
 var id = ResourceUID.create_id()
-var stats = {}
-
-func _init():
-	stats["goth"] = goth
-	stats["cutesy"] = cutesy
-	stats["chic"] = chic
-	stats["athletic"] = athletic
-	stats["formal"] = formal
-	stats["wacky"] = wacky
-	stats["rugged"] = rugged
-	stats["preppy"] = preppy
-
-	most_significant_stat = init_most_significant_stat()
-	print("testing: current most stat", most_significant_stat)
+var stats = {
+	"goth": goth
+}
 
 
 func init_most_significant_stat():

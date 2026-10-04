@@ -537,12 +537,12 @@ layout_mode = 2
 size_flags_horizontal = 3
 columns = 4
 
-[node name="Accessories" type="Control" parent="DressUp/TabContainer" unique_id=1235810253]
+[node name="Neck" type="Control" parent="DressUp/TabContainer" unique_id=1235810253]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 4
 
-[node name="ScrollContainer" type="ScrollContainer" parent="DressUp/TabContainer/Accessories" unique_id=1075427534]
+[node name="ScrollContainer" type="ScrollContainer" parent="DressUp/TabContainer/Neck" unique_id=1075427534]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -550,8 +550,26 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="AccessoriesGridContainer" type="GridContainer" parent="DressUp/TabContainer/Accessories/ScrollContainer" unique_id=385760226]
+[node name="NeckAccessoriesGridContainer" type="GridContainer" parent="DressUp/TabContainer/Neck/ScrollContainer" unique_id=385760226]
 unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+columns = 4
+
+[node name="Wrist" type="Control" parent="DressUp/TabContainer" unique_id=1878170024]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 5
+
+[node name="ScrollContainer" type="ScrollContainer" parent="DressUp/TabContainer/Wrist" unique_id=1256787855]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WristAccessoriesGridContainer" type="GridContainer" parent="DressUp/TabContainer/Wrist/ScrollContainer" unique_id=1733774612]
 layout_mode = 2
 size_flags_horizontal = 3
 columns = 4

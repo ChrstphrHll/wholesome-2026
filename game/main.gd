@@ -127,8 +127,10 @@ func get_closet_tab_container(item: ClothingItem):
 			return $%BottomsGridContainer
 		ClothingItem.ClothingType.Shoe:
 			return $%ShoesGridContainer
-		ClothingItem.ClothingType.Accessory:
-			return $%AccessoriesGridContainer
+		ClothingItem.ClothingType.NeckAccessory:
+			return $%NeckAccessoriesGridContainer
+		ClothingItem.ClothingType.WristAccessory:
+			return $%WristAccessoriesGridContainer
 
 
 func populate_closet():
