@@ -12,8 +12,71 @@ Player: Oh… I’m sorry to hear that. Well, let’s see what we can do.
 
 Player: Ready? => END
 
-~ post_photo
+~ rugged1
 
+Montana: Oh, this would be great on my hikes!
+
+Player: Yeah, do you hike a lot?
+
+Montana: Yeah! [sad expression] Well… not much recently. I’ve been grinding to meet my Q3 KPIs. But I used to.
+=> END
+
+~ rugged4
+
+Montana: I almost forgot, when I was younger I wanted to be a park ranger.
+
+Player: Ooh, do you have a favorite park?
+
+Montana: Assateague Island!
+
+Player: Obviously.
+
+Montana: Obviously.
+=> END
+
+~ preppy1
+
+Montana: Oh, I don’t know about this one.
+
+Player: Too preppy?
+
+Montana: Private school days were not my greatest.
+=> END
+
+~ preppy4
+
+Montana: This one reminds me of an old bully.
+
+Player: Oh wow, maybe not this one then.
+
+Montana: Yeah, I liked to wear an accent item with my uniform. Let’s just say duct tape necklaces…are actually NOT too cool for school.
+=> END
+
+~ formal1
+Montana: You know, I spent 4 years at Butch, Cassidy, and Partners. 4 years of my life.
+
+Player: Yikes. Sorry about that.
+
+Montana: I’m trying to think of it as their loss.
+=> END
+
+~ formal4
+Montana: Private equine-ty specialist… I was so happy to finally have that title.
+
+Player: How does this feel? Dressing for the job you want?
+
+Montana: If I go back into corporate, I could see it.
+=> END
+
+~ special_item
+Montana: YES! I love a fun tie.
+
+Player: Okay business casual.
+
+Montana: I kept it clean for work. But you should see my bachelor party tie.
+=> END
+
+~ post_photo_best
 Montana: Oh my gosh, it’s perfect!
 
 Montana: You know, I’ve really been feeling like my whole life, I’ve just done what I’m supposed to do.
@@ -23,6 +86,48 @@ Montana: And I did all the right things. I worked hard, I stayed late. I even ke
 Montana: Earlier, I was feeling like I didn’t know if I could try again. But I didn’t know what else I could do.
 
 Montana: But thanks to you, I feel like I can start on my own dreams.
+
+Montana: Thank you!
+=> END
+
+~ post_photo_high
+Montana: Oh wow, it looks great!
+
+Montana: You know, I’ve really been feeling like my whole life, I’ve just done what I’m supposed to do.
+
+Montana: And I did all the right things. I worked hard, I stayed late. I even kept a pillow in the office. And they still dropped me in the end.
+
+Montana: Earlier, I was feeling like I didn’t know if I could try again. But I didn’t know what else I could do.
+
+Montana: But thanks to you I think I have a better path now.
+
+Montana: Thank you!
+=> END
+
+~ post_photo_mid
+Montana: Oh wow, I like it.
+
+Montana: You know, I’ve really been feeling like my whole life, I’ve just done what I’m supposed to do.
+
+Montana: And I did all the right things. I worked hard, I stayed late. I even kept a pillow in the office. And they still dropped me in the end.
+
+Montana: Earlier, I was feeling like I didn’t know if I could try again. But I didn’t know what else I could do.
+
+Montana: But at least now I have some more confidence to try and figure something out.
+
+Montana: Thank you!
+=> END
+
+~ post_photo_low
+Montana: Oh, very interesting.
+
+Montana: You know, I’ve really been feeling like my whole life, I’ve just done what I’m supposed to do.
+
+Montana: And I did all the right things. I worked hard, I stayed late. I even kept a pillow in the office. And they still dropped me in the end.
+
+Montana: Earlier, I was feeling like I didn’t know if I could try again. But I didn’t know what else I could do.
+
+Montana: But now, I feel like it’s only uphill from here.
 
 Montana: Thank you!
 => END

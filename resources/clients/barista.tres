@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dquhpw367nj7q" path="res://assets/clients/barista/barista_horse_close.png" id="1_s12uj"]
 [ext_resource type="Script" uid="uid://4yufbpnlxpb0" path="res://resources/client.gd" id="1_ssvvy"]
+[ext_resource type="Resource" uid="uid://bfwqu7nl338km" path="res://dialog/barista.dialogue" id="2_d3bcy"]
 [ext_resource type="Texture2D" uid="uid://demcdiq2kxq1x" path="res://assets/clients/barista/barista_horse_1.4_close.png" id="2_g2lod"]
 [ext_resource type="Texture2D" uid="uid://cvuyl6dfvx22" path="res://assets/clients/barista/barista_horse.png" id="3_d3bcy"]
 [ext_resource type="Texture2D" uid="uid://8jgodiy8o440" path="res://assets/clients/barista/barista_horse_sad.png" id="4_uqq1p"]
@@ -24,4 +25,5 @@ closed = ExtResource("1_s12uj")
 smile = ExtResource("6_imoii")
 talking = ExtResource("7_fgfoa")
 sad = ExtResource("4_uqq1p")
+dialogue_file = ExtResource("2_d3bcy")
 metadata/_custom_type_script = "uid://4yufbpnlxpb0"

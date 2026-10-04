@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bfwqu7nl338km"
+path="res://.godot/imported/barista.dialogue-88bd231a8574126ba837250aa7cf836d.tres"
+
+[deps]
+
+source_file="res://dialog/barista.dialogue"
+dest_files=["res://.godot/imported/barista.dialogue-88bd231a8574126ba837250aa7cf836d.tres"]
+
+[params]
+
+defaults=true
