@@ -661,6 +661,18 @@ Sound effects sourced from Youtube: @soundeffectspublicdomain120, @soundfxtracks
 
 Godot Dialogue Manager by Nathan Hoad used under his MIT License"
 
+[node name="ChristopherHorse" type="Sprite2D" parent="Credits" unique_id=1165093371]
+position = Vector2(100, 200)
+
+[node name="PreethaHorse" type="Sprite2D" parent="Credits" unique_id=849643217]
+position = Vector2(100, 400)
+
+[node name="KatieHorse" type="Sprite2D" parent="Credits" unique_id=403123940]
+position = Vector2(950, 200)
+
+[node name="AmiHorse" type="Sprite2D" parent="Credits" unique_id=435492148]
+position = Vector2(950, 400)
+
 [connection signal="pressed" from="debug/HBoxContainer/Button" to="." method="_move_screen" binds= [0]]
 [connection signal="pressed" from="debug/HBoxContainer/Button2" to="." method="_move_screen" binds= [1]]
 [connection signal="pressed" from="debug/HBoxContainer/Button3" to="." method="_move_screen" binds= [2]]
