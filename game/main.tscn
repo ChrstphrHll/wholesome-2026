@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://d1j0rr77xt3v7"]
 
 [ext_resource type="Script" uid="uid://cecprltpmifqn" path="res://game/main.gd" id="1_xtpaf"]
-[ext_resource type="Texture2D" uid="uid://f36kavnpbwho" path="res://assets/backgrounds/showpony_studio_game_screen.png" id="2_yyxey"]
 [ext_resource type="Texture2D" uid="uid://c82bt5n7jpyti" path="res://assets/brown_horse/brown_horse_trim.png" id="3_5un7r"]
 [ext_resource type="Texture2D" uid="uid://bcp5wayak4jhx" path="res://assets/backgrounds/studio_entry_clouds.png" id="3_g6fv7"]
 [ext_resource type="Texture2D" uid="uid://7yecy52jpsav" path="res://assets/backgrounds/studio_entry_clouds_pink_complete.png" id="4_g6fv7"]
+[ext_resource type="Texture2D" uid="uid://cnfr7710vnxde" path="res://assets/backgrounds/showpony_studio_game_screen_CENTERED.png" id="4_m8y2r"]
 [ext_resource type="PackedScene" uid="uid://b5pceuhay505a" path="res://dialog/balloon.tscn" id="4_xkbyp"]
 [ext_resource type="Resource" uid="uid://d4mu6aiuwt8sm" path="res://dialog/lost_my_job.dialogue" id="7_g6fv7"]
 [ext_resource type="AudioStream" uid="uid://jt5qkdukibh" path="res://assets/sound effects/Shop Door Bell.mp3" id="8_tv0fx"]
@@ -291,20 +291,20 @@ color = Color(1, 1, 0.6156863, 1)
 
 [node name="ShowponyStudioGameScreen" type="Sprite2D" parent="Menu" unique_id=36170354]
 position = Vector2(576, 325)
-texture = ExtResource("2_yyxey")
+texture = ExtResource("4_m8y2r")
 
 [node name="Play" type="Button" parent="Menu" unique_id=343275629]
-offset_left = 505.0
-offset_top = 325.0
-offset_right = 715.0
-offset_bottom = 402.0
+offset_left = 491.0
+offset_top = 324.0
+offset_right = 663.0
+offset_bottom = 401.0
 text = "Play"
 
 [node name="Credits" type="Button" parent="Menu" unique_id=893948525]
-offset_left = 503.0
-offset_top = 425.0
-offset_right = 713.0
-offset_bottom = 502.0
+offset_left = 491.0
+offset_top = 404.0
+offset_right = 665.0
+offset_bottom = 481.0
 text = "Credits"
 
 [node name="Desk" type="Node2D" parent="." unique_id=839386804]
