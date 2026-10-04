@@ -342,7 +342,8 @@ func _on_take_photo_pressed():
 	pop_up_animation_player.play("flash")
 	var photoed_horse = photo_horse.duplicate()
 	var frame = $PhotoWall/SubViewportContainer/PhotoView
-	photoed_horse.position = Vector2(frame.size.x / 2.0, frame.size.y / 2.0)
+	photoed_horse.position = Vector2(frame.size.x / 2, frame.size.y / 2.0)
+	photoed_horse.scale *= 0.7
 	frame.add_child(photoed_horse)
 	await RenderingServer.frame_post_draw
 	var image = frame.get_texture().get_image()
