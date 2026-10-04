@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://dp0uyqx1xxkv1"]
+
+[ext_resource type="Texture2D" uid="uid://c86tjqu2ox73o" path="res://assets/clothing/hats/horn.png" id="1_4vp3y"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_w73vr"]
+
+[resource]
+script = ExtResource("1_w73vr")
+name = "Horn"
+image = ExtResource("1_4vp3y")
+wacky = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

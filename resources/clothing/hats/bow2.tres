@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://cew0y55krebsq"]
+
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_75ymp"]
+[ext_resource type="Texture2D" uid="uid://sdncb2mo1rlx" path="res://assets/clothing/hats/bow_2.png" id="1_jnijy"]
+
+[resource]
+script = ExtResource("1_75ymp")
+name = "Red Bow"
+image = ExtResource("1_jnijy")
+cutesy = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"
