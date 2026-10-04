@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Backdrop" format=3 uid="uid://bgfu3k2uiaywy"]
+
+[ext_resource type="Script" uid="uid://dcrtc0ph32c3e" path="res://resources/backdrop.gd" id="1_gu2p2"]
+
+[resource]
+script = ExtResource("1_gu2p2")
+name = "Undersea"
+metadata/_custom_type_script = "uid://dcrtc0ph32c3e"

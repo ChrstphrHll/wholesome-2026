@@ -1,10 +1,10 @@
 ~ start
 
-Montana: …hello? Is this the photo studio?
+Montana: …hello? [$>> animate("talking")] Is this the photo studio?
 
 Player: Sure is! Welcome to the Show Pony Studio. Can I get you started on a shoot?
 
-Montana: Yeah… I just got laid off today, and I could use a win.
+Montana: [$>> animate("sad")] Yeah… I just got laid off today, and I could use a win.
 
 Player: Oh… I’m sorry to hear that. Well, let’s see what we can do.
 
@@ -13,16 +13,11 @@ Player: Oh… I’m sorry to hear that. Well, let’s see what we can do.
 Player: Ready? => END
 
 ~ rugged1
-
-
-
-Montana: Oh, this would be great on my hikes!
+Montana: [$>> animated("smile")] Oh, this would be great on my hikes!
 
 Player: Yeah, do you hike a lot?
 
-Montana: Yeah! [$> animate("sad")] Well… not much recently. I’ve been grinding to meet my Q3 KPIs. But I used to.
-
-$> animate("blinking")
+Montana: Yeah! [$>> animate("sad")] Well… not much recently. I’ve been grinding to meet my Q3 KPIs. But I used to.
 => END
 
 ~ rugged4
@@ -31,11 +26,11 @@ Montana: I almost forgot, when I was younger I wanted to be a park ranger.
 
 Player: Ooh, do you have a favorite park?
 
-Montana: Assateague Island!
+Montana: [$>> animated("smile")]Assateague Island!
 
 Player: Obviously.
 
-Montana: Obviously.
+Montana: [$>> animated("talking")]Obviously.
 => END
 
 ~ preppy1
@@ -53,7 +48,7 @@ Montana: This one reminds me of an old bully.
 
 Player: Oh wow, maybe not this one then.
 
-Montana: Yeah, I liked to wear an accent item with my uniform. Let’s just say duct tape necklaces…are actually NOT too cool for school.
+Montana: Yeah, I liked to wear an accent item with my uniform. [$>> animate("sad")] Let’s just say duct tape necklaces...are actually NOT too cool for school.
 => END
 
 ~ formal1
@@ -65,7 +60,7 @@ Montana: I’m trying to think of it as their loss.
 => END
 
 ~ formal4
-Montana: Private equine-ty specialist… I was so happy to finally have that title.
+Montana: Private equine-ty specialist...[$>> animate("sad")] I was so happy to finally have that title.
 
 Player: How does this feel? Dressing for the job you want?
 
@@ -73,7 +68,7 @@ Montana: If I go back into corporate, I could see it.
 => END
 
 ~ special_item
-Montana: YES! I love a fun tie.
+Montana: [$>> animate("smile")]YES! I love a fun tie.
 
 Player: Okay business casual.
 
