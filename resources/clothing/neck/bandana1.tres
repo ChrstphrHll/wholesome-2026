@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://bmyys5m520pen"]
 
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_1ev7a"]
+[ext_resource type="Texture2D" uid="uid://cqgyf764tph7l" path="res://assets/clothing_icons/neck/bandana_1.png" id="1_n7j4c"]
 [ext_resource type="Texture2D" uid="uid://wbsy172l030w" path="res://assets/clothing/neck/bandana_1.png" id="1_syosp"]
 
 [resource]
 script = ExtResource("1_1ev7a")
 name = "Purple Bandana"
 image = ExtResource("1_syosp")
+cropped_icon = ExtResource("1_n7j4c")
 type = 4
 rugged = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

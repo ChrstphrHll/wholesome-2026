@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://cedkaxjulak06"]
 
+[ext_resource type="Texture2D" uid="uid://clk3nj4mqgsjo" path="res://assets/clothing_icons/shoes/shoe_fall.png" id="1_0hayv"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_aoojf"]
 [ext_resource type="Texture2D" uid="uid://ccs3deduedk02" path="res://assets/clothing/shoes/shoe_fall.png" id="1_xx7kt"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_aoojf")
 name = "Brown Heels"
 image = ExtResource("1_xx7kt")
+cropped_icon = ExtResource("1_0hayv")
 type = 3
 chic = 5.0
 formal = 1.0

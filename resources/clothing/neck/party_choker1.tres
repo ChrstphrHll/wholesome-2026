@@ -2,11 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://bwliruwnpisf1" path="res://assets/clothing/neck/partychoker_1.png" id="1_56tr0"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_o5kqy"]
+[ext_resource type="Texture2D" uid="uid://dewc04rgw787b" path="res://assets/clothing_icons/neck/partychoker_1.png" id="1_tl2qu"]
 
 [resource]
 script = ExtResource("1_o5kqy")
 name = "Purple Choker"
 image = ExtResource("1_56tr0")
+cropped_icon = ExtResource("1_tl2qu")
 type = 4
 wacky = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"
