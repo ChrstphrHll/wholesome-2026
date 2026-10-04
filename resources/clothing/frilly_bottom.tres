@@ -8,6 +8,5 @@ script = ExtResource("1_clgq4")
 name = "Frilly Skirt"
 image = ExtResource("1_a0lmu")
 type = 2
-cutesy = 1.545
-wacky = 0.235
+cutesy = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"
