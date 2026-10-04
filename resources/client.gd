@@ -2,6 +2,8 @@ class_name Client
 extends Resource
 
 
+@export var order: int
+
 @export var goth: Array[int] = []
 @export var cutesy: Array[int] = []
 @export var chic: Array[int] = []
@@ -10,6 +12,9 @@ extends Resource
 @export var wacky: Array[int] = []
 @export var rugged: Array[int] = []
 @export var preppy: Array[int] = []
+
+
+@export var special_triggers: Array[String] = []
 
 
 var seen_info = {
@@ -26,6 +31,13 @@ var seen_info = {
 
 @export var name: String
 @export var image: CompressedTexture2D
+@export var forth_closed: CompressedTexture2D
+@export var three_forths_closed: CompressedTexture2D
+@export var closed: CompressedTexture2D
+@export var smile: CompressedTexture2D
+@export var talking: CompressedTexture2D
+@export var sad: CompressedTexture2D
+
 
 @export var dialogue_file: DialogueResource
 
