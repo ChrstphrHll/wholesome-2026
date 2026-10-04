@@ -5,9 +5,9 @@ Player: Alright, well, I have a slot open now if–
 
 Peanut: [$>> animate("smile")][shake rate=20.0 level=5 connected=1] ALL RIGHT! [/shake] [$>> animate("talking")]Come on, boss, what are you waiting for?
 
-Player: Oh! Okay, let’s just…
+Player: Oh! Okay, let’s just...
 
-[drilling/hammering/backdrop/studio setup noises]
+[$>> StudioSetUp.play()]
 
 Player: Ready?
 => END
