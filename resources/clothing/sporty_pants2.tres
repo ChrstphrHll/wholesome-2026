@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://bp63xfpo13lw4"]
+
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_3isms"]
+
+[resource]
+script = ExtResource("1_3isms")
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"
