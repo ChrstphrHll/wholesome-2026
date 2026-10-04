@@ -13,6 +13,9 @@
 [resource]
 script = ExtResource("1_ssvvy")
 order = 5
+chic_points = 1
+rugged_points = -1
+preppy_points = 3
 chic = Array[int]([1, 4])
 rugged = Array[int]([1, 4])
 preppy = Array[int]([1, 4])
