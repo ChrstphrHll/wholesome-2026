@@ -8,11 +8,11 @@
 [ext_resource type="PackedScene" uid="uid://b5pceuhay505a" path="res://dialog/balloon.tscn" id="4_xkbyp"]
 [ext_resource type="Resource" uid="uid://d4mu6aiuwt8sm" path="res://dialog/lost_my_job.dialogue" id="7_g6fv7"]
 [ext_resource type="Texture2D" uid="uid://bndptqrgs2pww" path="res://assets/space.webp" id="8_lx3aj"]
-[ext_resource type="Texture2D" uid="uid://y7gq57b23sud" path="res://assets/backgrounds/photo_studio_bg.png" id="8_yyxey"]
+[ext_resource type="Texture2D" uid="uid://b861dl08823ud" path="res://assets/backgrounds/photo_studio_bg_lights.png" id="8_yyxey"]
 [ext_resource type="Texture2D" uid="uid://yy20714jjc" path="res://assets/beach.jpg" id="9_itumj"]
+[ext_resource type="Texture2D" uid="uid://ci4qy5auwpxkt" path="res://assets/backgrounds/camera asses.png" id="9_tv0fx"]
 [ext_resource type="Texture2D" uid="uid://bl6reti1trc1i" path="res://assets/backgrounds/dress_up_screen.png" id="10_frwyw"]
 [ext_resource type="Texture2D" uid="uid://ec04q87wt0qy" path="res://assets/brown_horse/brown_horse_1.4_close.png" id="10_g6fv7"]
-[ext_resource type="Texture2D" uid="uid://c4qxlq4yg4a0y" path="res://assets/tripod.webp" id="10_itumj"]
 [ext_resource type="Texture2D" uid="uid://co44jtluoifsr" path="res://assets/brown_horse/brown_horse_3.4_close.png" id="11_frwyw"]
 [ext_resource type="Texture2D" uid="uid://ovhalnxxiqry" path="res://assets/cork-339.jpg" id="12_ioaqv"]
 [ext_resource type="Texture2D" uid="uid://bchwjphwhmbfb" path="res://assets/brown_horse/brown_horse_close.png" id="12_yyxey"]
@@ -394,9 +394,9 @@ layout_mode = 2
 text = "Say Apple!"
 
 [node name="Tripod" type="Sprite2D" parent="PhotoWall" unique_id=1027008530]
-position = Vector2(676.9999, 563)
-scale = Vector2(0.093, 0.093)
-texture = ExtResource("10_itumj")
+position = Vector2(574.8653, 322.5)
+scale = Vector2(0.99849755, 1.0015433)
+texture = ExtResource("9_tv0fx")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="PhotoWall" unique_id=123339095]
 offset_left = 107.0

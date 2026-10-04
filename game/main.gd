@@ -71,6 +71,14 @@ func _move_screen(target_screen_name: Location):
 	camera_tween.tween_property(camera_2d, "position", target_screen.position, 0.5)
 
 
+func show_dialog(tag: String):
+	DialogueManager.show_dialogue_balloon_scene(balloon, active_client.dialogue_file, tag)
+
+
+func listen_for_dialog_end():
+	await DialogueManager.dialogue_ended
+
+
 #region front desk
 
 
@@ -90,14 +98,6 @@ func bring_client_into_lobby():
 func set_all_horses(texture: CompressedTexture2D):
 	lobby_horse.texture = texture
 	dress_up_horse.texture = texture
-
-
-func show_dialog(tag: String):
-	DialogueManager.show_dialogue_balloon_scene(balloon, active_client.dialogue_file, tag)
-
-
-func listen_for_dialog_end():
-	await DialogueManager.dialogue_ended
 
 
 func client_end_screen():
@@ -193,7 +193,9 @@ func check_item_dialog_triggers(item: ClothingItem):
 
 func open_dressing_dialog(cue: String):
 	print("Run the current client dialog tree in the dressing room starting at cue", cue)
+	show_dialog(cue)
 	# TODO: Finish this function
+	
 
 
 func get_clothing_item_from_id(id: int):
@@ -204,6 +206,7 @@ func _on_dress_up_finished():
 	photo_horse = dress_up_horse.duplicate()
 	photo_horse.position = Vector2(300, 300)
 	photo_horse.scale.x = photo_horse.scale.x * -1
+	photo_horse.scale = photo_horse.scale * 0.8
 	photo_wall.add_child(photo_horse)
 	_move_screen(Location.PHOTO_WALL)
 

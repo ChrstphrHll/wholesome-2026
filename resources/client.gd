@@ -60,11 +60,32 @@ func get_dialog_cue(stat: String):
 		return ""
 	
 	if times_seen_stat == next_trigger:
+		pop_front_trigger(stat)
 		var cue = stat + str(times_seen_stat)
 		print("you should play the dialog at cue ", cue)
 		return cue
 	
 	return ""
+
+
+func pop_front_trigger(stat: String):
+	match stat:
+		"goth":
+			goth.pop_front()
+		"cutesy":
+			cutesy.pop_front()
+		"chic":
+			chic.pop_front()
+		"athletic":
+			athletic.pop_front()
+		"formal":
+			formal.pop_front()
+		"wacky":
+			wacky.pop_front()
+		"rugged":
+			rugged.pop_front()
+		"preppy":
+			preppy.pop_front()
 
 
 func get_stat_next_trigger(stat: String):
