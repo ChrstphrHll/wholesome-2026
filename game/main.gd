@@ -3,7 +3,7 @@ extends Node2D
 var all_clothing: Dictionary[int, ClothingItem] = {}
 var equipped_clothes: Dictionary[ClothingItem.ClothingType, ClothingItem]
 
-var backdrops = {}
+var backdrops: Dictionary[int, Backdrop] = {}
 var activeBackdrop: Backdrop
 
 var client_queue: Array[Client] = [ResourceLoader.load("res://resources/clients/lost_my_job.tres")]
@@ -12,7 +12,7 @@ var active_client: Client = client_queue[0]
 const POLAROID = preload("res://components/polaroid.tscn")
 
 @onready var camera_2d = $Camera2D
-@onready var balloon = $Desk/DeskBalloon
+@onready var balloon = $Camera2D/Balloon
 
 # Screen Base Nodes
 @onready var menu = $Menu
@@ -227,7 +227,15 @@ func load_backdrop_options():
 
 
 func populate_backdrops():
-	pass
+	for backdrop in backdrops.values():
+		var button = Button.new()
+		button.text = backdrop.name
+		button.pressed.connect(_on_backdrop_pressed.bind(backdrop.id))
+		$%Backdrops.add_child(button)
+
+
+func _on_backdrop_pressed(id: int):
+	print("change backdrop to, ", backdrops[id].name)
 
 
 func _on_beach_pressed():

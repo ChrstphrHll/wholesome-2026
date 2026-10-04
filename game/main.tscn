@@ -1,13 +1,14 @@
 [gd_scene format=3 uid="uid://d1j0rr77xt3v7"]
 
 [ext_resource type="Script" uid="uid://cecprltpmifqn" path="res://game/main.gd" id="1_xtpaf"]
-[ext_resource type="Texture2D" uid="uid://cd47fcrjidwyu" path="res://assets/horse.jpg" id="2_xtpaf"]
+[ext_resource type="Texture2D" uid="uid://f36kavnpbwho" path="res://assets/backgrounds/showpony_studio_game_screen.png" id="2_yyxey"]
 [ext_resource type="Texture2D" uid="uid://c82bt5n7jpyti" path="res://assets/brown_horse/brown_horse_trim.png" id="3_5un7r"]
 [ext_resource type="Texture2D" uid="uid://bcp5wayak4jhx" path="res://assets/backgrounds/studio_entry_clouds.png" id="3_g6fv7"]
 [ext_resource type="Texture2D" uid="uid://7yecy52jpsav" path="res://assets/backgrounds/studio_entry_clouds_pink_complete.png" id="4_g6fv7"]
 [ext_resource type="PackedScene" uid="uid://b5pceuhay505a" path="res://dialog/balloon.tscn" id="4_xkbyp"]
 [ext_resource type="Resource" uid="uid://d4mu6aiuwt8sm" path="res://dialog/lost_my_job.dialogue" id="7_g6fv7"]
 [ext_resource type="Texture2D" uid="uid://bndptqrgs2pww" path="res://assets/space.webp" id="8_lx3aj"]
+[ext_resource type="Texture2D" uid="uid://y7gq57b23sud" path="res://assets/backgrounds/photo_studio_bg.png" id="8_yyxey"]
 [ext_resource type="Texture2D" uid="uid://yy20714jjc" path="res://assets/beach.jpg" id="9_itumj"]
 [ext_resource type="Texture2D" uid="uid://bl6reti1trc1i" path="res://assets/backgrounds/dress_up_screen.png" id="10_frwyw"]
 [ext_resource type="Texture2D" uid="uid://ec04q87wt0qy" path="res://assets/brown_horse/brown_horse_1.4_close.png" id="10_g6fv7"]
@@ -248,6 +249,10 @@ limit_top = 0
 limit_right = 1152
 limit_bottom = 648
 
+[node name="Balloon" parent="Camera2D" unique_id=38036521 instance=ExtResource("4_xkbyp")]
+follow_viewport_enabled = false
+dialogue_resource = ExtResource("7_g6fv7")
+
 [node name="debug" type="CanvasLayer" parent="." unique_id=197581472]
 
 [node name="HBoxContainer" type="HBoxContainer" parent="debug" unique_id=610103683]
@@ -279,33 +284,23 @@ offset_right = 1153.0
 offset_bottom = 648.0
 color = Color(1, 1, 0.6156863, 1)
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Menu" unique_id=222257333]
-offset_left = 211.0
-offset_top = 119.0
-offset_right = 993.0
-offset_bottom = 230.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 72
-bbcode_enabled = true
-text = "[wave amp=50.0 freq=5.0 connected=1]Horse Dress Up Game![/wave]"
+[node name="ShowponyStudioGameScreen" type="Sprite2D" parent="Menu" unique_id=36170354]
+position = Vector2(576, 325)
+texture = ExtResource("2_yyxey")
 
 [node name="Button" type="Button" parent="Menu" unique_id=343275629]
-offset_left = 365.0
-offset_top = 321.0
-offset_right = 738.0
+offset_left = 504.0
+offset_top = 349.0
+offset_right = 714.0
 offset_bottom = 402.0
 text = "Play"
 
-[node name="Horse" type="Sprite2D" parent="Menu" unique_id=1579420382]
-position = Vector2(211, 402.00012)
-scale = Vector2(0.16333333, 0.16333334)
-texture = ExtResource("2_xtpaf")
-flip_h = true
-
-[node name="Horse2" type="Sprite2D" parent="Menu" unique_id=695621828]
-position = Vector2(888, 440.00012)
-scale = Vector2(0.17666666, 0.17666669)
-texture = ExtResource("2_xtpaf")
+[node name="Button2" type="Button" parent="Menu" unique_id=893948525]
+offset_left = 504.0
+offset_top = 413.0
+offset_right = 714.0
+offset_bottom = 466.00003
+text = "Credits"
 
 [node name="Desk" type="Node2D" parent="." unique_id=839386804]
 
@@ -340,18 +335,12 @@ text = "Next Client
 libraries/ = SubResource("AnimationLibrary_tv0fx")
 autoplay = &"clouds"
 
-[node name="DeskBalloon" parent="Desk" unique_id=38036521 instance=ExtResource("4_xkbyp")]
-visible = false
-dialogue_resource = ExtResource("7_g6fv7")
-
 [node name="PhotoWall" type="Node2D" parent="." unique_id=1930109288]
 position = Vector2(-1152, 0)
 
-[node name="ColorRect2" type="ColorRect" parent="PhotoWall" unique_id=535456687]
-offset_left = -1.0
-offset_right = 1152.0
-offset_bottom = 647.0
-color = Color(1, 1, 0.6156863, 1)
+[node name="PhotoStudioBg" type="Sprite2D" parent="PhotoWall" unique_id=892521565]
+position = Vector2(576, 323)
+texture = ExtResource("8_yyxey")
 
 [node name="Panel" type="Panel" parent="PhotoWall" unique_id=1103831408]
 offset_left = 761.0
@@ -378,20 +367,21 @@ layout_mode = 2
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer" unique_id=1577746861]
+[node name="Backdrops" type="VBoxContainer" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer" unique_id=1577746861]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/VBoxContainer" unique_id=254773564]
+[node name="Label" type="Label" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/Backdrops" unique_id=254773564]
 layout_mode = 2
 text = "Backgrounds"
 
-[node name="Beach" type="Button" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/VBoxContainer" unique_id=2064933721]
+[node name="Beach" type="Button" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/Backdrops" unique_id=2064933721]
 layout_mode = 2
 text = "Beach"
 
-[node name="Space" type="Button" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/VBoxContainer" unique_id=1739323624]
+[node name="Space" type="Button" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/Backdrops" unique_id=1739323624]
 layout_mode = 2
 text = "Space"
 
@@ -402,6 +392,11 @@ text = "Change Outfit"
 [node name="TakePhoto" type="Button" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2" unique_id=18193390]
 layout_mode = 2
 text = "Say Apple!"
+
+[node name="Tripod" type="Sprite2D" parent="PhotoWall" unique_id=1027008530]
+position = Vector2(676.9999, 563)
+scale = Vector2(0.093, 0.093)
+texture = ExtResource("10_itumj")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="PhotoWall" unique_id=123339095]
 offset_left = 107.0
@@ -580,21 +575,6 @@ layout_mode = 2
 size_flags_horizontal = 3
 columns = 4
 
-[node name="ColorRect" type="ColorRect" parent="DressUp" unique_id=1802641472]
-offset_left = 591.0
-offset_top = 42.0
-offset_right = 1094.0
-offset_bottom = 132.0
-
-[node name="Label" type="Label" parent="DressUp/ColorRect" unique_id=1298548012]
-layout_mode = 0
-offset_left = 15.0
-offset_top = 13.0
-offset_right = 316.0
-offset_bottom = 36.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Horse commenting on the clothes here"
-
 [node name="Done" type="Button" parent="DressUp" unique_id=1067218762]
 offset_left = 67.0
 offset_top = 594.0
@@ -602,18 +582,13 @@ offset_right = 551.0
 offset_bottom = 625.0
 text = "Done!"
 
-[node name="Tripod" type="Sprite2D" parent="DressUp" unique_id=1027008530]
-position = Vector2(-1627.0001, 563)
-scale = Vector2(0.093, 0.093)
-texture = ExtResource("10_itumj")
-
 [node name="Cork" type="Node2D" parent="." unique_id=1331599127]
 
 [node name="ColorRect" type="ColorRect" parent="Cork" unique_id=1588079676]
-offset_left = -1151.0
-offset_top = 645.0
-offset_right = 2.0
-offset_bottom = 1292.0
+offset_left = -1152.0
+offset_top = 647.0
+offset_right = 1.0
+offset_bottom = 1294.0
 color = Color(1, 1, 0.6156863, 1)
 
 [node name="Cork339" type="Sprite2D" parent="Cork" unique_id=1242390642]
@@ -647,8 +622,8 @@ libraries/ = SubResource("AnimationLibrary_li27q")
 [connection signal="pressed" from="debug/HBoxContainer/Button4" to="." method="_move_screen" binds= [3]]
 [connection signal="pressed" from="Menu/Button" to="." method="_move_screen" binds= [1]]
 [connection signal="pressed" from="Desk/NextClient" to="." method="call_next_client"]
-[connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/VBoxContainer/Beach" to="." method="_on_beach_pressed"]
-[connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/VBoxContainer/Space" to="." method="_on_space_pressed"]
+[connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/Backdrops/Beach" to="." method="_on_beach_pressed"]
+[connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/Backdrops/Space" to="." method="_on_space_pressed"]
 [connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/ChangeOutfit" to="." method="_on_change_outfit_pressed"]
 [connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/TakePhoto" to="." method="_on_take_photo_pressed"]
 [connection signal="pressed" from="DressUp/Done" to="." method="_on_dress_up_finished"]
