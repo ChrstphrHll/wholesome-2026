@@ -626,16 +626,57 @@ grow_vertical = 2
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Popups" unique_id=122211834]
 libraries/ = SubResource("AnimationLibrary_li27q")
 
-[node name="Main Music" type="AudioStreamPlayer2D" parent="." unique_id=1502217667]
-position = Vector2(566, 269)
+[node name="Main Music" type="AudioStreamPlayer" parent="." unique_id=1305032229]
 stream = ExtResource("21_le3en")
-autoplay = true
+
+[node name="Credits" type="Node2D" parent="." unique_id=1382025543]
+position = Vector2(25, 679)
+
+[node name="ColorRect" type="ColorRect" parent="Credits" unique_id=1306414093]
+offset_left = -28.0
+offset_top = -31.0
+offset_right = 1127.0
+offset_bottom = 613.0
+
+[node name="CreditsTitle" type="RichTextLabel" parent="Credits" unique_id=1839422658]
+offset_left = 342.0
+offset_top = -70.0
+offset_right = 775.0
+offset_bottom = 138.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 68
+bbcode_enabled = true
+text = "[wave amp=50.0 freq=5.0 connected=1][center]Credits[/center][/wave]"
+
+[node name="CreditText" type="RichTextLabel" parent="Credits" unique_id=1145361287]
+offset_left = 249.0
+offset_top = 165.0
+offset_right = 931.0
+offset_bottom = 539.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 16
+bbcode_enabled = true
+text = "Made for the 2026 Wholesome Game Jam by Chrstphr, Pita, Ami, and Katie
+
+Programming by Chrstphr and Ami
+
+Art by Pita and Kt
+
+Music by Katie
+
+Writing by Ami
+
+Sound effects sourced from Youtube: @soundeffectspublicdomain120, @soundfxtracks2500, @HD_SOUND_FX,@youtubesoundeffects4695, and @FreeLifeSounds.
+
+
+Godot Dialogue Manager by Nathan Hoad used under his MIT License"
 
 [connection signal="pressed" from="debug/HBoxContainer/Button" to="." method="_move_screen" binds= [0]]
 [connection signal="pressed" from="debug/HBoxContainer/Button2" to="." method="_move_screen" binds= [1]]
 [connection signal="pressed" from="debug/HBoxContainer/Button3" to="." method="_move_screen" binds= [2]]
 [connection signal="pressed" from="debug/HBoxContainer/Button4" to="." method="_move_screen" binds= [3]]
 [connection signal="pressed" from="Menu/Play" to="." method="_move_screen" binds= [1]]
+[connection signal="pressed" from="Menu/Credits" to="." method="_move_screen" binds= [4]]
 [connection signal="pressed" from="Desk/NextClient" to="." method="call_next_client"]
 [connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/ChangeOutfit" to="." method="_on_change_outfit_pressed"]
 [connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/TakePhoto" to="." method="_on_take_photo_pressed"]

@@ -23,13 +23,14 @@ const POLAROID = preload("res://components/polaroid.tscn")
 @onready var desk = $Desk
 @onready var photo_wall = $PhotoWall
 @onready var dress_up = $DressUp
+@onready var credits = $Credits
 
 @onready var pop_up = $Popups
 @onready var pop_up_container = $Popups/CenterContainer
 @onready var pop_up_animation_player = $Popups/AnimationPlayer
 
 
-enum Location { MENU, DESK, DRESS_UP, PHOTO_WALL }
+enum Location { MENU, DESK, DRESS_UP, PHOTO_WALL, CREDITS }
 
 # Horse Sprites
 var dress_up_horse: AnimatedSprite2D
@@ -89,6 +90,8 @@ func get_screen(screen_name: Location):
 			return photo_wall
 		Location.DRESS_UP:
 			return dress_up
+		Location.CREDITS:
+			return credits
 		_:
 			printerr("💣 NOT A VALID SCREEN NAME 💣")
 
@@ -129,8 +132,7 @@ func listen_for_dialog_end():
 
 
 func bring_to_credits():
-	#TODO: end the game!!!!!
-	pass
+	_move_screen(Location.CREDITS)
 
 
 #region front desk
