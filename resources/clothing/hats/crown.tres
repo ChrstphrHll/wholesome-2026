@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://b5t8jfk4v22nb"]
+
+[ext_resource type="Texture2D" uid="uid://cnawfo700857u" path="res://assets/clothing/hats/crown.png" id="1_mua2h"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_sylyv"]
+
+[resource]
+script = ExtResource("1_sylyv")
+name = "Crown"
+image = ExtResource("1_mua2h")
+chic = 5.0
+formal = 1.0
+preppy = 1.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

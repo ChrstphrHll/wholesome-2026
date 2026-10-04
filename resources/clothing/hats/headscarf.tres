@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://ccp24yh2yahm1"]
+
+[ext_resource type="Texture2D" uid="uid://ihwgj8jkyomy" path="res://assets/clothing/hats/headscarf.png" id="1_vpti3"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_y5iu4"]
+
+[resource]
+script = ExtResource("1_y5iu4")
+name = "Headscarf"
+image = ExtResource("1_vpti3")
+rugged = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

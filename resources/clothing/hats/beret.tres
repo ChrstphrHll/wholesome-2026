@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://dikliu7ylnoti"]
+
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_iavwc"]
+[ext_resource type="Texture2D" uid="uid://coqvlkash6od5" path="res://assets/clothing/hats/beret_1.png" id="1_wrrwb"]
+
+[resource]
+script = ExtResource("1_iavwc")
+name = "Red Beret"
+image = ExtResource("1_wrrwb")
+chic = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

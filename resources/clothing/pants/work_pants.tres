@@ -1,12 +1,13 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://4apaqaggkbel"]
 
-[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_epprq"]
-[ext_resource type="Texture2D" uid="uid://83d85v4tugil" path="res://assets/clothing/pants/work_pants.png" id="1_gwt0j"]
+[ext_resource type="Texture2D" uid="uid://83d85v4tugil" path="res://assets/clothing/pants/work_pants.png" id="1_1urrw"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="2_8x4bc"]
 
 [resource]
-script = ExtResource("1_epprq")
+script = ExtResource("2_8x4bc")
 name = "Peach Slacks"
-image = ExtResource("1_gwt0j")
+image = ExtResource("1_1urrw")
+type = 2
 chic = 1.0
 formal = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

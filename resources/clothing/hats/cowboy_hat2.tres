@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://ciouj4400wqr6"]
+
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_j656i"]
+[ext_resource type="Texture2D" uid="uid://cd7bheydf1cd2" path="res://assets/clothing/hats/cowboyhat_2.png" id="1_m6uua"]
+
+[resource]
+script = ExtResource("1_j656i")
+name = "Yellow Cowboy Hat"
+image = ExtResource("1_m6uua")
+rugged = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"
