@@ -1,5 +1,5 @@
 ~ start
-Red: ...............
+Red: [$>> animate("sad")]...............
 
 Player: Hi! Welcome to Show Pony Studio, how can I help you?
 
@@ -21,37 +21,37 @@ Player: Ready?
 => END
 
 ~ goth1
-Red: Hey, I like this one!
+Red: [$>> animate("smile")]Hey, I like this one!
 
 Player: Aw, great! I love helping Reds find their style.
 
-Red: Yeah... yeah! It makes me feel like burning shit down and starting fresh, you know!
+Red: [$>> animate("talking")]Yeah... yeah! It makes me feel like burning stuff down and starting fresh, you know!
 
 Player: Wait what?
 => END
 
 ~ goth4
-Red: I love it! So much!
+Red: [$>> animate("smile")]I love it! So much!
 
 Player: Can we go back to what you said about you burning stuff down?
 
-Red: Yeah, I think our only recourse as a society is to rip it up and start again.
+Red: [$>> animate("talking")]Yeah, I think our only recourse as a society is to rip it up and start again.
 
 Player: So–
 
-Red: Just like I’m doing with these clothes!
+Red: [$>> animate("smile")]Just like I’m doing with these clothes!
 => END
 
 ~ wacky1
-Red: ........this is JUST like my home clothes.
+Red: [$>> animate("talking")]........this is JUST like my home clothes.
 
 Player: ...is that a good thing?
 
-Red: Well, I don’t know that I know a lot about fashion........ But I feel right at home in it!
+Red: [$>> animate("sad")]Well, I don’t know that I know a lot about fashion........ [$>> animate("smile")]But I feel right at home in it!
 => END
 
 ~ wacky4
-Red: I’ve been trying to work on developing my fashion sense. I’m just trying to get out there more, you know?
+Red: I’ve been trying to work on developing my fashion sense. [$>> animate("talking")]I’m just trying to get out there more, you know?
 
 Player: Nice, how is it working out for you?
 
@@ -59,7 +59,7 @@ Red: Well, I’m here now, aren’t I?
 => END
 
 ~ cutesy1
-Red: ..........
+Red: [$>> animate("sad")]..........
 
 Player: ..............
 
@@ -69,11 +69,11 @@ Player: Let’s try something else on.
 => END
 
 ~ cutesy4
-Red: ...............
+Red: [$>> animate("sad")]...............
 
 Player: ..................
 
-Red: ............You know how sometimes in games, you know you’re supposed to click on something because it looks really out of place compared to the other assets?
+Red: ............You know how sometimes in games,[$>> animate("talking")] you know you’re supposed to click on something because it looks really out of place compared to the other assets?
 
 Player: Yeah?
 
@@ -81,22 +81,22 @@ Red: That’s how I feel right now.
 => END
 
 ~ special_item
-Red: YES!!!!!!! JUST like Red Dead Redemption!
+Red: [$>> animate("smile")]YES!!!!!!! JUST like Red Dead Redemption!
 
 Player: Oh, you like that game?
 
-Red: It has Reds! I love good representation.
+Red: [$>> animate("talking")]It has horses! I love good representation.
 => END
 
 ~ post_photo_best
 
-Red: ................
+Red: [$>> animate("sad")]................
 
-Red: [shake rate=20.0 level=5 connected=1] I LOVE IT!!!! [/shake]
+Red: [$>> animate("smile")][shake rate=20.0 level=5 connected=1] I LOVE IT!!!! [/shake]
 
-Red: [font_size=10] sorry I didn’t mean to be so loud [/font_size]
+Red: [$>> animate("talking")][font_size=10] sorry I didn’t mean to be so loud [/font_size]
 
-Red: It’s just that I’ve been feeling more and more like the world is getting to be a harder place to live in.
+Red: [$>> animate("sad")]It’s just that I’ve been feeling more and more like the world is getting to be a harder place to live in.
 
 Red: Like no matter what I or anyone does, the people in charge are just going to keep stepping on us to fight for the top.
 
@@ -104,21 +104,21 @@ Red: And it sucks. So I hid.
 
 Red: I just stayed in my room and closed myself into worlds I could save.
 
-Red: But I’ve been feeling lately like I want to make a change. I’m done being small and I’m done hiding.
+Red: [$>> animate("talking")]But I’ve been feeling lately like I want to make a change. I’m done being small and I’m done hiding.
 
-Red: And this outfit makes me feel brave! These pictures look like someone who can DO something!
+Red: [$>> animate("smile")]And this outfit makes me feel brave! These pictures look like someone who can DO something!
 
 Red: Thank you!
 => END
 
 ~ post_photo_high
-Red: ...........
+Red: [$>> animate("sad")]...........
 
-Red: It’s GREAT!
+Red: [$>> animate("smile")]It’s GREAT!
 
 Red: [font_size=10] sorry I didn’t mean to be so loud [/font_size]
 
-Red: It’s just that I’ve been feeling more and more like the world is getting to be a harder place to live in.
+Red: [$>> animate("sad")]It’s just that I’ve been feeling more and more like the world is getting to be a harder place to live in.
 
 Red: Like no matter what I or anyone does, the people in charge are just going to keep stepping on us to fight for the top.
 
@@ -126,19 +126,19 @@ Red: And it sucks. So I hid.
 
 Red: I just stayed in my room and closed myself into worlds I could save.
 
-Red: But I’ve been feeling lately like I want to make a change. I’m done being small and I’m done hiding.
+Red: [$>> animate("talking")]But I’ve been feeling lately like I want to make a change. I’m done being small and I’m done hiding.
 
-Red: And this outfit makes me feel a little braver! Like maybe I could do something!
+Red: [$>> animate("smile")]And this outfit makes me feel a little braver! Like maybe I could do something!
 
 Red: Thank you!
 => END
 
 ~ post_photo_mid
-Red: ...........
+Red: [$>> animate("sad")]...........
 
-Red: I like it!
+Red: [$>> animate("smile")]I like it!
 
-Red: It’s just that I’ve been feeling more and more like the world is getting to be a harder place to live in.
+Red: [$>> animate("sad")]It’s just that I’ve been feeling more and more like the world is getting to be a harder place to live in.
 
 Red: Like no matter what I or anyone does, the people in charge are just going to keep stepping on us to fight for the top.
 
@@ -146,20 +146,20 @@ Red: And it sucks. So I hid.
 
 Red: I just stayed in my room and closed myself into worlds I could save.
 
-Red: But I’ve been feeling lately like I want to make a change. I’m done being small and I’m done hiding.
+Red: [$>> animate("talking")]But I’ve been feeling lately like I want to make a change. I’m done being small and I’m done hiding.
 
-Red: And this outfit makes me feel like maybe I’m ready to start getting out there!
+Red: [$>> animate("smile")]And this outfit makes me feel like maybe I’m ready to start getting out there!
 
 Red: Thank you!
 => END
 
 ~ post_photo_low
 
-Red: ...........
+Red: [$>> animate("sad")]...........
 
-Red: It’s good!
+Red: [$>> animate("smile")]It’s good!
 
-Red: It’s just that I’ve been feeling more and more like the world is getting to be a harder place to live in.
+Red: [$>> animate("sad")]It’s just that I’ve been feeling more and more like the world is getting to be a harder place to live in.
 
 Red: Like no matter what I or anyone does, the people in charge are just going to keep stepping on us to fight for the top.
 
@@ -167,19 +167,19 @@ Red: And it sucks. So I hid.
 
 Red: I just stayed in my room and closed myself into worlds I could save.
 
-Red: But I’ve been feeling lately like I want to make a change. I’m done being small and I’m done hiding.
+Red: [$>> animate("talking")]But I’ve been feeling lately like I want to make a change. I’m done being small and I’m done hiding.
 
-Red: And this outfit is the first step in getting myself out there.
+Red: [$>> animate("smile")]And this outfit is the first step in getting myself out there.
 
 Red: Thank you!
 => END
 
 ~ post_photo_naked
-Red: This is the style we're going for?
+Red: [$>> animate("sad")]This is the style we're going for?
 
-Red: Okay, yeah! It's comfortable.
+Red: [$>> animate("smile")]Okay, yeah! It's comfortable.
 
-Red: I'd be lying if I said I didn't game like this sometimes.
+Red: [$>> animate("talking")]I'd be lying if I said I didn't game like this sometimes.
 
 Red: Thanks!
 => END

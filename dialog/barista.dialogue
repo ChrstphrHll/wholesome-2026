@@ -1,11 +1,11 @@
 ~ start
-Oat Milk: Hi! I made an appointment for today. My name is Oat Milk.
+Oat Milk: [$>> animate("talking")]Hi! I made an appointment for today. My name is Oat Milk.
 
 Player: Great! Welcome to Show Pony Studio.
 
-Oat Milk: I’m so excited for this! I’ve been wanting to work on my style for ages. 
+Oat Milk: [$>> animate("smile")]I’m so excited for this! I’ve been wanting to work on my style for ages. 
 
-Oat Milk: Two years at the Clip Clop Cafe and some of the regulars are starting to wonder if I have any other clothes besides my classic outfits.
+Oat Milk: [$>> animate("sad")]Two years at the Clip Clop Cafe and some of the regulars are starting to wonder if I have any other clothes besides my classic outfits.
 
 Player: Alright, well let’s try you out in some new styles and see what we can do.
 
@@ -15,59 +15,59 @@ Player: Ready?
 => END
 
 ~ preppy1
-Oat Milk: Ooooooh yes! It reminds me of hand-me-downs from my mom haha
+Oat Milk: [$>> animate("smile")]Ooooooh yes! It reminds me of hand-me-downs from my mom haha
 
 Player: Your mom has a good sense of style!
 
-Oat Milk: It’s just New England old money, but you gotta hand it to ‘em, the clothes are NICE.
+Oat Milk: [$>> animate("talking")]It’s just New England old money, but you gotta hand it to ‘em, the clothes are NICE.
 => END
 
 ~ preppy4
-Oat Milk: My parents weren’t always supportive of me just wanting to be a barista.
+Oat Milk: [$>> animate("sad")]My parents weren’t always supportive of me just wanting to be a barista.
 
 Player: You know, I had a guy who was in corporate earlier, and I don’t know that he was any happier.
 
-Oat Milk: Of course not! But still, it would be nice to have something to connect with my parents on.
+Oat Milk: [$>> animate("talking")]Of course not! But still, it would be nice to have something to connect with my parents on.
 
-Oat Milk: [cringe] God knows it’s not music—they don’t appreciate the dulcet tones of the heavy metal band Oat Milkshoe. [/cringe]
+Oat Milk: [$>> animate("sad")]God knows it’s not music—they don’t appreciate the dulcet tones of the heavy metal band Horseshoe.
 => END
 
 ~ chic1
-Oat Milk: Oh, I like it! I feel like it’s kind of like my current classics.
+Oat Milk: [$>> animate("talking")]Oh, I like it! I feel like it’s kind of like my current classics.
 
 Player: Do you think your regulars will be able to tell the difference?
 
-Oat Milk: Well, at least it won’t have coffee stains on it!
+Oat Milk: [$>> animate("smile")]Well, at least it won’t have coffee stains on it!
 => END
 
 ~ chic4
-Oat Milk: Yeah, this would go well with my coffee-colored beanie.
+Oat Milk: [$>> animate("talking")]Yeah, this would go well with my coffee-colored beanie.
 
 Player: Does it get hot in the summer?
 
-Oat Milk: So hot! But it’s my favorite beanie.
+Oat Milk: So hot! [$>> animate("smile")]But it’s my favorite beanie.
 => END
 
 ~ rugged1
-Oat Milk: Wow, I feel like a cowboy.
+Oat Milk: [$>> animate("talking")]Wow, I feel like a cowboy.
 
 Player: Yeah?
 
-Oat Milk: Yeah. And by that I mean I feel out of my element.
+Oat Milk: [$>> animate("sad")]Yeah. And by that I mean I feel out of my element.
 => END
 
 ~ rugged4
-Oat Milk: My mom always said a Oat Milk can still be a lady.
+Oat Milk: My mom always said a horse can still be a lady.
 
 Player: Do you feel like you’re a lady?
 
-Oat Milk: I don’t know. She’s not the biggest fan of the barista thing. But she’s trying.
+Oat Milk: [$>> animate("rugged")]I don’t know. She’s not the biggest fan of the barista thing. But she’s trying.
 
 Oat Milk: This might send her over the edge though.
 => END
 
 ~ special_item
-Oat Milk: Oh wow, it’s just like what Black Beauty wears in Oat Milkshoe!!!
+Oat Milk: [$>> animate("smile")]Oh wow, it’s just like what Black Beauty wears in Horseshoe!!!
 
 Player: Oh, your favorite band?
 
@@ -75,76 +75,76 @@ Oat Milk: Yep!! I feel so cool!!
 => END
 
 ~ post_photo_best
-Oat Milk: Oh my gosh! I really love it!
+Oat Milk: [$>> animate("smile")]Oh my gosh! I really love it!
 
-Oat Milk: To be honest, I’ve been having a lot of trouble finding my style. Not just clothes, I mean.
+Oat Milk: [$>> animate("blinking")]To be honest, I’ve been having a lot of trouble finding my style. [$>> animate("sad")]Not just clothes, I mean.
 
 Oat Milk: My parents and I have fought a lot about where I’m going in life.
 
-Oat Milk: But I’m really happy doing what I do! I get to help people every day. I’m sure you feel similarly doing this.
+Oat Milk: [$>> animate("talking")]But I’m really happy doing what I do! I get to help people every day. I’m sure you feel similarly doing this.
 
 Oat Milk: I know it’s not saving lives or changing the world, but we’re making people just a little happier. And that matters, right? Even if other people don’t see it the way we do.
 
-Oat Milk: And these clothes make me feel more confident facing the day, while still taking a piece of my parents with me.
+Oat Milk: [$>> animate("smile")]And these clothes make me feel more confident facing the day, while still taking a piece of my parents with me.
 
 Oat Milk: Thank you so much, have a great day!
 => END
 
 ~ post_photo_high
-Oat Milk: Oh, it looks so great!
+Oat Milk: [$>> animate("smile")]Oh, it looks so great!
 
-Oat Milk: To be honest, I’ve been having a lot of trouble finding my style. Not just clothes, I mean.
+Oat Milk: [$>> animate("blinking")]To be honest, I’ve been having a lot of trouble finding my style. [$>> animate("sad")]Not just clothes, I mean.
 
 Oat Milk: My parents and I have fought a lot about where I’m going in life.
 
-Oat Milk: But I’m really happy doing what I do! I get to help people every day. I’m sure you feel similarly doing this.
+Oat Milk: [$>> animate("talking")]But I’m really happy doing what I do! I get to help people every day. I’m sure you feel similarly doing this.
 
 Oat Milk: I know it’s not saving lives or changing the world, but we’re making people just a little happier. And that matters, right? Even if other people don’t see it the way we do.
 
-Oat Milk: And these clothes make me feel like I can face the day, and my parents will see the whole me someday.
+Oat Milk: [$>> animate("smile")]And these clothes make me feel like I can face the day, and my parents will see the whole me someday.
 
 Oat Milk: Thank you so much, have a great day!
 => END
 
 ~ post_photo_mid
-Oat Milk: I like it!
+Oat Milk: [$>> animate("smile")]I like it!
 
-Oat Milk: To be honest, I’ve been having a lot of trouble finding my style. Not just clothes, I mean.
+Oat Milk: [$>> animate("blinking")]To be honest, I’ve been having a lot of trouble finding my style. [$>> animate("sad")]Not just clothes, I mean.
 
 Oat Milk: My parents and I have fought a lot about where I’m going in life.
 
-Oat Milk: But I’m really happy doing what I do! I get to help people every day. I’m sure you feel similarly doing this.
+Oat Milk: [$>> animate("talking")]But I’m really happy doing what I do! I get to help people every day. I’m sure you feel similarly doing this.
 
 Oat Milk: I know it’s not saving lives or changing the world, but we’re making people just a little happier. And that matters, right? Even if other people don’t see it the way we do.
 
-Oat Milk: And these clothes give me hope that I can gain the confidence to show others that I’m happy the way I am.
+Oat Milk: [$>> animate("smile")]And these clothes give me hope that I can gain the confidence to show others that I’m happy the way I am.
 
 Oat Milk: Thank you so much, have a great day!
 => END
 
 ~ post_photo_low
-Oat Milk: Oh, it’s interesting!
+Oat Milk: [$>> animate("smile")]Oh, it’s interesting!
 
-Oat Milk: To be honest, I’ve been having a lot of trouble finding my style. Not just clothes, I mean.
+Oat Milk: [$>> animate("blinking")]To be honest, I’ve been having a lot of trouble finding my style. [$>> animate("sad")]Not just clothes, I mean.
 
 Oat Milk: My parents and I have fought a lot about where I’m going in life.
 
-Oat Milk: But I’m really happy doing what I do! I get to help people every day. I’m sure you feel similarly doing this.
+Oat Milk: [$>> animate("talking")]But I’m really happy doing what I do! I get to help people every day. I’m sure you feel similarly doing this.
 
 Oat Milk: I know it’s not saving lives or changing the world, but we’re making people just a little happier. And that matters, right? Even if other people don’t see it the way we do.
 
-Oat Milk: And these clothes help me feel more confident about exploring new things.
+Oat Milk: [$>> animate("smile")]And these clothes help me feel more confident about exploring new things.
 
 Oat Milk: Thank you so much, have a great day!
 => END
 
 ~ post_photo_naked
-Oat Milk: Ah, I'm not sure if I can go to work like this.
+Oat Milk: [$>> animate("sad")]Ah, I'm not sure if I can go to work like this.
 
-Oat Milk: But you know, it never hurts to give a new style a try.
+Oat Milk: [$>> animate("talking")]But you know, it never hurts to give a new style a try.
 
 Oat Milk: If only to get a glimpse into another kind of life.
 
-Oat Milk: Thanks!
+Oat Milk: [$>> animate("smile")]Thanks!
 
 => END
