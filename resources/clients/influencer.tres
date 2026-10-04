@@ -13,6 +13,9 @@
 [resource]
 script = ExtResource("1_232jb")
 order = 3
+cutesy_points = 1
+chic_points = 3
+athletic_points = -1
 cutesy = Array[int]([1, 4])
 chic = Array[int]([1, 4])
 athletic = Array[int]([1, 4])

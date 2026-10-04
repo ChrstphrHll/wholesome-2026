@@ -12,8 +12,9 @@
 
 [resource]
 script = ExtResource("1_uakr1")
+order = 1
 formal_points = 1
-rugged_points = 5
+rugged_points = 3
 preppy_points = -1
 formal = Array[int]([1, 4])
 rugged = Array[int]([1, 4])

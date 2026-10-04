@@ -13,6 +13,9 @@
 [resource]
 script = ExtResource("1_axtfb")
 order = 4
+goth_points = 3
+cutesy_points = -1
+wacky_points = 1
 goth = Array[int]([1, 4])
 cutesy = Array[int]([1, 4])
 wacky = Array[int]([1, 4])
