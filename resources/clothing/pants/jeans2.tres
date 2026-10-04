@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://4xyu2gyo7cs"]
 
-[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_ev71c"]
-[ext_resource type="Texture2D" uid="uid://dd4u18cwm1v6c" path="res://assets/clothing/pants/pant_western.png" id="1_ig3jf"]
+[ext_resource type="Texture2D" uid="uid://ccf6vl8000igy" path="res://assets/clothing_icons/pants/pant_western.png" id="1_snibw"]
+[ext_resource type="Texture2D" uid="uid://dd4u18cwm1v6c" path="res://assets/clothing/pants/pant_western.png" id="2_3r7eu"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="3_wxcqf"]
 
 [resource]
-script = ExtResource("1_ev71c")
+script = ExtResource("3_wxcqf")
 name = "Pink Jeans"
-image = ExtResource("1_ig3jf")
+image = ExtResource("2_3r7eu")
+cropped_icon = ExtResource("1_snibw")
 type = 2
 cutesy = 1.0
 rugged = 5.0

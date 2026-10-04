@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://ddiq53si8mpw6"]
 
-[ext_resource type="Texture2D" uid="uid://cv872rbffgrvb" path="res://assets/clothing/pants/pant_western_alt1.png" id="1_08c4g"]
-[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_gpjc4"]
+[ext_resource type="Texture2D" uid="uid://c5reaj0763ra8" path="res://assets/clothing_icons/pants/pant_western_alt1.png" id="1_dyna1"]
+[ext_resource type="Texture2D" uid="uid://cv872rbffgrvb" path="res://assets/clothing/pants/pant_western_alt1.png" id="2_n31hb"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="3_x01w5"]
 
 [resource]
-script = ExtResource("1_gpjc4")
+script = ExtResource("3_x01w5")
 name = "Yellow Jeans"
-image = ExtResource("1_08c4g")
+image = ExtResource("2_n31hb")
+cropped_icon = ExtResource("1_dyna1")
 type = 2
 rugged = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

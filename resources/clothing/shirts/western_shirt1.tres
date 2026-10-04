@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://cwyefkulr1iq5"]
 
+[ext_resource type="Texture2D" uid="uid://brs153bw5ln61" path="res://assets/clothing_icons/shirts/shirt_western_alt1.png" id="1_4la3y"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_7xg1f"]
 [ext_resource type="Texture2D" uid="uid://ba5u57tajlkjn" path="res://assets/clothing/shirts/shirt_western_alt1.png" id="1_f5kos"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_7xg1f")
 name = "Peach Western Top"
 image = ExtResource("1_f5kos")
+cropped_icon = ExtResource("1_4la3y")
 type = 1
 rugged = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

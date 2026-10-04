@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://c2duik40x3dnu"]
 
+[ext_resource type="Texture2D" uid="uid://ocnyhpedy47u" path="res://assets/clothing_icons/wrist/beadedbracelet.png" id="1_12oam"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_miy6d"]
 [ext_resource type="Texture2D" uid="uid://b83kcm8yrdnq8" path="res://assets/clothing/wrist/beadedbracelet.png" id="1_v7t4y"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_miy6d")
 name = "Beaded Bracelet"
 image = ExtResource("1_v7t4y")
+cropped_icon = ExtResource("1_12oam")
 type = 5
 cutesy = 1.0
 wacky = 5.0

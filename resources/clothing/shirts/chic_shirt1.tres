@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://brdtj3fa3j2fm"]
 
+[ext_resource type="Texture2D" uid="uid://bbxn7kj200wmi" path="res://assets/clothing_icons/shirts/chic_shirt_alt1.png" id="1_1w1cn"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_3aj7y"]
 [ext_resource type="Texture2D" uid="uid://c17h3dir6riws" path="res://assets/clothing/shirts/chic_shirt_alt1.png" id="1_tyviq"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_3aj7y")
 name = "Brown Cardigan"
 image = ExtResource("1_tyviq")
+cropped_icon = ExtResource("1_1w1cn")
 type = 1
 chic = 5.0
 formal = 1.0

@@ -2,11 +2,13 @@
 
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_dv0ru"]
 [ext_resource type="Texture2D" uid="uid://dh1xgsxgc7msb" path="res://assets/clothing/shirts/shirt_sporty.png" id="1_lsich"]
+[ext_resource type="Texture2D" uid="uid://bdk0roj0305v4" path="res://assets/clothing_icons/shirts/shirt_sporty.png" id="1_mk05s"]
 
 [resource]
 script = ExtResource("1_dv0ru")
 name = "Teal Performance Shirt"
 image = ExtResource("1_lsich")
+cropped_icon = ExtResource("1_mk05s")
 type = 1
 athletic = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

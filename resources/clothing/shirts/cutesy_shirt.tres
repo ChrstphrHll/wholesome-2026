@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://1ramo10ou26e"]
 
 [ext_resource type="Texture2D" uid="uid://bgmx2patie6rl" path="res://assets/clothing/shirts/shirt_cutesy.png" id="1_b8d6j"]
+[ext_resource type="Texture2D" uid="uid://dwjk6bq0m215s" path="res://assets/clothing_icons/shirts/shirt_cutesy.png" id="1_ff7bm"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="2_ff7bm"]
 
 [resource]
 script = ExtResource("2_ff7bm")
 name = "Purple Frilly Shirt"
 image = ExtResource("1_b8d6j")
+cropped_icon = ExtResource("1_ff7bm")
 type = 1
 cutesy = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

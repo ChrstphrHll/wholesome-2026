@@ -2,11 +2,13 @@
 
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_a1wok"]
 [ext_resource type="Texture2D" uid="uid://c121uaba3ci0" path="res://assets/clothing/shirts/party_shirt_alt2.png" id="1_frt23"]
+[ext_resource type="Texture2D" uid="uid://db6phweh3mqp3" path="res://assets/clothing_icons/shirts/party_shirt_alt2.png" id="1_hmar8"]
 
 [resource]
 script = ExtResource("1_a1wok")
 name = "Pink Mesh Top"
 image = ExtResource("1_frt23")
+cropped_icon = ExtResource("1_hmar8")
 type = 1
 wacky = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

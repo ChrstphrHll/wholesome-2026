@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://bgg50emudfh4h"]
 
-[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_3hjns"]
-[ext_resource type="Texture2D" uid="uid://b5c8llqw7s4uu" path="res://assets/clothing/pants/pants_sporty.png" id="1_u1b68"]
+[ext_resource type="Texture2D" uid="uid://bbi7xvsg2fxhq" path="res://assets/clothing_icons/pants/pants_sporty.png" id="1_d58te"]
+[ext_resource type="Texture2D" uid="uid://b5c8llqw7s4uu" path="res://assets/clothing/pants/pants_sporty.png" id="2_6rkux"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="3_628al"]
 
 [resource]
-script = ExtResource("1_3hjns")
+script = ExtResource("3_628al")
 name = "Teal Leggings"
-image = ExtResource("1_u1b68")
+image = ExtResource("2_6rkux")
+cropped_icon = ExtResource("1_d58te")
 type = 2
 athletic = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

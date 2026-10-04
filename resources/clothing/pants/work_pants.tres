@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://4apaqaggkbel"]
 
 [ext_resource type="Texture2D" uid="uid://83d85v4tugil" path="res://assets/clothing/pants/work_pants.png" id="1_1urrw"]
+[ext_resource type="Texture2D" uid="uid://cuo82behqnfse" path="res://assets/clothing_icons/pants/work_pants.png" id="1_8x4bc"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="2_8x4bc"]
 
 [resource]
 script = ExtResource("2_8x4bc")
 name = "Peach Slacks"
 image = ExtResource("1_1urrw")
+cropped_icon = ExtResource("1_8x4bc")
 type = 2
 chic = 1.0
 formal = 5.0
