@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dqw8mgxfuyu7n"
+path="res://.godot/imported/athlete.dialogue-b9d46c7afbb124ca3d0aae22efa112f9.tres"
+
+[deps]
+
+source_file="res://dialog/athlete.dialogue"
+dest_files=["res://.godot/imported/athlete.dialogue-b9d46c7afbb124ca3d0aae22efa112f9.tres"]
+
+[params]
+
+defaults=true
