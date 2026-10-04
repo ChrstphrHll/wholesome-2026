@@ -452,18 +452,18 @@ bbcode_enabled = true
 text = "[wave amp=50.0 freq=5.0 connected=1]dress up[/wave]"
 
 [node name="Horse" type="AnimatedSprite2D" parent="DressUp" unique_id=243598187]
-position = Vector2(866.6465, 412.31)
-scale = Vector2(0.28450713, 0.25369984)
+position = Vector2(861, 385.00003)
+scale = Vector2(0.40604344, 0.36207587)
 sprite_frames = SubResource("SpriteFrames_ynx3y")
 animation = &"blink"
 autoplay = "blink"
 frame_progress = 0.04970823
 
 [node name="TabContainer" type="TabContainer" parent="DressUp" unique_id=183496887]
-offset_left = 93.0
-offset_top = 113.0
+offset_left = 46.0
+offset_top = 111.0
 offset_right = 562.0
-offset_bottom = 606.0
+offset_bottom = 576.0
 current_tab = 0
 
 [node name="Hats" type="Control" parent="DressUp/TabContainer" unique_id=1549855114]
@@ -580,10 +580,10 @@ size_flags_horizontal = 3
 columns = 4
 
 [node name="ColorRect" type="ColorRect" parent="DressUp" unique_id=1802641472]
-offset_left = 660.0
-offset_top = 128.0
-offset_right = 1014.0
-offset_bottom = 218.0
+offset_left = 591.0
+offset_top = 42.0
+offset_right = 1094.0
+offset_bottom = 132.0
 
 [node name="Label" type="Label" parent="DressUp/ColorRect" unique_id=1298548012]
 layout_mode = 0
@@ -595,10 +595,10 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Horse commenting on the clothes here"
 
 [node name="Done" type="Button" parent="DressUp" unique_id=1067218762]
-offset_left = 1013.0
-offset_top = 51.0
-offset_right = 1067.0
-offset_bottom = 82.0
+offset_left = 67.0
+offset_top = 594.0
+offset_right = 551.0
+offset_bottom = 625.0
 text = "Done!"
 
 [node name="Tripod" type="Sprite2D" parent="DressUp" unique_id=1027008530]
