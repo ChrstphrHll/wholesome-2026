@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bwkkt4ea0osh6" path="res://assets/clients/gamer/gamer_horse_close.png" id="1_0sivb"]
 [ext_resource type="Script" uid="uid://4yufbpnlxpb0" path="res://resources/client.gd" id="1_axtfb"]
+[ext_resource type="Resource" uid="uid://dd5ibv6wd6gqc" path="res://dialog/gamer.dialogue" id="2_45auy"]
 [ext_resource type="Texture2D" uid="uid://d8x2f754svie" path="res://assets/clients/gamer/gamer_horse_1.4_close.png" id="2_mo6l5"]
 [ext_resource type="Texture2D" uid="uid://cb5su28awonqo" path="res://assets/clients/gamer/gamer_horse.png" id="3_45auy"]
 [ext_resource type="Texture2D" uid="uid://cien4c5k5vra8" path="res://assets/clients/gamer/gamer_horse_sad.png" id="4_p8a1l"]
@@ -11,6 +12,12 @@
 
 [resource]
 script = ExtResource("1_axtfb")
+order = 4
+goth = Array[int]([1, 4])
+cutesy = Array[int]([1, 4])
+wacky = Array[int]([1, 4])
+special_triggers = Array[String](["\"Bolo Tie\""])
+name = "Red"
 image = ExtResource("3_45auy")
 forth_closed = ExtResource("2_mo6l5")
 three_forths_closed = ExtResource("8_i5nym")
@@ -18,4 +25,5 @@ closed = ExtResource("1_0sivb")
 smile = ExtResource("6_lc7ia")
 talking = ExtResource("7_yue8b")
 sad = ExtResource("4_p8a1l")
+dialogue_file = ExtResource("2_45auy")
 metadata/_custom_type_script = "uid://4yufbpnlxpb0"

@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://br4qwq0fnq4dj" path="res://assets/clients/athlete/athletic_horse_close.png" id="1_1wc5x"]
 [ext_resource type="Script" uid="uid://4yufbpnlxpb0" path="res://resources/client.gd" id="1_v66fj"]
+[ext_resource type="Resource" uid="uid://dqw8mgxfuyu7n" path="res://athlete.dialogue" id="2_cxuqs"]
 [ext_resource type="Texture2D" uid="uid://cbvdgh7hggclj" path="res://assets/clients/athlete/athletic_horse_1.4_close.png" id="2_o1wa0"]
 [ext_resource type="Texture2D" uid="uid://caqo7me2tjkx0" path="res://assets/clients/athlete/athletic_horse.png" id="3_cxuqs"]
 [ext_resource type="Texture2D" uid="uid://cgyysw8i4uj5o" path="res://assets/clients/athlete/athletic_horse_sad.png" id="4_b4x5a"]
@@ -15,7 +16,7 @@ order = 2
 chic = Array[int]([1, 4])
 athletic = Array[int]([1, 4])
 preppy = Array[int]([1, 4])
-special_triggers = Array[String](["1"])
+special_triggers = Array[String](["\"Charm Bracelet\""])
 name = "Peanut"
 image = ExtResource("3_cxuqs")
 forth_closed = ExtResource("2_o1wa0")
@@ -24,4 +25,5 @@ closed = ExtResource("1_1wc5x")
 smile = ExtResource("6_vlb2x")
 talking = ExtResource("7_i0dsi")
 sad = ExtResource("4_b4x5a")
+dialogue_file = ExtResource("2_cxuqs")
 metadata/_custom_type_script = "uid://4yufbpnlxpb0"
