@@ -219,6 +219,11 @@ func _on_responses_menu_response_selected(response: DialogueResponse) -> void:
 
 func _on_line_changed(line: DialogueLine):
 	print("line changed")
-	$%Balloon.theme
+	var style_box = StyleBoxFlat.new()
+	style_box.bg_color = Color(0.675, 0.24, 0.655, 1.0)
+	style_box.border_color = Color(0.867, 0.0, 0.0, 1.0)
+	$%Balloon.add_theme_color_override("font_color", Color(0.675, 0.24, 0.655, 1.0))
+	print("done")
+	$%Balloon.add_theme_stylebox_override("panel", style_box)
 
 #endregion
