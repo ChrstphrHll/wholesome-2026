@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://k8xpsvamf1cv"
+path="res://.godot/imported/influencer.dialogue-46df71f6e90161360affee06c90eeab2.tres"
+
+[deps]
+
+source_file="res://dialog/influencer.dialogue"
+dest_files=["res://.godot/imported/influencer.dialogue-46df71f6e90161360affee06c90eeab2.tres"]
+
+[params]
+
+defaults=true

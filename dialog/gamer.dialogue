@@ -1,0 +1,45 @@
+~ start
+Horse: ……….
+
+Player: Hi! Welcome to Show Pony Studio, how can I help you?
+
+Horse: …………… [extremely small] can i get some photos please i paused my game to be here [/small]
+
+Player: Oh! Do you mind speaking up a little bit?
+
+Horse: ……………………
+
+Player: ……………………
+
+Horse: ………… [still small but readable] can i get some photos please my game is paused right now and i’m trying to get out there [/small]
+
+Player: Ah, yes of course! I’ll get the space set up for you.
+
+[drilling/hammering/backdrop/studio setup noises]
+
+Player: Ready?
+
+=> END
+
+~ post_photo
+
+Horse: ……………
+
+Horse: [shake rate=20.0 level=5 connected=1] I LOVE IT!!!! [/shake]
+
+Horse: [small] sorry I didn’t mean to be so loud [/small]
+
+Horse: It’s just that I’ve been feeling more and more like the world is getting to be a harder place to live in.
+
+Horse: Like no matter what I or anyone does, the people in charge are just going to keep stepping on us to fight for the top.
+
+Horse: And it sucks. So I hid.
+
+Horse: I just stayed in my room and closed myself into worlds I could save.
+
+Horse: But I’ve been feeling lately like I want to make a change. I’m done being small and I’m done hiding.
+
+Horse: And this outfit makes me feel brave! These pictures look like someone who can DO something!
+
+Horse: Thank you!
+=> END
