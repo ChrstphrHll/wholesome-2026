@@ -258,6 +258,7 @@ follow_viewport_enabled = false
 dialogue_resource = ExtResource("7_g6fv7")
 
 [node name="debug" type="CanvasLayer" parent="." unique_id=197581472]
+visible = false
 
 [node name="HBoxContainer" type="HBoxContainer" parent="debug" unique_id=610103683]
 offset_right = 40.0
@@ -292,18 +293,18 @@ color = Color(1, 1, 0.6156863, 1)
 position = Vector2(576, 325)
 texture = ExtResource("2_yyxey")
 
-[node name="Button" type="Button" parent="Menu" unique_id=343275629]
-offset_left = 504.0
-offset_top = 349.0
-offset_right = 714.0
+[node name="Play" type="Button" parent="Menu" unique_id=343275629]
+offset_left = 505.0
+offset_top = 325.0
+offset_right = 715.0
 offset_bottom = 402.0
 text = "Play"
 
-[node name="Button2" type="Button" parent="Menu" unique_id=893948525]
-offset_left = 504.0
-offset_top = 413.0
-offset_right = 714.0
-offset_bottom = 466.00003
+[node name="Credits" type="Button" parent="Menu" unique_id=893948525]
+offset_left = 503.0
+offset_top = 425.0
+offset_right = 713.0
+offset_bottom = 502.0
 text = "Credits"
 
 [node name="Desk" type="Node2D" parent="." unique_id=839386804]
@@ -321,10 +322,10 @@ position = Vector2(576, 324)
 texture = ExtResource("4_g6fv7")
 
 [node name="NextClient" type="Button" parent="Desk" unique_id=951989095]
-offset_left = 120.817726
-offset_top = 282.78854
-offset_right = 251.55334
-offset_bottom = 338.31116
+offset_left = 120.0
+offset_top = 258.0
+offset_right = 266.0
+offset_bottom = 335.0
 rotation = 0.007068038
 text = "Next Client
 "
@@ -461,14 +462,13 @@ autoplay = "blink"
 frame_progress = 0.04970823
 
 [node name="TabContainer" type="TabContainer" parent="DressUp" unique_id=183496887]
-offset_left = 46.0
-offset_top = 111.0
-offset_right = 562.0
-offset_bottom = 576.0
-current_tab = 2
+offset_left = 51.0
+offset_top = 90.0
+offset_right = 567.0
+offset_bottom = 555.0
+current_tab = 0
 
 [node name="Shirts" type="Control" parent="DressUp/TabContainer" unique_id=1293741375]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -506,6 +506,7 @@ size_flags_horizontal = 3
 columns = 4
 
 [node name="Hats" type="Control" parent="DressUp/TabContainer" unique_id=1549855114]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 2
 
@@ -582,10 +583,10 @@ size_flags_horizontal = 3
 columns = 4
 
 [node name="Done" type="Button" parent="DressUp" unique_id=1067218762]
-offset_left = 67.0
-offset_top = 594.0
-offset_right = 551.0
-offset_bottom = 625.0
+offset_left = 58.0
+offset_top = 563.0
+offset_right = 542.0
+offset_bottom = 640.0
 text = "Done!"
 
 [node name="Marker2D" type="Marker2D" parent="DressUp" unique_id=1518708543]
@@ -634,7 +635,7 @@ autoplay = true
 [connection signal="pressed" from="debug/HBoxContainer/Button2" to="." method="_move_screen" binds= [1]]
 [connection signal="pressed" from="debug/HBoxContainer/Button3" to="." method="_move_screen" binds= [2]]
 [connection signal="pressed" from="debug/HBoxContainer/Button4" to="." method="_move_screen" binds= [3]]
-[connection signal="pressed" from="Menu/Button" to="." method="_move_screen" binds= [1]]
+[connection signal="pressed" from="Menu/Play" to="." method="_move_screen" binds= [1]]
 [connection signal="pressed" from="Desk/NextClient" to="." method="call_next_client"]
 [connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/ChangeOutfit" to="." method="_on_change_outfit_pressed"]
 [connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/TakePhoto" to="." method="_on_take_photo_pressed"]

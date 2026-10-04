@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://udwjuuujq3tj" path="res://components/polaroid.gd" id="1_iapyp"]
 [ext_resource type="Texture2D" uid="uid://yy20714jjc" path="res://assets/beach.jpg" id="1_sluud"]
-[ext_resource type="Texture2D" uid="uid://cj4wxaxgxcpmm" path="res://assets/frame.png" id="2_iapyp"]
+[ext_resource type="Texture2D" uid="uid://bq3jnh6l0qes8" path="res://assets/polaroid_frame.png" id="3_iapyp"]
 
 [sub_resource type="Animation" id="Animation_iapyp"]
 length = 0.001
@@ -93,9 +93,9 @@ stretch_mode = 6
 metadata/_edit_use_anchors_ = true
 
 [node name="Frame" type="Sprite2D" parent="." unique_id=1088117480]
-position = Vector2(109.99999, 137)
-scale = Vector2(0.5566667, 0.5566667)
-texture = ExtResource("2_iapyp")
+position = Vector2(109.00001, 137.00002)
+scale = Vector2(0.34249997, 0.34249994)
+texture = ExtResource("3_iapyp")
 
 [node name="Control" type="Control" parent="." unique_id=795161642]
 layout_mode = 2

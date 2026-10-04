@@ -45,10 +45,6 @@ func _ready():
 	populate_backdrops()
 	
 	load_clients()
-	var test: AnimatedSprite2D = active_client.generate_sprite_sheet()
-	test.position = Vector2(600, 600)
-	test.autoplay = "blinking"
-	menu.add_child(test)
 	
 	DialogueManager.dialogue_ended.connect(reset_animations)
 
@@ -111,17 +107,17 @@ func test():
 
 func animate(animation: String):
 	print("animating sad")
-	if lobby_horse:
+	if lobby_horse and lobby_horse.is_visible_in_tree():
 		lobby_horse.animation = animation
-	if dress_up_horse:
+	if dress_up_horse and dress_up_horse.is_visible_in_tree():
 		dress_up_horse.animation = animation
 
 func reset_animations(resource_that_stopped):
 	print("resetting animations")
-	if lobby_horse:
+	if lobby_horse and lobby_horse.is_visible_in_tree():
 		lobby_horse.play("blinking")
-	if dress_up_horse:
-		lobby_horse.play("blinking")
+	if dress_up_horse and dress_up_horse.is_visible_in_tree():
+		dress_up_horse.play("blinking")
 
 
 func show_dialog(tag: String):

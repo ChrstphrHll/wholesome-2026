@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dojmalryfds6t"
-path="res://.godot/imported/Button_Default_.png-8570a5b83f9b6a646dc3f4dcb5a7e3ff.ctex"
+uid="uid://cnfr7710vnxde"
+path="res://.godot/imported/showpony_studio_game_screen_CENTERED.png-7ab4618a8340dc93efd80bcd995a443d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/Button_Default_.png"
-dest_files=["res://.godot/imported/Button_Default_.png-8570a5b83f9b6a646dc3f4dcb5a7e3ff.ctex"]
+source_file="res://assets/backgrounds/showpony_studio_game_screen_CENTERED.png"
+dest_files=["res://.godot/imported/showpony_studio_game_screen_CENTERED.png-7ab4618a8340dc93efd80bcd995a443d.ctex"]
 
 [params]
 
