@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c82bt5n7jpyti"
-path="res://.godot/imported/brown_horse_trim.png-2a42fbad7b0e251b5afdcabf4a557e38.ctex"
+uid="uid://cs86uh73uqp4a"
+path="res://.godot/imported/studio_entry_static.png-5ba5cde07ebe278502013e05cba67c58.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/brown_horse_trim.png"
-dest_files=["res://.godot/imported/brown_horse_trim.png-2a42fbad7b0e251b5afdcabf4a557e38.ctex"]
+source_file="res://assets/backgrounds/studio_entry_static.png"
+dest_files=["res://.godot/imported/studio_entry_static.png-5ba5cde07ebe278502013e05cba67c58.ctex"]
 
 [params]
 

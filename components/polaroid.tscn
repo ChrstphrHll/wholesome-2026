@@ -1,0 +1,116 @@
+[gd_scene format=3 uid="uid://b4lh1oxe0l34l"]
+
+[ext_resource type="Script" uid="uid://udwjuuujq3tj" path="res://components/polaroid.gd" id="1_iapyp"]
+[ext_resource type="Texture2D" uid="uid://yy20714jjc" path="res://assets/beach.jpg" id="1_sluud"]
+[ext_resource type="Texture2D" uid="uid://cj4wxaxgxcpmm" path="res://assets/frame.png" id="2_iapyp"]
+
+[sub_resource type="Animation" id="Animation_iapyp"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_lnal6"]
+resource_name = "reveal"
+length = 2.539445
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.1, -6.5, 18.76, -0.8, -0.26000023, 0, 0),
+"times": PackedFloat32Array(0, 0.93333334)
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.93333334, 2.4882348),
+"transitions": PackedFloat32Array(0.9012494, 28.840014, 0.12940806),
+"update": 0,
+"values": [Vector2(0.195, 0.195), Vector2(1.6, 1.6), Vector2(0, 0)]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(2.4882348),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"animation_completed"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ssigr"]
+_data = {
+&"RESET": SubResource("Animation_iapyp"),
+&"reveal": SubResource("Animation_lnal6")
+}
+
+[node name="Polaroid" type="CenterContainer" unique_id=413842390]
+custom_maximum_size = Vector2(219.695, 225.585)
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 234.695
+offset_bottom = 240.585
+pivot_offset = Vector2(107.86, 127.275)
+script = ExtResource("1_iapyp")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=124121997]
+layout_mode = 2
+texture = ExtResource("1_sluud")
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="Frame" type="Sprite2D" parent="." unique_id=1088117480]
+position = Vector2(109.99999, 137)
+scale = Vector2(0.5566667, 0.5566667)
+texture = ExtResource("2_iapyp")
+
+[node name="Control" type="Control" parent="." unique_id=795161642]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control" unique_id=1280669254]
+layout_mode = 0
+offset_left = -104.0
+offset_top = 126.0
+offset_right = -30.0
+offset_bottom = 149.0
+offset_transform_position = Vector2(1.39, 0)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Caption..."
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2069577196]
+libraries/ = SubResource("AnimationLibrary_ssigr")
+autoplay = &"reveal"
