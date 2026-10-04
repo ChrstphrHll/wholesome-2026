@@ -442,16 +442,6 @@ color = Color(1, 1, 0.6156863, 1)
 position = Vector2(577, 324)
 texture = ExtResource("10_frwyw")
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="DressUp" unique_id=1021011893]
-offset_left = 52.0
-offset_top = 33.0
-offset_right = 421.0
-offset_bottom = 110.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 39
-bbcode_enabled = true
-text = "[wave amp=50.0 freq=5.0 connected=1]dress up[/wave]"
-
 [node name="Horse" type="AnimatedSprite2D" parent="DressUp" unique_id=243598187]
 visible = false
 position = Vector2(861, 385.00003)

@@ -280,8 +280,6 @@ func get_clothing_item_from_id(id: int):
 func _on_dress_up_finished():
 	put_client_into_photo_booth(dress_up_horse.duplicate())
 	_move_screen(Location.PHOTO_WALL)
-	await get_tree().create_timer(2).timeout
-	dress_up_horse.queue_free()
 
 
 #endregion
@@ -329,7 +327,6 @@ func _on_backdrop_pressed(id: int):
 
 
 func _on_change_outfit_pressed():
-	put_client_into_dressing_room(photo_horse.duplicate())
 	_move_screen(Location.DRESS_UP)
 	await get_tree().create_timer(2).timeout
 	photo_horse.queue_free()
