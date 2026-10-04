@@ -18,7 +18,9 @@ Montana: Oh, this would be great on my hikes!
 
 Player: Yeah, do you hike a lot?
 
-Montana: Yeah! [sad expression] Well… not much recently. I’ve been grinding to meet my Q3 KPIs. But I used to.
+Montana: Yeah! [$> animate("sad")] Well… not much recently. I’ve been grinding to meet my Q3 KPIs. But I used to.
+
+$> animate("blinking")
 => END
 
 ~ rugged4

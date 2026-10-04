@@ -53,10 +53,24 @@ func generate_sprite_sheet():
 	sprite_frames.set_animation_loop("blinking", true)
 	sprite_frames.set_animation_loop_mode("blinking", SpriteFrames.LOOP_PINGPONG)
 	
+	sprite_frames.add_animation("smile")
+	sprite_frames.add_frame("smile", smile, 60)
+	
+	sprite_frames.add_animation("sad")
+	sprite_frames.add_frame("sad", sad, 60)
+	
+	sprite_frames.add_animation("talking")
+	sprite_frames.add_frame("talking", talking, 60)
+	
 	sprite.sprite_frames = sprite_frames
 	sprite.animation = "blinking"
 	
 	return sprite
+
+
+func get_item_score(item: ClothingItem):
+	var main_stat = item.get_most_significant_stat()
+	return 0
 
 
 func check_clothing_triggers(item: ClothingItem):

@@ -98,8 +98,19 @@ func _move_screen(target_screen_name: Location):
 	camera_tween.tween_property(camera_2d, "position", target_screen.position, 0.5)
 
 
+func test():
+	print("executed from dialog")
+	
+
+func animate(animation: String):
+	print("animating sad")
+	if lobby_horse:
+		lobby_horse.animation = animation
+	if dress_up_horse:
+		dress_up_horse.animation = animation
+
 func show_dialog(tag: String):
-	DialogueManager.show_dialogue_balloon_scene(balloon, active_client.dialogue_file, tag)
+	DialogueManager.show_dialogue_balloon_scene(balloon, active_client.dialogue_file, tag, [self])
 
 
 func listen_for_dialog_end():
@@ -137,10 +148,21 @@ func remove_lobby_horse():
 	lobby_horse.queue_free()
 
 
+func calculate_outfit_score():
+	var score = 0
+	for item in equipped_clothes.values():
+		score += active_client.get_item_score(item)
+	print(score)
+	return "post_photo_high"
+
+
 func client_end_screen():
 	bring_client_into_lobby(photo_horse.duplicate())
 	_move_screen(Location.DESK)
-	show_dialog("post_photo_high")
+	
+	var score_trigger = calculate_outfit_score()
+	
+	show_dialog(score_trigger)
 	await listen_for_dialog_end()
 	remove_lobby_horse()
 	equipped_clothes = {}
