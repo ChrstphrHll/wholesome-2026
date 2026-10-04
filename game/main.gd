@@ -126,7 +126,6 @@ func load_clothes():
 
 
 func get_closet_tab_container(item: ClothingItem):
-	print(item)
 	match item.type:
 		ClothingItem.ClothingType.Hat:
 			return $%HatsGridContainer
@@ -158,7 +157,6 @@ func populate_closet():
 			texture.texture = clothing_item.image
 		button.add_child(texture)
 		get_closet_tab_container(clothing_item).add_child(button)
-		print(clothing_item)
 		button.pressed.connect(_select_clothing_item.bind(clothing_item.id))
 
 

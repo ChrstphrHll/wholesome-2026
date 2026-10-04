@@ -51,9 +51,9 @@ func check_clothing_triggers(item: ClothingItem):
 		
 
 func get_dialog_cue(stat: String):
-	print("looking for dialog cue for ", stat)
 	seen_info[stat] = seen_info[stat] + 1
 	var times_seen_stat = seen_info[stat]
+	print("looking for dialog cue for ", stat, " ", str(times_seen_stat))
 	var next_trigger = get_stat_next_trigger(stat)
 	
 	if not next_trigger:
