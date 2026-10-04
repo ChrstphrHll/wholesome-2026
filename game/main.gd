@@ -126,6 +126,7 @@ func load_clothes():
 
 
 func get_closet_tab_container(item: ClothingItem):
+	print(item)
 	match item.type:
 		ClothingItem.ClothingType.Hat:
 			return $%HatsGridContainer
