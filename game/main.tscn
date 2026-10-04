@@ -348,6 +348,11 @@ stream = ExtResource("9_m8y2r")
 [node name="PhotoWall" type="Node2D" parent="." unique_id=1930109288]
 position = Vector2(-1152, 0)
 
+[node name="Tripod" type="Sprite2D" parent="PhotoWall" unique_id=1027008530]
+position = Vector2(574.8653, 322.5)
+scale = Vector2(0.99849755, 1.0015433)
+texture = ExtResource("9_tv0fx")
+
 [node name="PhotoStudioBg" type="Sprite2D" parent="PhotoWall" unique_id=892521565]
 position = Vector2(576, 323)
 texture = ExtResource("8_yyxey")
@@ -395,11 +400,6 @@ text = "Change Outfit"
 [node name="TakePhoto" type="Button" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2" unique_id=18193390]
 layout_mode = 2
 text = "Say Apple!"
-
-[node name="Tripod" type="Sprite2D" parent="PhotoWall" unique_id=1027008530]
-position = Vector2(574.8653, 322.5)
-scale = Vector2(0.99849755, 1.0015433)
-texture = ExtResource("9_tv0fx")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="PhotoWall" unique_id=123339095]
 offset_left = 107.0
