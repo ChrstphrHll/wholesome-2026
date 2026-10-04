@@ -8,14 +8,19 @@
 [ext_resource type="PackedScene" uid="uid://b5pceuhay505a" path="res://dialog/balloon.tscn" id="4_xkbyp"]
 [ext_resource type="Resource" uid="uid://d4mu6aiuwt8sm" path="res://dialog/lost_my_job.dialogue" id="7_g6fv7"]
 [ext_resource type="Texture2D" uid="uid://bndptqrgs2pww" path="res://assets/space.webp" id="8_lx3aj"]
+[ext_resource type="AudioStream" uid="uid://jt5qkdukibh" path="res://assets/sound effects/Shop Door Bell.mp3" id="8_tv0fx"]
 [ext_resource type="Texture2D" uid="uid://b861dl08823ud" path="res://assets/backgrounds/photo_studio_bg_lights.png" id="8_yyxey"]
 [ext_resource type="Texture2D" uid="uid://yy20714jjc" path="res://assets/beach.jpg" id="9_itumj"]
+[ext_resource type="AudioStream" uid="uid://cwx1oyt1wh4mj" path="res://assets/sound effects/studio setup.mp3" id="9_m8y2r"]
 [ext_resource type="Texture2D" uid="uid://ci4qy5auwpxkt" path="res://assets/backgrounds/camera asses.png" id="9_tv0fx"]
 [ext_resource type="Texture2D" uid="uid://bl6reti1trc1i" path="res://assets/backgrounds/dress_up_screen.png" id="10_frwyw"]
 [ext_resource type="Texture2D" uid="uid://ec04q87wt0qy" path="res://assets/brown_horse/brown_horse_1.4_close.png" id="10_g6fv7"]
 [ext_resource type="Texture2D" uid="uid://co44jtluoifsr" path="res://assets/brown_horse/brown_horse_3.4_close.png" id="11_frwyw"]
 [ext_resource type="Texture2D" uid="uid://ovhalnxxiqry" path="res://assets/cork-339.jpg" id="12_ioaqv"]
 [ext_resource type="Texture2D" uid="uid://bchwjphwhmbfb" path="res://assets/brown_horse/brown_horse_close.png" id="12_yyxey"]
+[ext_resource type="AudioStream" uid="uid://k8uq3bxjlx5n" path="res://assets/sound effects/Shutter Click.mp3" id="14_le3en"]
+[ext_resource type="AudioStream" uid="uid://bjkmfxifu87co" path="res://assets/sound effects/ta da.mp3" id="15_rqwoc"]
+[ext_resource type="AudioStream" uid="uid://dyvid5v1lg1fq" path="res://assets/MainMusic_v1.wav" id="21_le3en"]
 
 [sub_resource type="Animation" id="Animation_frwyw"]
 length = 0.001
@@ -332,6 +337,14 @@ autoplay = &"clouds"
 [node name="Marker2D" type="Marker2D" parent="Desk" unique_id=1458107529]
 position = Vector2(904, 300)
 
+[node name="ShopBell" type="AudioStreamPlayer2D" parent="Desk" unique_id=287976306]
+unique_name_in_owner = true
+stream = ExtResource("8_tv0fx")
+
+[node name="StudioSetUp" type="AudioStreamPlayer2D" parent="Desk" unique_id=351733]
+unique_name_in_owner = true
+stream = ExtResource("9_m8y2r")
+
 [node name="PhotoWall" type="Node2D" parent="." unique_id=1930109288]
 position = Vector2(-1152, 0)
 
@@ -419,6 +432,14 @@ unique_name_in_owner = true
 position = Vector2(172.00002, 168.00002)
 scale = Vector2(0.36416668, 0.36416668)
 texture = ExtResource("9_itumj")
+
+[node name="ShutterClick" type="AudioStreamPlayer2D" parent="PhotoWall" unique_id=509466488]
+unique_name_in_owner = true
+stream = ExtResource("14_le3en")
+
+[node name="TaDa" type="AudioStreamPlayer2D" parent="PhotoWall" unique_id=554114669]
+unique_name_in_owner = true
+stream = ExtResource("15_rqwoc")
 
 [node name="DressUp" type="Node2D" parent="." unique_id=1531325856]
 position = Vector2(1152, 0)
@@ -612,6 +633,10 @@ grow_vertical = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Popups" unique_id=122211834]
 libraries/ = SubResource("AnimationLibrary_li27q")
+
+[node name="Main Music" type="AudioStreamPlayer2D" parent="." unique_id=1502217667]
+stream = ExtResource("21_le3en")
+autoplay = true
 
 [connection signal="pressed" from="debug/HBoxContainer/Button" to="." method="_move_screen" binds= [0]]
 [connection signal="pressed" from="debug/HBoxContainer/Button2" to="." method="_move_screen" binds= [1]]

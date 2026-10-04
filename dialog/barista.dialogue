@@ -14,8 +14,67 @@ Player: Alright, well let’s try you out in some new styles and see what we can
 Player: Ready?
 => END
 
-~ post_photo
+~ preppy1
+Oat Milk: Ooooooh yes! It reminds me of hand-me-downs from my mom haha
 
+Player: Your mom has a good sense of style!
+
+Oat Milk: It’s just New England old money, but you gotta hand it to ‘em, the clothes are NICE.
+=> END
+
+~ preppy4
+Oat Milk: My parents weren’t always supportive of me just wanting to be a barista.
+
+Player: You know, I had a guy who was in corporate earlier, and I don’t know that he was any happier.
+
+Oat Milk: Of course not! But still, it would be nice to have something to connect with my parents on.
+
+Oat Milk: [cringe] God knows it’s not music—they don’t appreciate the dulcet tones of the heavy metal band Oat Milkshoe. [/cringe]
+=> END
+
+~ chic1
+Oat Milk: Oh, I like it! I feel like it’s kind of like my current classics.
+
+Player: Do you think your regulars will be able to tell the difference?
+
+Oat Milk: Well, at least it won’t have coffee stains on it!
+=> END
+
+~ chic4
+Oat Milk: Yeah, this would go well with my coffee-colored beanie.
+
+Player: Does it get hot in the summer?
+
+Oat Milk: So hot! But it’s my favorite beanie.
+=> END
+
+~ rugged1
+Oat Milk: Wow, I feel like a cowboy.
+
+Player: Yeah?
+
+Oat Milk: Yeah. And by that I mean I feel out of my element.
+=> END
+
+~ rugged4
+Oat Milk: My mom always said a Oat Milk can still be a lady.
+
+Player: Do you feel like you’re a lady?
+
+Oat Milk: I don’t know. She’s not the biggest fan of the barista thing. But she’s trying.
+
+Oat Milk: This might send her over the edge though.
+=> END
+
+~ special_item
+Oat Milk: Oh wow, it’s just like what Black Beauty wears in Oat Milkshoe!!!
+
+Player: Oh, your favorite band?
+
+Oat Milk: Yep!! I feel so cool!!
+=> END
+
+~ post_photo_best
 Oat Milk: Oh my gosh! I really love it!
 
 Oat Milk: To be honest, I’ve been having a lot of trouble finding my style. Not just clothes, I mean.
@@ -27,6 +86,54 @@ Oat Milk: But I’m really happy doing what I do! I get to help people every day
 Oat Milk: I know it’s not saving lives or changing the world, but we’re making people just a little happier. And that matters, right? Even if other people don’t see it the way we do.
 
 Oat Milk: And these clothes make me feel more confident facing the day, while still taking a piece of my parents with me.
+
+Oat Milk: Thank you so much, have a great day!
+=> END
+
+~ post_photo_high
+Oat Milk: Oh, it looks so great!
+
+Oat Milk: To be honest, I’ve been having a lot of trouble finding my style. Not just clothes, I mean.
+
+Oat Milk: My parents and I have fought a lot about where I’m going in life.
+
+Oat Milk: But I’m really happy doing what I do! I get to help people every day. I’m sure you feel similarly doing this.
+
+Oat Milk: I know it’s not saving lives or changing the world, but we’re making people just a little happier. And that matters, right? Even if other people don’t see it the way we do.
+
+Oat Milk: And these clothes make me feel like I can face the day, and my parents will see the whole me someday.
+
+Oat Milk: Thank you so much, have a great day!
+=> END
+
+~ post_photo_mid
+Oat Milk: I like it!
+
+Oat Milk: To be honest, I’ve been having a lot of trouble finding my style. Not just clothes, I mean.
+
+Oat Milk: My parents and I have fought a lot about where I’m going in life.
+
+Oat Milk: But I’m really happy doing what I do! I get to help people every day. I’m sure you feel similarly doing this.
+
+Oat Milk: I know it’s not saving lives or changing the world, but we’re making people just a little happier. And that matters, right? Even if other people don’t see it the way we do.
+
+Oat Milk: And these clothes give me hope that I can gain the confidence to show others that I’m happy the way I am.
+
+Oat Milk: Thank you so much, have a great day!
+=> END
+
+~ post_photo_low
+Oat Milk: Oh, it’s interesting!
+
+Oat Milk: To be honest, I’ve been having a lot of trouble finding my style. Not just clothes, I mean.
+
+Oat Milk: My parents and I have fought a lot about where I’m going in life.
+
+Oat Milk: But I’m really happy doing what I do! I get to help people every day. I’m sure you feel similarly doing this.
+
+Oat Milk: I know it’s not saving lives or changing the world, but we’re making people just a little happier. And that matters, right? Even if other people don’t see it the way we do.
+
+Oat Milk: And these clothes help me feel more confident about exploring new things.
 
 Oat Milk: Thank you so much, have a great day!
 => END
