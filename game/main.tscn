@@ -348,6 +348,11 @@ stream = ExtResource("9_m8y2r")
 [node name="PhotoWall" type="Node2D" parent="." unique_id=1930109288]
 position = Vector2(-1152, 0)
 
+[node name="Tripod" type="Sprite2D" parent="PhotoWall" unique_id=1027008530]
+position = Vector2(574.8653, 322.5)
+scale = Vector2(0.99849755, 1.0015433)
+texture = ExtResource("9_tv0fx")
+
 [node name="PhotoStudioBg" type="Sprite2D" parent="PhotoWall" unique_id=892521565]
 position = Vector2(576, 323)
 texture = ExtResource("8_yyxey")
@@ -396,11 +401,6 @@ text = "Change Outfit"
 layout_mode = 2
 text = "Say Apple!"
 
-[node name="Tripod" type="Sprite2D" parent="PhotoWall" unique_id=1027008530]
-position = Vector2(574.8653, 322.5)
-scale = Vector2(0.99849755, 1.0015433)
-texture = ExtResource("9_tv0fx")
-
 [node name="SubViewportContainer" type="SubViewportContainer" parent="PhotoWall" unique_id=123339095]
 offset_left = 107.0
 offset_top = 67.0
@@ -441,16 +441,6 @@ color = Color(1, 1, 0.6156863, 1)
 [node name="DressUpScreen" type="Sprite2D" parent="DressUp" unique_id=614881949]
 position = Vector2(577, 324)
 texture = ExtResource("10_frwyw")
-
-[node name="RichTextLabel2" type="RichTextLabel" parent="DressUp" unique_id=1021011893]
-offset_left = 52.0
-offset_top = 33.0
-offset_right = 421.0
-offset_bottom = 110.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 39
-bbcode_enabled = true
-text = "[wave amp=50.0 freq=5.0 connected=1]dress up[/wave]"
 
 [node name="Horse" type="AnimatedSprite2D" parent="DressUp" unique_id=243598187]
 visible = false

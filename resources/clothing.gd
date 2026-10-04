@@ -58,3 +58,19 @@ func get_most_significant_stat():
 			current_max_value = stat_val
 	
 	return current_max_stat
+
+
+func get_z_index():
+	match type:
+		ClothingType.Hat:
+			return 11
+		ClothingType.Bottom:
+			return 7
+		ClothingType.Shoe:
+			return 6
+		ClothingType.Top:
+			return 8
+		ClothingType.NeckAccessory:
+			return 10
+		ClothingType.WristAccessory:
+			return 10
