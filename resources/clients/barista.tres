@@ -1,7 +1,27 @@
 [gd_resource type="Resource" script_class="Client" format=3 uid="uid://dgj881fpuwxhs"]
 
+[ext_resource type="Texture2D" uid="uid://dquhpw367nj7q" path="res://assets/clients/barista/barista_horse_close.png" id="1_s12uj"]
 [ext_resource type="Script" uid="uid://4yufbpnlxpb0" path="res://resources/client.gd" id="1_ssvvy"]
+[ext_resource type="Texture2D" uid="uid://demcdiq2kxq1x" path="res://assets/clients/barista/barista_horse_1.4_close.png" id="2_g2lod"]
+[ext_resource type="Texture2D" uid="uid://cvuyl6dfvx22" path="res://assets/clients/barista/barista_horse.png" id="3_d3bcy"]
+[ext_resource type="Texture2D" uid="uid://8jgodiy8o440" path="res://assets/clients/barista/barista_horse_sad.png" id="4_uqq1p"]
+[ext_resource type="Texture2D" uid="uid://xjdcnxo1s52a" path="res://assets/clients/barista/barista_horse_smile.png" id="6_imoii"]
+[ext_resource type="Texture2D" uid="uid://d2kd3ptfr3v0b" path="res://assets/clients/barista/barista_horse_talking.png" id="7_fgfoa"]
+[ext_resource type="Texture2D" uid="uid://5cc85yyltaln" path="res://assets/clients/barista/barista_horse_3.4_close.png" id="8_tii7x"]
 
 [resource]
 script = ExtResource("1_ssvvy")
+order = 5
+chic = Array[int]([1, 4])
+rugged = Array[int]([1, 4])
+preppy = Array[int]([1, 4])
+special_triggers = Array[String](["1"])
+name = "Oat Milk"
+image = ExtResource("3_d3bcy")
+forth_closed = ExtResource("2_g2lod")
+three_forths_closed = ExtResource("8_tii7x")
+closed = ExtResource("1_s12uj")
+smile = ExtResource("6_imoii")
+talking = ExtResource("7_fgfoa")
+sad = ExtResource("4_uqq1p")
 metadata/_custom_type_script = "uid://4yufbpnlxpb0"
