@@ -292,7 +292,7 @@ func load_backdrop_options():
 func populate_backdrops():
 	for backdrop in backdrops.values():
 		var button = TextureButton.new()
-		button.texture_normal = backdrop.image
+		button.texture_normal = backdrop.get_image()
 		button.size_flags_horizontal = Control.SIZE_EXPAND
 		button.custom_minimum_size = Vector2(100, 100)
 		button.ignore_texture_size = true
@@ -312,7 +312,7 @@ func put_client_into_photo_booth(sprite: AnimatedSprite2D):
 
 
 func _on_backdrop_pressed(id: int):
-	$%Backdrop.texture = backdrops[id].image
+	$%Backdrop.texture = backdrops[id].get_image()
 	print("change backdrop to, ", backdrops[id].name)
 
 

@@ -6,5 +6,5 @@
 [resource]
 script = ExtResource("1_jq5a7")
 name = "Beach"
-image = ExtResource("1_hecaa")
+image = Array[CompressedTexture2D]([ExtResource("1_hecaa")])
 metadata/_custom_type_script = "uid://dcrtc0ph32c3e"
