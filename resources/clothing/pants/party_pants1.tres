@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://chfjhw0dpac4d"]
+
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_3y0jx"]
+[ext_resource type="Texture2D" uid="uid://dj0tuf6aj4c07" path="res://assets/clothing/pants/party_pants_alt1.png" id="1_myipy"]
+
+[resource]
+script = ExtResource("1_3y0jx")
+name = "Teal Party Pants"
+image = ExtResource("1_myipy")
+type = 2
+wacky = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

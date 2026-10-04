@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://c07encr4pc48j"]
+
+[ext_resource type="Texture2D" uid="uid://bdp46v04c2d0x" path="res://assets/clothing/pants/rugged_pants.png" id="1_8t54m"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_pxks3"]
+
+[resource]
+script = ExtResource("1_pxks3")
+name = "Camo Pants"
+image = ExtResource("1_8t54m")
+type = 2
+rugged = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

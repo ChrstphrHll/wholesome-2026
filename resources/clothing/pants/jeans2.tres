@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://4xyu2gyo7cs"]
+
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_ev71c"]
+[ext_resource type="Texture2D" uid="uid://dd4u18cwm1v6c" path="res://assets/clothing/pants/pant_western.png" id="1_ig3jf"]
+
+[resource]
+script = ExtResource("1_ev71c")
+name = "Pink Jeans"
+image = ExtResource("1_ig3jf")
+type = 2
+cutesy = 1.0
+rugged = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

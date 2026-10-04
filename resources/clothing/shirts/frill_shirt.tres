@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://t4jc1mu1lt3g"]
+
+[ext_resource type="Texture2D" uid="uid://gj85pg5u2r6o" path="res://assets/clothing/shirts/cute_shirt.png" id="1_2meja"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_g6r32"]
+
+[resource]
+script = ExtResource("1_g6r32")
+name = "Frilly Shirt"
+image = ExtResource("1_2meja")
+type = 1
+cutesy = 5.0
+chic = 1.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

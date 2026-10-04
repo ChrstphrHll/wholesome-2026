@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://bsgipr00fqxgi"]
+
+[ext_resource type="Texture2D" uid="uid://gwqg5h5ue0r0" path="res://assets/clothing/shirts/shirt_sweater.png" id="1_macx5"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_xt4dw"]
+
+[resource]
+script = ExtResource("1_xt4dw")
+name = "Red Sweater"
+image = ExtResource("1_macx5")
+type = 1
+chic = 5.0
+preppy = 1.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

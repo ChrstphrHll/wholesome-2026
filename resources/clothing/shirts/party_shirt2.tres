@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://b4x1wj5uyw38k"]
+
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_a1wok"]
+[ext_resource type="Texture2D" uid="uid://c121uaba3ci0" path="res://assets/clothing/shirts/party_shirt_alt2.png" id="1_frt23"]
+
+[resource]
+script = ExtResource("1_a1wok")
+name = "Pink Mesh Top"
+image = ExtResource("1_frt23")
+type = 1
+wacky = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

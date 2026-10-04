@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://cptxgul7v3yam"]
+
+[ext_resource type="Texture2D" uid="uid://dwgvoichhkmla" path="res://assets/clothing/shirts/color_shirt_alt2.png" id="1_0h0xm"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_8ppf4"]
+
+[resource]
+script = ExtResource("1_8ppf4")
+name = "Teal and Maroon Top"
+image = ExtResource("1_0h0xm")
+type = 1
+athletic = 1.0
+wacky = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"
