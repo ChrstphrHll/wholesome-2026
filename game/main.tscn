@@ -600,6 +600,9 @@ offset_right = 551.0
 offset_bottom = 625.0
 text = "Done!"
 
+[node name="Marker2D" type="Marker2D" parent="DressUp" unique_id=1518708543]
+position = Vector2(858, 386)
+
 [node name="Cork" type="Node2D" parent="." unique_id=1331599127]
 
 [node name="ColorRect" type="ColorRect" parent="Cork" unique_id=1588079676]
@@ -635,6 +638,7 @@ grow_vertical = 2
 libraries/ = SubResource("AnimationLibrary_li27q")
 
 [node name="Main Music" type="AudioStreamPlayer2D" parent="." unique_id=1502217667]
+position = Vector2(566, 269)
 stream = ExtResource("21_le3en")
 autoplay = true
 
