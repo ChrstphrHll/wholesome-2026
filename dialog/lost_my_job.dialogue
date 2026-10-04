@@ -1,10 +1,10 @@
 ~ start
 
-Horse: …hello? Is this the photo studio?
+Montana: …hello? Is this the photo studio?
 
 Player: Sure is! Welcome to the Show Pony Studio. Can I get you started on a shoot?
 
-Horse: Yeah… I just got laid off today, and I could use a win.
+Montana: Yeah… I just got laid off today, and I could use a win.
 
 Player: Oh… I’m sorry to hear that. Well, let’s see what we can do.
 
@@ -14,14 +14,14 @@ Player: Ready? => END
 
 ~ post_photo
 
-Horse: Oh my gosh, it’s perfect!
+Montana: Oh my gosh, it’s perfect!
 
-Horse: You know, I’ve really been feeling like my whole life, I’ve just done what I’m supposed to do.
+Montana: You know, I’ve really been feeling like my whole life, I’ve just done what I’m supposed to do.
 
-Horse: And I did all the right things. I worked hard, I stayed late. I even kept a pillow in the office. And they still dropped me in the end.
+Montana: And I did all the right things. I worked hard, I stayed late. I even kept a pillow in the office. And they still dropped me in the end.
 
-Horse: Earlier, I was feeling like I didn’t know if I could try again. But I didn’t know what else I could do.
+Montana: Earlier, I was feeling like I didn’t know if I could try again. But I didn’t know what else I could do.
 
-Horse: But thanks to you, I feel like I can start on my own dreams.
+Montana: But thanks to you, I feel like I can start on my own dreams.
 
-Horse: Thank you!
+Montana: Thank you!

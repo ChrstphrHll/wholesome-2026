@@ -2,12 +2,27 @@
 
 [ext_resource type="Resource" uid="uid://d4mu6aiuwt8sm" path="res://dialog/lost_my_job.dialogue" id="1_tim2n"]
 [ext_resource type="Script" uid="uid://4yufbpnlxpb0" path="res://resources/client.gd" id="1_uakr1"]
+[ext_resource type="Texture2D" uid="uid://djtino1i6phpd" path="res://assets/clients/lost my job/brown_horse_close.png" id="1_wvd2l"]
 [ext_resource type="Texture2D" uid="uid://c82bt5n7jpyti" path="res://assets/brown_horse/brown_horse_trim.png" id="2_judff"]
+[ext_resource type="Texture2D" uid="uid://bs360txmy25i2" path="res://assets/clients/lost my job/brown_horse_1.4_close.png" id="3_u6v10"]
+[ext_resource type="Texture2D" uid="uid://w5xfcqigbin0" path="res://assets/clients/lost my job/brown_horse_sad.png" id="5_gou7r"]
+[ext_resource type="Texture2D" uid="uid://b6nvkwfa6isul" path="res://assets/clients/lost my job/brown_horse_smile.png" id="7_hy1lk"]
+[ext_resource type="Texture2D" uid="uid://dupb4oc650vg1" path="res://assets/clients/lost my job/brown_horse_talking.png" id="8_sukvo"]
+[ext_resource type="Texture2D" uid="uid://qhycq0vvj53" path="res://assets/clients/lost my job/brown_horse_3.4_close.png" id="9_wjo7r"]
 
 [resource]
 script = ExtResource("1_uakr1")
-cutesy = Array[int]([1])
-name = "Clint"
+formal = Array[int]([1, 4])
+rugged = Array[int]([1, 4])
+preppy = Array[int]([1, 4])
+special_triggers = Array[String](["1"])
+name = "Montana"
 image = ExtResource("2_judff")
+forth_closed = ExtResource("3_u6v10")
+three_forths_closed = ExtResource("9_wjo7r")
+closed = ExtResource("1_wvd2l")
+smile = ExtResource("7_hy1lk")
+talking = ExtResource("8_sukvo")
+sad = ExtResource("5_gou7r")
 dialogue_file = ExtResource("1_tim2n")
 metadata/_custom_type_script = "uid://4yufbpnlxpb0"

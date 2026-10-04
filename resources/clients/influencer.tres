@@ -1,7 +1,26 @@
 [gd_resource type="Resource" script_class="Client" format=3 uid="uid://cpf4dqyed2kex"]
 
 [ext_resource type="Script" uid="uid://4yufbpnlxpb0" path="res://resources/client.gd" id="1_232jb"]
+[ext_resource type="Texture2D" uid="uid://c6gwxhvsv4lph" path="res://assets/clients/influencer/influencer_horse_close.png" id="1_n0cpn"]
+[ext_resource type="Texture2D" uid="uid://d4cd8qvl1oat8" path="res://assets/clients/influencer/influencer_horse_1.4_close.png" id="2_qr3mj"]
+[ext_resource type="Texture2D" uid="uid://bpan7l1gjq1li" path="res://assets/clients/influencer/influencer_horse.png" id="3_cgnwo"]
+[ext_resource type="Texture2D" uid="uid://hj455l7l44st" path="res://assets/clients/influencer/influencer_horse_sad.png" id="4_o3qdt"]
+[ext_resource type="Texture2D" uid="uid://cbm3lbk2ht6kr" path="res://assets/clients/influencer/influencer_horse_smile.png" id="6_wo4on"]
+[ext_resource type="Texture2D" uid="uid://bicmgdk1uqk7t" path="res://assets/clients/influencer/influencer_horse_talking.png" id="7_v6cf0"]
+[ext_resource type="Texture2D" uid="uid://bdejvkuvwe3hs" path="res://assets/clients/influencer/influencer_horse_3.4_close.png" id="8_xqv3v"]
 
 [resource]
 script = ExtResource("1_232jb")
+order = 3
+cutesy = Array[int]([1, 4])
+chic = Array[int]([1, 4])
+athletic = Array[int]([1, 4])
+name = "Sundance"
+image = ExtResource("3_cgnwo")
+forth_closed = ExtResource("2_qr3mj")
+three_forths_closed = ExtResource("8_xqv3v")
+closed = ExtResource("1_n0cpn")
+smile = ExtResource("6_wo4on")
+talking = ExtResource("7_v6cf0")
+sad = ExtResource("4_o3qdt")
 metadata/_custom_type_script = "uid://4yufbpnlxpb0"
