@@ -85,6 +85,7 @@ func listen_for_dialog_end():
 func call_next_client():
 	#set_active_client()
 	bring_client_into_lobby()
+	%ShopBell.play()
 	show_dialog("start")
 	await listen_for_dialog_end()
 	#put_client_into_dressing_room()
@@ -257,6 +258,7 @@ func _on_change_outfit_pressed():
 
 
 func _on_take_photo_pressed():
+	%ShutterClick.play()
 	print("took photo")
 	pop_up.show()
 	pop_up_animation_player.play("flash")
@@ -268,6 +270,7 @@ func _on_take_photo_pressed():
 	var image = frame.get_texture().get_image()
 	
 	var photo = POLAROID.instantiate()
+	%TaDa.play()
 	photo.image = image
 	pop_up_container.add_child(photo)
 	photoed_horse.queue_free()
