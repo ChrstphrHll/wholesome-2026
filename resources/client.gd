@@ -4,6 +4,15 @@ extends Resource
 
 @export var order: int
 
+@export var goth_points = 0
+@export var cutesy_points = 0
+@export var chic_points = 0
+@export var athletic_points = 0
+@export var formal_points = 0
+@export var wacky_points = 0
+@export var rugged_points = 0
+@export var preppy_points = 0
+
 @export var goth: Array[int] = []
 @export var cutesy: Array[int] = []
 @export var chic: Array[int] = []
@@ -71,7 +80,27 @@ func generate_sprite_sheet():
 
 func get_item_score(item: ClothingItem):
 	var main_stat = item.get_most_significant_stat()
-	return 0
+	return get_stat_score(main_stat)
+
+
+func get_stat_score(stat: String):
+	match stat:
+		"goth":
+			return goth_points
+		"cutesy":
+			return cutesy_points
+		"chic":
+			return chic_points
+		"athletic":
+			return athletic_points
+		"formal":
+			return formal_points
+		"wacky":
+			return wacky_points
+		"rugged":
+			return rugged_points
+		"preppy":
+			return preppy_points
 
 
 func check_clothing_triggers(item: ClothingItem):
