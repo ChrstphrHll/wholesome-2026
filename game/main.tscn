@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://bchwjphwhmbfb" path="res://assets/brown_horse/brown_horse_close.png" id="12_yyxey"]
 [ext_resource type="AudioStream" uid="uid://k8uq3bxjlx5n" path="res://assets/sound effects/Shutter Click.mp3" id="14_le3en"]
 [ext_resource type="AudioStream" uid="uid://bjkmfxifu87co" path="res://assets/sound effects/ta da.mp3" id="15_rqwoc"]
+[ext_resource type="AudioStream" uid="uid://dyvid5v1lg1fq" path="res://assets/MainMusic_v1.wav" id="21_le3en"]
 
 [sub_resource type="Animation" id="Animation_frwyw"]
 length = 0.001
@@ -635,6 +636,10 @@ grow_vertical = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Popups" unique_id=122211834]
 libraries/ = SubResource("AnimationLibrary_li27q")
+
+[node name="Main Music" type="AudioStreamPlayer2D" parent="." unique_id=1502217667]
+stream = ExtResource("21_le3en")
+autoplay = true
 
 [connection signal="pressed" from="debug/HBoxContainer/Button" to="." method="_move_screen" binds= [0]]
 [connection signal="pressed" from="debug/HBoxContainer/Button2" to="." method="_move_screen" binds= [1]]
