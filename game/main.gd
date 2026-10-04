@@ -351,6 +351,7 @@ func _on_take_photo_pressed():
 	photo.image = image
 	pop_up_container.add_child(photo)
 	photoed_horse.queue_free()
+	dress_up_horse.queue_free()
 	
 	await photo.animation_done
 	pop_up.hide()
