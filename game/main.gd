@@ -6,8 +6,10 @@ var equipped_clothes: Dictionary[ClothingItem.ClothingType, ClothingItem]
 var backdrops: Dictionary[int, Backdrop] = {}
 var activeBackdrop: Backdrop
 
-var client_queue: Array[Client] = [ResourceLoader.load("res://resources/clients/lost_my_job.tres")]
-var active_client: Client = client_queue[0]
+var client_queue: Array[Client] = []
+var active_client: Client
+
+const LOBBY_SCALE = Vector2(0.4, 0.4)
 
 const POLAROID = preload("res://components/polaroid.tscn")
 
@@ -29,7 +31,7 @@ enum Location { MENU, DESK, DRESS_UP, PHOTO_WALL }
 
 # Horse Sprites
 @onready var dress_up_horse: AnimatedSprite2D = $DressUp/Horse
-@onready var lobby_horse: Sprite2D = $Desk/LobbyHorse
+@onready var lobby_horse: AnimatedSprite2D
 var photo_horse
 
 # Called when the node enters the scene tree for the first time.
@@ -39,6 +41,29 @@ func _ready():
 	
 	load_backdrop_options()
 	populate_backdrops()
+	
+	load_clients()
+
+
+func load_clients():
+	var clients = load_resources_from_dir("res://resources/clients/")
+	clients.sort_custom(func (a: Client, b: Client): return a.order < b.order)
+	print("~~~~~~~~sorted~~~~~~~~~~~")
+	for client in clients:
+		print(client.name, client.order)
+
+	client_queue = clients
+	active_client = clients[0]
+
+
+func load_resources_from_dir(dir: String):
+	var raw = ResourceLoader.list_directory(dir)
+	var items: Array[Client] = []
+	for path in raw:
+		var full_path = dir + path
+		var item = ResourceLoader.load(full_path)
+		items.append(item)
+	return items
 
 
 func move_sprite_to_point(sprite: Sprite2D, target_position: Vector2):
@@ -79,20 +104,33 @@ func listen_for_dialog_end():
 	await DialogueManager.dialogue_ended
 
 
+func bring_to_credits():
+	#TODO: end the game!!!!!
+	pass
+
+
 #region front desk
 
 
 func call_next_client():
-	#set_active_client()
-	bring_client_into_lobby()
+	bring_client_into_lobby(active_client.generate_sprite_sheet())
 	show_dialog("start")
 	await listen_for_dialog_end()
 	#put_client_into_dressing_room()
 	_move_screen(Location.DRESS_UP)
+	await get_tree().create_timer(2).timeout
+	remove_lobby_horse()
 
 
-func bring_client_into_lobby():
-	lobby_horse.show()
+func bring_client_into_lobby(sprite: AnimatedSprite2D):
+	lobby_horse = sprite
+	lobby_horse.global_position = $Desk/Marker2D.global_position
+	lobby_horse.scale = LOBBY_SCALE
+	desk.add_child(lobby_horse)
+
+
+func remove_lobby_horse():
+	lobby_horse.queue_free()
 
 
 func set_all_horses(texture: CompressedTexture2D):
@@ -101,10 +139,15 @@ func set_all_horses(texture: CompressedTexture2D):
 
 
 func client_end_screen():
+	bring_client_into_lobby(photo_horse.duplicate())
 	_move_screen(Location.DESK)
-	show_dialog("post_photo")
+	show_dialog("post_photo_high")
 	await listen_for_dialog_end()
-	lobby_horse.hide()
+	remove_lobby_horse()
+	client_queue.pop_front()
+	active_client = client_queue.front()
+	if not active_client:
+		bring_to_credits()
 
 #endregion
 
@@ -188,14 +231,7 @@ func check_item_dialog_triggers(item: ClothingItem):
 	var cue = active_client.check_clothing_triggers(item)
 	
 	if cue:
-		open_dressing_dialog(cue)
-
-
-func open_dressing_dialog(cue: String):
-	print("Run the current client dialog tree in the dressing room starting at cue", cue)
-	show_dialog(cue)
-	# TODO: Finish this function
-	
+		show_dialog(cue)
 
 
 func get_clothing_item_from_id(id: int):
@@ -219,7 +255,6 @@ func _on_dress_up_finished():
 
 func load_backdrop_options():
 	var base_directory = "res://resources/backdrops/"
-	
 
 	var backdrops_raw = ResourceLoader.list_directory(base_directory)
 

@@ -241,7 +241,7 @@ metadata/_edit_vertical_guides_ = [1153.0, 0.0, -1152.0, -1152.0]
 metadata/_edit_horizontal_guides_ = [0.0, -648.0, 647.0, 1292.0]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1320608787]
-position = Vector2(1154.2382, 4.2749786)
+position = Vector2(-0.01133728, -647.0202)
 anchor_mode = 0
 limit_enabled = false
 limit_left = 0
@@ -316,12 +316,6 @@ texture = ExtResource("3_g6fv7")
 position = Vector2(576, 324)
 texture = ExtResource("4_g6fv7")
 
-[node name="LobbyHorse" type="Sprite2D" parent="Desk" unique_id=2028178170]
-visible = false
-position = Vector2(888.125, 343.30927)
-scale = Vector2(0.3968366, 0.39683664)
-texture = ExtResource("3_5un7r")
-
 [node name="NextClient" type="Button" parent="Desk" unique_id=951989095]
 offset_left = 120.817726
 offset_top = 282.78854
@@ -334,6 +328,9 @@ text = "Next Client
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Desk" unique_id=210240691]
 libraries/ = SubResource("AnimationLibrary_tv0fx")
 autoplay = &"clouds"
+
+[node name="Marker2D" type="Marker2D" parent="Desk" unique_id=1458107529]
+position = Vector2(904, 300)
 
 [node name="PhotoWall" type="Node2D" parent="." unique_id=1930109288]
 position = Vector2(-1152, 0)
