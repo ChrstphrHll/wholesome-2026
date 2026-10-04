@@ -27,6 +27,7 @@ enum ClothingType {
 @export var preppy: float = 0
 
 var equipped = false
+var current_sprite
 
 var id = ResourceUID.create_id()
 
@@ -51,9 +52,7 @@ func get_most_significant_stat():
 	var stats = generate_stat_list()
 	
 	for stat in stats:
-		print("looking at ", stat)
 		var stat_val = stats[stat]
-		print(stat_val)
 		if stat_val > current_max_value:
 			current_max_stat = stat
 			current_max_value = stat_val
