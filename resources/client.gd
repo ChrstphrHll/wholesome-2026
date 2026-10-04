@@ -15,7 +15,7 @@ extends Resource
 
 
 @export var special_triggers: Array[String] = []
-
+var special_item_shown = false
 
 var seen_info = {
 	"goth": 0,
@@ -60,12 +60,27 @@ func generate_sprite_sheet():
 
 
 func check_clothing_triggers(item: ClothingItem):
+	var special_item_cue = check_special_item_trigger(item)
+	
+	if special_item_cue:
+		return special_item_cue
+	
 	var stat = item.get_most_significant_stat()
 	if not stat:
 		return ""
 	
 	return get_dialog_cue(stat)
 
+
+func check_special_item_trigger(item: ClothingItem):
+	print(item.name)
+	print(special_triggers)
+	print(special_triggers.has(item.name))
+	if special_item_shown:
+		return ""
+	
+	if special_triggers.has(item.name):
+		return "special_item"
 
 func get_dialog_cue(stat: String):
 	seen_info[stat] = seen_info[stat] + 1

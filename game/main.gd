@@ -291,17 +291,8 @@ func put_client_into_photo_booth(sprite: AnimatedSprite2D):
 
 
 func _on_backdrop_pressed(id: int):
+	$%Backdrop.texture = backdrops[id].image
 	print("change backdrop to, ", backdrops[id].name)
-
-
-func _on_beach_pressed():
-	$%Beach.show()
-	$%Space.hide()
-
-
-func _on_space_pressed():
-	$%Beach.hide()
-	$%Space.show()
 
 
 func _on_change_outfit_pressed():
