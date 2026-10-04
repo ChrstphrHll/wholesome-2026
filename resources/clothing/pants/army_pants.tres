@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://c07encr4pc48j"]
 
-[ext_resource type="Texture2D" uid="uid://bdp46v04c2d0x" path="res://assets/clothing/pants/rugged_pants.png" id="1_8t54m"]
-[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_pxks3"]
+[ext_resource type="Texture2D" uid="uid://c65bmx1q7xc4b" path="res://assets/clothing_icons/pants/rugged_pants.png" id="1_aavca"]
+[ext_resource type="Texture2D" uid="uid://bdp46v04c2d0x" path="res://assets/clothing/pants/rugged_pants.png" id="2_dai5w"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="3_0mpkn"]
 
 [resource]
-script = ExtResource("1_pxks3")
+script = ExtResource("3_0mpkn")
 name = "Camo Pants"
-image = ExtResource("1_8t54m")
+image = ExtResource("2_dai5w")
+cropped_icon = ExtResource("1_aavca")
 type = 2
 rugged = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

@@ -2,11 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://bkv8q8jmje0va" path="res://assets/clothing/shirts/party_shirt_alt1.png" id="1_5qj2n"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_dfony"]
+[ext_resource type="Texture2D" uid="uid://dbn6bgp5sdqix" path="res://assets/clothing_icons/shirts/party_shirt_alt1.png" id="1_wtisw"]
 
 [resource]
 script = ExtResource("1_dfony")
 name = "Peach Mesh Top"
 image = ExtResource("1_5qj2n")
+cropped_icon = ExtResource("1_wtisw")
 type = 1
 wacky = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

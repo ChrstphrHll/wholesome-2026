@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://bklibkfogn3hk"]
 
-[ext_resource type="Texture2D" uid="uid://dpiosyi7j1d06" path="res://assets/clothing/pants/clueless_pants.png" id="1_2lk72"]
-[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_uvvc6"]
+[ext_resource type="Texture2D" uid="uid://dxppimtnf6vgl" path="res://assets/clothing_icons/pants/clueless_pants.png" id="1_bwuix"]
+[ext_resource type="Texture2D" uid="uid://dpiosyi7j1d06" path="res://assets/clothing/pants/clueless_pants.png" id="2_sdffj"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="3_yg3w0"]
 
 [resource]
-script = ExtResource("1_uvvc6")
+script = ExtResource("3_yg3w0")
 name = "Clueless Skirt"
-image = ExtResource("1_2lk72")
+image = ExtResource("2_sdffj")
+cropped_icon = ExtResource("1_bwuix")
 type = 2
 chic = 2.0
 preppy = 5.0

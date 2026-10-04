@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://b77xu52m5ylk"]
 
-[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_fgmif"]
-[ext_resource type="Texture2D" uid="uid://brk1pbutd8h8t" path="res://assets/clothing/pants/pant_fall.png" id="1_vcm47"]
+[ext_resource type="Texture2D" uid="uid://bghvh87qs7k4s" path="res://assets/clothing_icons/pants/pant_fall.png" id="1_ihapi"]
+[ext_resource type="Texture2D" uid="uid://brk1pbutd8h8t" path="res://assets/clothing/pants/pant_fall.png" id="2_11dyx"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="3_waso2"]
 
 [resource]
-script = ExtResource("1_fgmif")
+script = ExtResource("3_waso2")
 name = "Brown Button-Up Skirt"
-image = ExtResource("1_vcm47")
+image = ExtResource("2_11dyx")
+cropped_icon = ExtResource("1_ihapi")
 type = 2
 chic = 5.0
 preppy = 1.0

@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://vv460kbvbkn2"]
 
-[ext_resource type="Texture2D" uid="uid://cxtxhqi3ubi3b" path="res://assets/clothing/pants/work_pants_alt2.png" id="1_35o6k"]
-[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_usc1o"]
+[ext_resource type="Texture2D" uid="uid://bmhayiqtynm6n" path="res://assets/clothing_icons/pants/work_pants_alt2.png" id="1_vbifi"]
+[ext_resource type="Texture2D" uid="uid://cxtxhqi3ubi3b" path="res://assets/clothing/pants/work_pants_alt2.png" id="2_bqp4x"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="3_6erun"]
 
 [resource]
-script = ExtResource("1_usc1o")
+script = ExtResource("3_6erun")
 name = "Green Slacks"
-image = ExtResource("1_35o6k")
+image = ExtResource("2_bqp4x")
+cropped_icon = ExtResource("1_vbifi")
 type = 2
 chic = 1.0
 formal = 5.0

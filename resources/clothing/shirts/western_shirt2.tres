@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://ciasw4a1x5apj"]
 
+[ext_resource type="Texture2D" uid="uid://dnwnchinrjchh" path="res://assets/clothing_icons/shirts/shirt_western_alt2.png" id="1_bfi44"]
 [ext_resource type="Texture2D" uid="uid://dkjws5a8gpex2" path="res://assets/clothing/shirts/shirt_western_alt2.png" id="1_fvmuh"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_vyljq"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_vyljq")
 name = "Yellow Western Top"
 image = ExtResource("1_fvmuh")
+cropped_icon = ExtResource("1_bfi44")
 type = 1
 rugged = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

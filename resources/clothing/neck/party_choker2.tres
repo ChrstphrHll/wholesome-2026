@@ -9,5 +9,6 @@ script = ExtResource("1_qgm5g")
 name = "Teal Choker"
 image = ExtResource("1_w6s4e")
 cropped_icon = ExtResource("1_qc8tg")
+type = 4
 wacky = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

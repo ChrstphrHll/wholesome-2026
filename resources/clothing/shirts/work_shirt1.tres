@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://bg7u20mb8e5wg"]
 
 [ext_resource type="Texture2D" uid="uid://btbqpwf8lgj3l" path="res://assets/clothing/shirts/work_shirt_alt1.png" id="1_1p50u"]
+[ext_resource type="Texture2D" uid="uid://ynx8oxk66en6" path="res://assets/clothing_icons/shirts/work_shirt_alt1.png" id="1_clglw"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_hnm0k"]
 
 [resource]
 script = ExtResource("1_hnm0k")
 name = "Purple Button-Up"
 image = ExtResource("1_1p50u")
+cropped_icon = ExtResource("1_clglw")
 type = 1
 formal = 5.0
 preppy = 1.0

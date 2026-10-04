@@ -2,11 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://gj85pg5u2r6o" path="res://assets/clothing/shirts/cute_shirt.png" id="1_2meja"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_g6r32"]
+[ext_resource type="Texture2D" uid="uid://m8kulm767wmv" path="res://assets/clothing_icons/shirts/cute_shirt.png" id="1_orads"]
 
 [resource]
 script = ExtResource("1_g6r32")
 name = "Frilly Shirt"
 image = ExtResource("1_2meja")
+cropped_icon = ExtResource("1_orads")
 type = 1
 cutesy = 5.0
 chic = 1.0

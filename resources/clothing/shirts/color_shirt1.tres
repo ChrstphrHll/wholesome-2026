@@ -2,11 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://cxsmygcb2426q" path="res://assets/clothing/shirts/color_shirt_alt1.png" id="1_d6ssr"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_d708a"]
+[ext_resource type="Texture2D" uid="uid://fh842yq6ollh" path="res://assets/clothing_icons/shirts/color_shirt_alt1.png" id="1_pyxsw"]
 
 [resource]
 script = ExtResource("1_d708a")
 name = "Yellow and Purple Top"
 image = ExtResource("1_d6ssr")
+cropped_icon = ExtResource("1_pyxsw")
 type = 1
 athletic = 1.0
 wacky = 5.0

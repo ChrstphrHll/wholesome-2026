@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://bad8uunqtd84x"]
 
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_5s5mp"]
+[ext_resource type="Texture2D" uid="uid://dutf8si8vcsru" path="res://assets/clothing_icons/wrist/wristband_2.png" id="1_ill8a"]
 [ext_resource type="Texture2D" uid="uid://gfc6a4hp3q2o" path="res://assets/clothing/wrist/wristband_2.png" id="1_jeny8"]
 
 [resource]
 script = ExtResource("1_5s5mp")
 name = "Yellow/Brown Wristbands"
 image = ExtResource("1_jeny8")
+cropped_icon = ExtResource("1_ill8a")
 type = 5
 athletic = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://jgrnvynarqee"]
 
+[ext_resource type="Texture2D" uid="uid://bqfpe5gsqqybd" path="res://assets/clothing_icons/wrist/wristband_1.png" id="1_3jx7c"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_8h2y5"]
 [ext_resource type="Texture2D" uid="uid://4fmr46vcvf6" path="res://assets/clothing/wrist/wristband_1.png" id="1_w3xjb"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_8h2y5")
 name = "White/Teal Wristbands"
 image = ExtResource("1_w3xjb")
+cropped_icon = ExtResource("1_3jx7c")
 type = 5
 athletic = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

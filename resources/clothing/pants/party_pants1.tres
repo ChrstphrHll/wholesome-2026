@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://chfjhw0dpac4d"]
 
-[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_3y0jx"]
-[ext_resource type="Texture2D" uid="uid://dj0tuf6aj4c07" path="res://assets/clothing/pants/party_pants_alt1.png" id="1_myipy"]
+[ext_resource type="Texture2D" uid="uid://chcds7s5o43b0" path="res://assets/clothing_icons/pants/party_pants_alt1.png" id="1_dvpi6"]
+[ext_resource type="Texture2D" uid="uid://dj0tuf6aj4c07" path="res://assets/clothing/pants/party_pants_alt1.png" id="2_5bkyk"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="3_t52sy"]
 
 [resource]
-script = ExtResource("1_3y0jx")
+script = ExtResource("3_t52sy")
 name = "Teal Party Pants"
-image = ExtResource("1_myipy")
+image = ExtResource("2_5bkyk")
+cropped_icon = ExtResource("1_dvpi6")
 type = 2
 wacky = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

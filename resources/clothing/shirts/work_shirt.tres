@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://bv2sx8rj1vmtv"]
 
 [ext_resource type="Texture2D" uid="uid://baf80ohqv58l7" path="res://assets/clothing/shirts/work_shirt.png" id="1_3xwce"]
+[ext_resource type="Texture2D" uid="uid://8swwk870dxlh" path="res://assets/clothing_icons/shirts/work_shirt.png" id="1_huby0"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_lwjgn"]
 
 [resource]
 script = ExtResource("1_lwjgn")
 name = "Yellow Button-Up"
 image = ExtResource("1_3xwce")
+cropped_icon = ExtResource("1_huby0")
 type = 1
 formal = 5.0
 preppy = 1.0

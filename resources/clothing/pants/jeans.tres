@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://bgpn8gggvgwum"]
 
-[ext_resource type="Texture2D" uid="uid://o0bfian51u62" path="res://assets/clothing/pants/pant_western_alt2.png" id="1_hmd44"]
-[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_hxtlx"]
+[ext_resource type="Texture2D" uid="uid://b7rgb0lja5xct" path="res://assets/clothing_icons/pants/pant_western_alt2.png" id="1_dfp3l"]
+[ext_resource type="Texture2D" uid="uid://o0bfian51u62" path="res://assets/clothing/pants/pant_western_alt2.png" id="2_itsfx"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="3_layxq"]
 
 [resource]
-script = ExtResource("1_hxtlx")
+script = ExtResource("3_layxq")
 name = "Peach Jeans"
-image = ExtResource("1_hmd44")
+image = ExtResource("2_itsfx")
+cropped_icon = ExtResource("1_dfp3l")
 type = 2
 rugged = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://bgq4kj12y5egm"]
 
-[ext_resource type="Texture2D" uid="uid://33co55niu0xk" path="res://assets/clothing/pants/cutsey_skirt_new.png" id="1_7dl78"]
-[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_bmdiy"]
+[ext_resource type="Texture2D" uid="uid://dpka8tkcx10hl" path="res://assets/clothing_icons/pants/cutsey_skirt_new.png" id="1_owqxv"]
+[ext_resource type="Texture2D" uid="uid://33co55niu0xk" path="res://assets/clothing/pants/cutsey_skirt_new.png" id="2_53wfm"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="3_u8m5v"]
 
 [resource]
-script = ExtResource("1_bmdiy")
+script = ExtResource("3_u8m5v")
 name = "Floral Skirt"
-image = ExtResource("1_7dl78")
+image = ExtResource("2_53wfm")
+cropped_icon = ExtResource("1_owqxv")
 type = 2
 cutesy = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"
