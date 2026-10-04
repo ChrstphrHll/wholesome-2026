@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://bndptqrgs2pww" path="res://assets/space.webp" id="8_lx3aj"]
 [ext_resource type="AudioStream" uid="uid://jt5qkdukibh" path="res://assets/sound effects/Shop Door Bell.mp3" id="8_tv0fx"]
 [ext_resource type="Texture2D" uid="uid://b861dl08823ud" path="res://assets/backgrounds/photo_studio_bg_lights.png" id="8_yyxey"]
-[ext_resource type="Texture2D" uid="uid://yy20714jjc" path="res://assets/beach.jpg" id="9_itumj"]
 [ext_resource type="AudioStream" uid="uid://cwx1oyt1wh4mj" path="res://assets/sound effects/studio setup.mp3" id="9_m8y2r"]
 [ext_resource type="Texture2D" uid="uid://ci4qy5auwpxkt" path="res://assets/backgrounds/camera asses.png" id="9_tv0fx"]
 [ext_resource type="Texture2D" uid="uid://bl6reti1trc1i" path="res://assets/backgrounds/dress_up_screen.png" id="10_frwyw"]
@@ -340,12 +339,10 @@ position = Vector2(904, 300)
 [node name="ShopBell" type="AudioStreamPlayer2D" parent="Desk" unique_id=287976306]
 unique_name_in_owner = true
 stream = ExtResource("8_tv0fx")
-volume_db = -2.5
 
 [node name="StudioSetUp" type="AudioStreamPlayer2D" parent="Desk" unique_id=351733]
 unique_name_in_owner = true
 stream = ExtResource("9_m8y2r")
-volume_db = -1.077
 
 [node name="PhotoWall" type="Node2D" parent="." unique_id=1930109288]
 position = Vector2(-1152, 0)
@@ -390,14 +387,6 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 columns = 4
 
-[node name="Beach" type="Button" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/Backdrops" unique_id=2064933721]
-layout_mode = 2
-text = "Beach"
-
-[node name="Space" type="Button" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/Backdrops" unique_id=1739323624]
-layout_mode = 2
-text = "Space"
-
 [node name="ChangeOutfit" type="Button" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2" unique_id=816284960]
 layout_mode = 2
 text = "Change Outfit"
@@ -419,32 +408,25 @@ offset_bottom = 403.0
 stretch = true
 
 [node name="PhotoView" type="SubViewport" parent="PhotoWall/SubViewportContainer" unique_id=1159018555]
+unique_name_in_owner = true
 disable_3d = true
 handle_input_locally = false
 size = Vector2i(345, 336)
 render_target_update_mode = 4
 
-[node name="Space" type="Sprite2D" parent="PhotoWall/SubViewportContainer/PhotoView" unique_id=966234832]
+[node name="Backdrop" type="Sprite2D" parent="PhotoWall/SubViewportContainer/PhotoView" unique_id=966234832]
 unique_name_in_owner = true
 position = Vector2(178.00002, 170.00002)
 scale = Vector2(0.26750004, 0.2673323)
 texture = ExtResource("8_lx3aj")
 
-[node name="Beach" type="Sprite2D" parent="PhotoWall/SubViewportContainer/PhotoView" unique_id=2128673957]
-unique_name_in_owner = true
-position = Vector2(172.00002, 168.00002)
-scale = Vector2(0.36416668, 0.36416668)
-texture = ExtResource("9_itumj")
-
-[node name="ShutterClick" type="AudioStreamPlayer" parent="PhotoWall" unique_id=1322947742]
+[node name="ShutterClick" type="AudioStreamPlayer2D" parent="PhotoWall" unique_id=509466488]
 unique_name_in_owner = true
 stream = ExtResource("14_le3en")
-volume_db = 1.0
 
-[node name="TaDa" type="AudioStreamPlayer" parent="PhotoWall" unique_id=384015790]
+[node name="TaDa" type="AudioStreamPlayer2D" parent="PhotoWall" unique_id=554114669]
 unique_name_in_owner = true
 stream = ExtResource("15_rqwoc")
-volume_db = -1.5
 
 [node name="DressUp" type="Node2D" parent="." unique_id=1531325856]
 position = Vector2(1152, 0)
@@ -643,7 +625,8 @@ grow_vertical = 2
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Popups" unique_id=122211834]
 libraries/ = SubResource("AnimationLibrary_li27q")
 
-[node name="Main Music" type="AudioStreamPlayer" parent="." unique_id=1753406435]
+[node name="Main Music" type="AudioStreamPlayer2D" parent="." unique_id=1502217667]
+position = Vector2(566, 269)
 stream = ExtResource("21_le3en")
 autoplay = true
 
@@ -653,8 +636,6 @@ autoplay = true
 [connection signal="pressed" from="debug/HBoxContainer/Button4" to="." method="_move_screen" binds= [3]]
 [connection signal="pressed" from="Menu/Button" to="." method="_move_screen" binds= [1]]
 [connection signal="pressed" from="Desk/NextClient" to="." method="call_next_client"]
-[connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/Backdrops/Beach" to="." method="_on_beach_pressed"]
-[connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/ScrollContainer/Backdrops/Space" to="." method="_on_space_pressed"]
 [connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/ChangeOutfit" to="." method="_on_change_outfit_pressed"]
 [connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/TakePhoto" to="." method="_on_take_photo_pressed"]
 [connection signal="pressed" from="DressUp/Done" to="." method="_on_dress_up_finished"]
