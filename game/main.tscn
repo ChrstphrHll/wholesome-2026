@@ -575,6 +575,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="WristAccessoriesGridContainer" type="GridContainer" parent="DressUp/TabContainer/Wrist/ScrollContainer" unique_id=1733774612]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 columns = 4
