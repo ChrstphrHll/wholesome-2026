@@ -2,11 +2,13 @@
 
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_rfh2i"]
 [ext_resource type="Texture2D" uid="uid://cmlwxksbpwsv2" path="res://assets/clothing/shoes/shoes_sporty.png" id="1_tiiqi"]
+[ext_resource type="Texture2D" uid="uid://ce8minbcapgq4" path="res://assets/clothing_icons/shoes/shoes_sporty.png" id="1_wndq2"]
 
 [resource]
 script = ExtResource("1_rfh2i")
 name = "Teal Sneakers"
 image = ExtResource("1_tiiqi")
+cropped_icon = ExtResource("1_wndq2")
 type = 3
 athletic = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

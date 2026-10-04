@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://cr6nb3a1po1yq"]
 
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_23q00"]
+[ext_resource type="Texture2D" uid="uid://cfw05mii4yifm" path="res://assets/clothing_icons/shoes/work_shoes.png" id="1_mqt76"]
 [ext_resource type="Texture2D" uid="uid://b2a35efxj822m" path="res://assets/clothing/shoes/work_shoes.png" id="1_n4lsf"]
 
 [resource]
 script = ExtResource("1_23q00")
 name = "Office Shoes"
 image = ExtResource("1_n4lsf")
+cropped_icon = ExtResource("1_mqt76")
 type = 3
 formal = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

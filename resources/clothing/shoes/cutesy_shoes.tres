@@ -2,11 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://bkc6t51xxmvwg" path="res://assets/clothing/shoes/shoes_cutesy.png" id="1_88qu0"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_h5i48"]
+[ext_resource type="Texture2D" uid="uid://7fh4pfef3w8o" path="res://assets/clothing_icons/shoes/shoes_cutesy.png" id="1_kmari"]
 
 [resource]
 script = ExtResource("1_h5i48")
 name = "Bow Shoes"
 image = ExtResource("1_88qu0")
+cropped_icon = ExtResource("1_kmari")
 type = 3
 cutesy = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

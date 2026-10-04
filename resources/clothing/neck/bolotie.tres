@@ -2,11 +2,13 @@
 
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_hjj6f"]
 [ext_resource type="Texture2D" uid="uid://c0g6dmenegpc5" path="res://assets/clothing/neck/bolotie.png" id="1_k2y7g"]
+[ext_resource type="Texture2D" uid="uid://b7e5to5intpnh" path="res://assets/clothing_icons/neck/bolotie.png" id="1_qojxm"]
 
 [resource]
 script = ExtResource("1_hjj6f")
 name = "Bolo Tie"
 image = ExtResource("1_k2y7g")
+cropped_icon = ExtResource("1_qojxm")
 type = 4
 formal = 1.0
 rugged = 5.0

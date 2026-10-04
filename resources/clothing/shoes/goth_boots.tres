@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://d4dk1ibxfevti"]
 
 [ext_resource type="Texture2D" uid="uid://dvovj7lns681v" path="res://assets/clothing/shoes/goth_boots.png" id="1_7l7nv"]
+[ext_resource type="Texture2D" uid="uid://bxuy6mlojyve" path="res://assets/clothing_icons/shoes/goth_boots.png" id="1_7s2cv"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_pxsjq"]
 
 [resource]
 script = ExtResource("1_pxsjq")
 name = "Edgy Boots"
 image = ExtResource("1_7l7nv")
+cropped_icon = ExtResource("1_7s2cv")
 type = 3
 goth = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"
