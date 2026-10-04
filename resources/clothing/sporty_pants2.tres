@@ -1,7 +1,12 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://bp63xfpo13lw4"]
 
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_3isms"]
+[ext_resource type="Texture2D" uid="uid://kqiqlsm4iyno" path="res://assets/clothing/pants/pants_sporty_alt2.png" id="1_30ue2"]
 
 [resource]
 script = ExtResource("1_3isms")
+name = "Brown Leggings"
+image = ExtResource("1_30ue2")
+type = 2
+athletic = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

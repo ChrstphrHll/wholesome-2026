@@ -1,7 +1,12 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://bgq4kj12y5egm"]
 
+[ext_resource type="Texture2D" uid="uid://33co55niu0xk" path="res://assets/clothing/pants/cutsey_skirt_new.png" id="1_7dl78"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_bmdiy"]
 
 [resource]
 script = ExtResource("1_bmdiy")
+name = "Floral Skirt"
+image = ExtResource("1_7dl78")
+type = 2
+cutesy = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

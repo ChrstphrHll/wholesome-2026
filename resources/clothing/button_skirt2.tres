@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://b7eqskh1lew7a"]
+
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_8mg63"]
+[ext_resource type="Texture2D" uid="uid://c5gt2u4sd63p6" path="res://assets/clothing/pants/pant_fall_alt2.png" id="1_fav4d"]
+
+[resource]
+script = ExtResource("1_8mg63")
+name = "Purple Button-Up Skirt"
+image = ExtResource("1_fav4d")
+type = 2
+chic = 5.0
+preppy = 1.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

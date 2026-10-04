@@ -8,6 +8,5 @@ script = ExtResource("1_nhpv7")
 name = "Frilly Shirt"
 image = ExtResource("1_hcc87")
 type = 1
-cutesy = 1.0
-preppy = 0.17
+cutesy = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"
