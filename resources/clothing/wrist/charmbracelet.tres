@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://o4frv60p2opg"]
+
+[ext_resource type="Texture2D" uid="uid://qncu2u2psno4" path="res://assets/clothing/wrist/charmbracelet.png" id="1_jayou"]
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_jsdsr"]
+
+[resource]
+script = ExtResource("1_jsdsr")
+name = "Charm Bracelet"
+image = ExtResource("1_jayou")
+type = 5
+cutesy = 5.0
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"
