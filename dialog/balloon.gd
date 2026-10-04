@@ -75,6 +75,8 @@ func _ready() -> void:
 	balloon.hide()
 	Engine.get_singleton("DialogueManager").mutated.connect(_on_mutated)
 
+	DialogueManager.got_dialogue.connect(_on_line_changed)
+
 	# If the responses menu doesn't have a next action set, use this one
 	if responses_menu.next_action.is_empty():
 		responses_menu.next_action = next_action
@@ -214,5 +216,9 @@ func _on_balloon_gui_input(event: InputEvent) -> void:
 func _on_responses_menu_response_selected(response: DialogueResponse) -> void:
 	next(response.next_id)
 
+
+func _on_line_changed(line: DialogueLine):
+	print("line changed")
+	$%Balloon.theme
 
 #endregion
