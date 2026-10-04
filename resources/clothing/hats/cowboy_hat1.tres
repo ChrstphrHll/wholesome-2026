@@ -2,10 +2,12 @@
 
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_5lulj"]
 [ext_resource type="Texture2D" uid="uid://b1xk38o11lqou" path="res://assets/clothing/hats/cowboyhat_1.png" id="1_cy0ta"]
+[ext_resource type="Texture2D" uid="uid://n40o004mghli" path="res://assets/clothing_icons/hats/cowboy_hat1.png" id="1_da4qg"]
 
 [resource]
 script = ExtResource("1_5lulj")
 name = "Pink Cowboy Hat"
 image = ExtResource("1_cy0ta")
+cropped_icon = ExtResource("1_da4qg")
 rugged = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

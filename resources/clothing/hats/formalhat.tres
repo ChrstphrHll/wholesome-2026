@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://u1bygrmrr5cw"]
 
+[ext_resource type="Texture2D" uid="uid://dtiei142scsjw" path="res://assets/clothing_icons/hats/boater.png" id="1_f26kv"]
 [ext_resource type="Texture2D" uid="uid://ca60tysr5f520" path="res://assets/clothing/hats/formalhat.png" id="1_ngp2u"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_sxakg"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_sxakg")
 name = "Brown Boater"
 image = ExtResource("1_ngp2u")
+cropped_icon = ExtResource("1_f26kv")
 formal = 5.0
 preppy = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

@@ -2,10 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://baok5whjb43fb" path="res://assets/clothing/hats/gothearrings.png" id="1_aigav"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_kn0r4"]
+[ext_resource type="Texture2D" uid="uid://dnl3dh38wt7ps" path="res://assets/clothing_icons/hats/gothearrings.png" id="1_me6uv"]
 
 [resource]
 script = ExtResource("1_kn0r4")
 name = "Edgy Piercings"
 image = ExtResource("1_aigav")
+cropped_icon = ExtResource("1_me6uv")
 goth = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

@@ -2,11 +2,13 @@
 
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_jvsb3"]
 [ext_resource type="Texture2D" uid="uid://131430vyrwb7" path="res://assets/clothing/hats/visor_2.png" id="1_q6286"]
+[ext_resource type="Texture2D" uid="uid://k0a8jw0lhr15" path="res://assets/clothing_icons/hats/visor_2.png" id="1_v3gel"]
 
 [resource]
 script = ExtResource("1_jvsb3")
 name = "Yellow Visor"
 image = ExtResource("1_q6286")
+cropped_icon = ExtResource("1_v3gel")
 athletic = 5.0
 preppy = 1.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

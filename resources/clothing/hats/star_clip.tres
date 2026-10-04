@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://durwdbiy7ae00"]
 
 [ext_resource type="Texture2D" uid="uid://b8ko67irvery6" path="res://assets/clothing/hats/starclips.png" id="1_emeow"]
+[ext_resource type="Texture2D" uid="uid://ljoxb4w1qbai" path="res://assets/clothing_icons/hats/starclips.png" id="1_n03wv"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_v2ccn"]
 
 [resource]
 script = ExtResource("1_v2ccn")
 name = "Star Clip"
 image = ExtResource("1_emeow")
+cropped_icon = ExtResource("1_n03wv")
 cutesy = 1.0
 wacky = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

@@ -1,11 +1,13 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://r0u5lbfjx0tj"]
 
 [ext_resource type="Texture2D" uid="uid://d3ntngmood1pg" path="res://assets/clothing/hats/heartclip.png" id="1_40jpc"]
+[ext_resource type="Texture2D" uid="uid://c4r1gqb6en8v2" path="res://assets/clothing_icons/hats/heartclip.png" id="1_oswna"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_vuesw"]
 
 [resource]
 script = ExtResource("1_vuesw")
 name = "Heart Clip"
 image = ExtResource("1_40jpc")
+cropped_icon = ExtResource("1_oswna")
 cutesy = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

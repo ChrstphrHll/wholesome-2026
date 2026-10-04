@@ -2,11 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://hcyrjieq3w15" path="res://assets/clothing/hats/goldstuds.png" id="1_pxonh"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_uc70w"]
+[ext_resource type="Texture2D" uid="uid://6h1finjcdj55" path="res://assets/clothing_icons/hats/goldstuds.png" id="1_yl4hy"]
 
 [resource]
 script = ExtResource("1_uc70w")
 name = "Gold Stud Earrings"
 image = ExtResource("1_pxonh")
+cropped_icon = ExtResource("1_yl4hy")
 chic = 5.0
 formal = 1.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

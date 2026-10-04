@@ -2,10 +2,12 @@
 
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_75ymp"]
 [ext_resource type="Texture2D" uid="uid://sdncb2mo1rlx" path="res://assets/clothing/hats/bow_2.png" id="1_jnijy"]
+[ext_resource type="Texture2D" uid="uid://drkfnyyeiavg7" path="res://assets/clothing_icons/hats/bow_2.png" id="1_sxqr1"]
 
 [resource]
 script = ExtResource("1_75ymp")
 name = "Red Bow"
 image = ExtResource("1_jnijy")
+cropped_icon = ExtResource("1_sxqr1")
 cutesy = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

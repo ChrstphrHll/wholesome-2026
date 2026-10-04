@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://wwogrjk5wl0y"]
 
+[ext_resource type="Texture2D" uid="uid://b2leduqd7yrgv" path="res://assets/clothing_icons/hats/apple.png" id="1_bm5m2"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_d0xkq"]
 [ext_resource type="Texture2D" uid="uid://d0ss3q02dmksq" path="res://assets/clothing/hats/apple.png" id="1_x0e1j"]
 
@@ -7,5 +8,6 @@
 script = ExtResource("1_d0xkq")
 name = "Apple"
 image = ExtResource("1_x0e1j")
+cropped_icon = ExtResource("1_bm5m2")
 wacky = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

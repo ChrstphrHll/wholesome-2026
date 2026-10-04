@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://cq6t4xoejkjhl"]
 
+[ext_resource type="Texture2D" uid="uid://dn4rkfbki0x1m" path="res://assets/clothing_icons/hats/headband.png" id="1_k6mrn"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_qsuu0"]
 [ext_resource type="Texture2D" uid="uid://kjmjx217okia" path="res://assets/clothing/hats/headband.png" id="1_wi48p"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_qsuu0")
 name = "Headband"
 image = ExtResource("1_wi48p")
+cropped_icon = ExtResource("1_k6mrn")
 cutesy = 1.0
 athletic = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

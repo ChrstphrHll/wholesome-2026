@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://dxcuo82icttpg"]
 
+[ext_resource type="Texture2D" uid="uid://cyajm6nilcxk3" path="res://assets/clothing_icons/hats/beret2.png" id="1_er6g5"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_sqhv1"]
 [ext_resource type="Texture2D" uid="uid://cra0t5nap3242" path="res://assets/clothing/hats/beret_2.png" id="1_tpsjx"]
 
@@ -7,5 +8,6 @@
 script = ExtResource("1_sqhv1")
 name = "Green Beret"
 image = ExtResource("1_tpsjx")
+cropped_icon = ExtResource("1_er6g5")
 chic = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

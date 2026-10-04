@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://lcbmxttutcoh"]
 
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_46yd4"]
+[ext_resource type="Texture2D" uid="uid://ca2ey8skaptb4" path="res://assets/clothing_icons/hats/baseball_cap.png" id="1_elrmd"]
 [ext_resource type="Texture2D" uid="uid://c4tcfc1b8stop" path="res://assets/clothing/hats/ballcap.png" id="1_fsb13"]
 
 [resource]
 script = ExtResource("1_46yd4")
 name = "Ballcap"
 image = ExtResource("1_fsb13")
+cropped_icon = ExtResource("1_elrmd")
 athletic = 5.0
 rugged = 1.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"
