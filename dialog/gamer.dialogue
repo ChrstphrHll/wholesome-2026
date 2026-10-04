@@ -21,63 +21,71 @@ Player: Ready?
 => END
 
 ~ goth1
-Horse: Hey, I like this one!
+Red: Hey, I like this one!
 
-Player: Aw, great! I love helping horses find their style.
+Player: Aw, great! I love helping Reds find their style.
 
-Horse: Yeah... yeah! It makes me feel like burning shit down and starting fresh, you know!
+Red: Yeah... yeah! It makes me feel like burning shit down and starting fresh, you know!
 
 Player: Wait what?
 => END
 
 ~ goth4
-Horse: I love it! So much!
+Red: I love it! So much!
 
 Player: Can we go back to what you said about you burning stuff down?
 
-Horse: Yeah, I think our only recourse as a society is to rip it up and start again.
+Red: Yeah, I think our only recourse as a society is to rip it up and start again.
 
 Player: So–
 
-Horse: Just like I’m doing with these clothes!
+Red: Just like I’m doing with these clothes!
 => END
 
 ~ wacky1
-Horse: ........this is JUST like my home clothes.
+Red: ........this is JUST like my home clothes.
 
 Player: ...is that a good thing?
 
-Horse: Well, I don’t know that I know a lot about fashion........ But I feel right at home in it!
+Red: Well, I don’t know that I know a lot about fashion........ But I feel right at home in it!
 => END
 
 ~ wacky4
-Horse: I’ve been trying to work on developing my fashion sense. I’m just trying to get out there more, you know?
+Red: I’ve been trying to work on developing my fashion sense. I’m just trying to get out there more, you know?
 
 Player: Nice, how is it working out for you?
 
-Horse: Well, I’m here now, aren’t I?
+Red: Well, I’m here now, aren’t I?
 => END
 
 ~ cutesy1
-Horse: ..........
+Red: ..........
 
 Player: ..............
 
-Horse: ..........................
+Red: ..........................
 
 Player: Let’s try something else on.
 => END
 
 ~ cutesy4
-Horse: ...............
+Red: ...............
 
 Player: ..................
 
-Horse: ............You know how sometimes in games, you know you’re supposed to click on something because it looks really out of place compared to the other assets?
+Red: ............You know how sometimes in games, you know you’re supposed to click on something because it looks really out of place compared to the other assets?
 
 Player: Yeah?
 
-Horse: That’s how I feel right now.
+Red: That’s how I feel right now.
+=> END
+
+~ special_item
+Red: YES!!!!!!! JUST like Red Dead Redemption!
+
+Player: Oh, you like that game?
+
+Red: It has Reds! I love good representation.
 => END
 
 ~ post_photo_best
@@ -102,3 +110,65 @@ Red: And this outfit makes me feel brave! These pictures look like someone who c
 
 Red: Thank you!
 => END
+
+~ post_photo_high
+Red: ...........
+
+Red: It’s GREAT!
+
+Red: [font_size=10] sorry I didn’t mean to be so loud [/font_size]
+
+Red: It’s just that I’ve been feeling more and more like the world is getting to be a harder place to live in.
+
+Red: Like no matter what I or anyone does, the people in charge are just going to keep stepping on us to fight for the top.
+
+Red: And it sucks. So I hid.
+
+Red: I just stayed in my room and closed myself into worlds I could save.
+
+Red: But I’ve been feeling lately like I want to make a change. I’m done being small and I’m done hiding.
+
+Red: And this outfit makes me feel a little braver! Like maybe I could do something!
+
+Red: Thank you!
+=> END
+
+~ post_photo_mid
+Red: ...........
+
+Red: I like it!
+
+Red: It’s just that I’ve been feeling more and more like the world is getting to be a harder place to live in.
+
+Red: Like no matter what I or anyone does, the people in charge are just going to keep stepping on us to fight for the top.
+
+Red: And it sucks. So I hid.
+
+Red: I just stayed in my room and closed myself into worlds I could save.
+
+Red: But I’ve been feeling lately like I want to make a change. I’m done being small and I’m done hiding.
+
+Red: And this outfit makes me feel like maybe I’m ready to start getting out there!
+
+Red: Thank you!
+=> END
+
+~ post_photo_low
+
+Red: ...........
+
+Red: It’s good!
+
+Red: It’s just that I’ve been feeling more and more like the world is getting to be a harder place to live in.
+
+Red: Like no matter what I or anyone does, the people in charge are just going to keep stepping on us to fight for the top.
+
+Red: And it sucks. So I hid.
+
+Red: I just stayed in my room and closed myself into worlds I could save.
+
+Red: But I’ve been feeling lately like I want to make a change. I’m done being small and I’m done hiding.
+
+Red: And this outfit is the first step in getting myself out there.
+
+Red: Thank you!
