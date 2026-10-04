@@ -1,7 +1,7 @@
 extends Node2D
 
 var all_clothing: Dictionary[int, ClothingItem] = {}
-var equipped_clothes: Dictionary[ClothingItem.ClothingType, Sprite2D]
+var equipped_clothes: Dictionary[ClothingItem.ClothingType, ClothingItem]
 
 var client_queue: Array[Client] = [ResourceLoader.load("res://resources/clients/lost_my_job.tres")]
 var active_client: Client = client_queue[0]
@@ -158,17 +158,22 @@ func populate_closet():
 func _select_clothing_item(item_id: int):
 	var item = get_clothing_item_from_id(item_id)
 	print("selecting item ", item.name)
-	if item.equipped:
+	
+	if equipped_clothes.has(item.type):
 		var equipped_item = equipped_clothes[item.type]
-		equipped_item.queue_free()
+		equipped_item.current_sprite.queue_free()
+		equipped_item.current_sprite = null
 		equipped_clothes.erase(item.type)
-		item.equipped = false
-		return
+		equipped_item.equipped = false
+		
+		if item.id == equipped_item.id:
+			return
 		
 	item.equipped = true
 	var sprite = Sprite2D.new()
 	sprite.texture = item.image
-	equipped_clothes[item.type] = sprite
+	item.current_sprite = sprite
+	equipped_clothes[item.type] = item
 	check_item_dialog_triggers(item)
 
 	dress_up_horse.add_child(sprite)
