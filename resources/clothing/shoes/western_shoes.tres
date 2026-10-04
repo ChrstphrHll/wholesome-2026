@@ -7,6 +7,7 @@
 script = ExtResource("1_cl5bg")
 name = "Heart Boots"
 image = ExtResource("1_j1m53")
+type = 3
 cutesy = 5.0
 rugged = 1.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"
