@@ -2,10 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://dcn0coyy4oaq3" path="res://assets/clothing/hats/beret_3.png" id="1_7gy1q"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_j4k1d"]
+[ext_resource type="Texture2D" uid="uid://druvkme4jolui" path="res://assets/clothing_icons/hats/beret3.png" id="1_sq6n3"]
 
 [resource]
 script = ExtResource("1_j4k1d")
 name = "Brown Beret"
 image = ExtResource("1_7gy1q")
+cropped_icon = ExtResource("1_sq6n3")
 chic = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

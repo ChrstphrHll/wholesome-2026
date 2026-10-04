@@ -1,11 +1,13 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://b1xrb7isa2gyc"]
 
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_8j8mf"]
+[ext_resource type="Texture2D" uid="uid://4nwffr3c75ag" path="res://assets/clothing_icons/hats/cowboy_hat2.png" id="1_hdwxl"]
 [ext_resource type="Texture2D" uid="uid://bve5tfvxcvjfr" path="res://assets/clothing/hats/cowboyhat_3.png" id="1_u0rhq"]
 
 [resource]
 script = ExtResource("1_8j8mf")
 name = "Peach Cowboy Hat"
 image = ExtResource("1_u0rhq")
+cropped_icon = ExtResource("1_hdwxl")
 rugged = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

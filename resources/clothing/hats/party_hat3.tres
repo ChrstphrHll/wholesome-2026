@@ -1,11 +1,13 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://b1xvmh0inahwq"]
 
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_5knev"]
+[ext_resource type="Texture2D" uid="uid://bxx0c6w15xojb" path="res://assets/clothing_icons/hats/party_hat2.png" id="1_abvmf"]
 [ext_resource type="Texture2D" uid="uid://oamtgio2mf3a" path="res://assets/clothing/hats/partyhat_3.png" id="1_gu6g8"]
 
 [resource]
 script = ExtResource("1_5knev")
 name = "Teal Clubbing Hat"
 image = ExtResource("1_gu6g8")
+cropped_icon = ExtResource("1_abvmf")
 wacky = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

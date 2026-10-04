@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://duwychjnukpm1"]
 
+[ext_resource type="Texture2D" uid="uid://dypjx2y8ld2l4" path="res://assets/clothing_icons/hats/visor_3.png" id="1_484xj"]
 [ext_resource type="Texture2D" uid="uid://jgwt5h0qy4fi" path="res://assets/clothing/hats/visor_3.png" id="1_mgg01"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_wc8h8"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_wc8h8")
 name = "Pink Visor"
 image = ExtResource("1_mgg01")
+cropped_icon = ExtResource("1_484xj")
 athletic = 5.0
 preppy = 1.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"

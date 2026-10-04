@@ -1,11 +1,13 @@
 [gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://fl1dmitxwgmo"]
 
 [ext_resource type="Texture2D" uid="uid://7ufol3lrrner" path="res://assets/clothing/hats/butterflyclip.png" id="1_45ull"]
+[ext_resource type="Texture2D" uid="uid://bvd77dv855aue" path="res://assets/clothing_icons/hats/butterflyclip.png" id="1_v4e1d"]
 [ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_wp3c1"]
 
 [resource]
 script = ExtResource("1_wp3c1")
 name = "Butterfly Clip"
 image = ExtResource("1_45ull")
+cropped_icon = ExtResource("1_v4e1d")
 cutesy = 5.0
 metadata/_custom_type_script = "uid://6qkf8qtwxcap"
