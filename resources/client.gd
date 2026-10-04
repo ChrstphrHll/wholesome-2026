@@ -58,7 +58,7 @@ func _init():
 
 func check_clothing_triggers(item: ClothingItem):
 	print("cheking triggers", item.name)
-	var stat = item.most_significant_stat
+	var stat = item.get_most_significant_stat()
 	print("most significant stat", stat)
 	if not stat:
 		return ""

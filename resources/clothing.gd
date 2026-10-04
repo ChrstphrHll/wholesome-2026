@@ -31,12 +31,20 @@ var most_significant_stat: String
 var equipped = false
 
 var id = ResourceUID.create_id()
+
 var stats = {
-	"goth": goth
+	"goth": goth,
+	"cutesy": cutesy,
+	"chic": chic,
+	"athletic": athletic,
+	"formal": formal,
+	"wacky": wacky,
+	"rugged": rugged,
+	"preppy": preppy
 }
 
 
-func init_most_significant_stat():
+func get_most_significant_stat():
 	var current_max_value = 0
 	var current_max_stat = ""
 	
