@@ -108,12 +108,15 @@ func client_end_screen():
 
 func load_clothes():
 	var base_directory = "res://resources/clothing/"
-	var clothes_raw = ResourceLoader.list_directory(base_directory)
+	var sub_dirs = ["pants/", "shirts/", "shoes/"]
 	
-	for clothing_item_path in clothes_raw:
-		var full_path = base_directory + clothing_item_path
-		var item = ResourceLoader.load(full_path)
-		all_clothing[item.id] = item
+	for sub_dir in sub_dirs:
+		var clothes_raw = ResourceLoader.list_directory(base_directory + sub_dir)
+	
+		for clothing_item_path in clothes_raw:
+			var full_path = base_directory + sub_dir + clothing_item_path
+			var item = ResourceLoader.load(full_path)
+			all_clothing[item.id] = item
 	print(all_clothing)
 
 
