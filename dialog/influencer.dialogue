@@ -1,9 +1,9 @@
 ~ start
-Sundance: Hi, are you guys open? I desperately need new headshots. 
+Sundance: Hi, are you guys open? [$>> animate("talking")]I desperately need new headshots. 
 
 Player: All right, here at Show Pony Studio we can handle whatever you need photo-wise. 
 
-Sundance: Oh thank GOD. My camera was blurry last week and now all my followers are saying I used Photoshop.
+Sundance: Oh thank GOD. [$>> animate("sad")]My camera was blurry last week and now all my followers are saying I used Photoshop.
 
 Sundance: I can’t get the kind of detail I need on photoshop, I have hooves!
 
@@ -15,11 +15,11 @@ Player: Ready?
 => END
 
 ~ chic1
-Sundance: Oh yes. Yes. The producers will love this. 
+Sundance: [$>> animate("smile")]Oh yes. Yes. The producers will love this. 
 
 Player: Okay, we can work around this vibe!
 
-Sundance: It’s not my usual brand, but that’s okay. I think they’ll like different. 
+Sundance: [$>> animate("talking")]It’s not my usual brand, but that’s okay. I think they’ll like different. 
 => END
 
 ~ chic4
@@ -27,19 +27,19 @@ Sundance: The role is for a young woman struggling with the relationship between
 
 Player: Oh wow, sounds heavy. 
 
-Sundance: Yeah, that’s why these photos need to show that I’m not only funny, I’m serious too. 
+Sundance: [$>> animate("talking")]Yeah, that’s why these photos need to show that I’m not only funny, I’m serious too. 
 => END
 
 ~ cutesy1
-Sundance: My little ponies loved my dressed for dressage series. All cutesy all the time.
+Sundance: My little ponies loved my dressed for dressage series.[$>> animate("talking")] All cutesy all the time.
 
 Player: Like the show?
 
-Sundance: No, that’s what my fanbase is called. 
+Sundance: [$>> animate("blinking")]No, that’s what my fanbase is called. 
 => END
 
 ~ cutesy4
-Sundance: You can follow me @stablechic. And my signature bow is on TikTok shop. 
+Sundance: [$>> animate("talking")]You can follow me @stablechic. And my signature bow is on TikTok shop. 
 
 Player: I’ve actually been trying to stay off of social media. 
 
@@ -47,15 +47,15 @@ Sundance: Honestly me too, I just use it for my brand. And to read sociocultural
 => END
 
 ~ athletic1
-Sundance: Oh god, it reminds me of @doubleSundancepower.
+Sundance: Oh god, it reminds me of @doublehorsepower.
 
 Player: A friend of yours?
 
-Sundance: Absolutely not. Not after their followers came after me for saying athleisure was so last season.
+Sundance: [$>> animate("sad")]Absolutely not. Not after their followers came after me for saying athleisure was so last season.
 => END
 
 ~ athletic4
-Sundance: @doubleSundancepower literally got my brand deal with Luluapple dropped.
+Sundance: [$>> animate("sad")]@doublehorsepower literally got my brand deal with Luluapple dropped.
 
 Player: How did they manage that?
 
@@ -65,84 +65,84 @@ Sundance: I respect it from a business perspective, but I do NOT mess with that 
 => END
 
 ~ special_item
-Sundance: OMG YOU HAVE MY SIGNATURE BOW?
+Sundance: [$>> animate("smile")]OMG YOU HAVE MY SIGNATURE BOW?
 
 Player: This is yours?? My clients love it!
 
-Sundance: It’s my bestseller! It’s part of THE original brand. 
+Sundance: It’s my bestseller! [$>> animate("talking")]It’s part of THE original brand. 
 => END
 
 ~ post_photo_best
 
-Sundance: Oh, that role is in the BAG once they see these headshots! I look just like Secretariat.
+Sundance: [$>> animate("smile")]Oh, that role is in the BAG once they see these headshots! I look just like Secretariat.
 
-Sundance: You know I actually got my start in the fashion niche.
+Sundance: [$>> animate("talking")]You know I actually got my start in the fashion niche.
 
 Sundance: And don’t get me wrong, it’s SO fun and I have such an amazing community. But some people just WON’T take you seriously.
 
-Sundance: They’re like, “Fashion? So what, you’re just playing dress up?”
+Sundance: [$>> animate("sad")]They’re like, “Fashion? So what, you’re just playing dress up?”
 
-Sundance: But it’s not like that. And I’m going to show the world that fashion is JUST as serious of an art as acting, filmmaking, writing, painting, or anything that the world sees as “real art.”
+Sundance: But it’s not like that. [$>> animate("talking")]And I’m going to show the world that fashion is JUST as serious of an art as acting, filmmaking, writing, painting, or anything that the world sees as “real art.”
 
 Sundance: The world is going to take me seriously. And I have you to thank for that.
 
-Sundance: Thank you so much! Keep an eye out for me on the silver screen ;)
+Sundance: [$>> animate("smile")]Thank you so much! Keep an eye out for me on the silver screen ;)
 => END
 
 ~ post_photo_high
-Sundance: Oh, it’s just like how I pictured it!
+Sundance: [$>> animate("smile")]Oh, it’s just like how I pictured it!
 
-Sundance: You know I actually got my start in the fashion niche.
+Sundance: [$>> animate("talking")]You know I actually got my start in the fashion niche.
 
 Sundance: And don’t get me wrong, it’s SO fun and I have such an amazing community. But some people just WON’T take you seriously.
 
-Sundance: They’re like, “Fashion? So what, you’re just playing dress up?”
+Sundance: [$>> animate("sad")]They’re like, “Fashion? So what, you’re just playing dress up?”
 
-Sundance: But it’s not like that. And I’m going to show the world that fashion is JUST as serious of an art as acting, filmmaking, writing, painting, or anything that the world sees as “real art.”
+Sundance: But it’s not like that. [$>> animate("talking")]And I’m going to show the world that fashion is JUST as serious of an art as acting, filmmaking, writing, painting, or anything that the world sees as “real art.”
 
 Sundance: The world is going to take me seriously. And you’ve played a big role in helping me.
 
-Sundance: Thank you so much! Keep an eye out for me on the silver screen ;)
+Sundance: [$>> animate("smile")]Thank you so much! Keep an eye out for me on the silver screen ;)
 => END
 
 ~ post_photo_mid
-Sundance: Oh, the producers will like it!
+Sundance: [$>> animate("smile")]Oh, the producers will like it!
 
-Sundance: You know I actually got my start in the fashion niche.
+Sundance: [$>> animate("talking")]You know I actually got my start in the fashion niche.
 
 Sundance: And don’t get me wrong, it’s SO fun and I have such an amazing community. But some people just WON’T take you seriously.
 
-Sundance: They’re like, “Fashion? So what, you’re just playing dress up?”
+Sundance: [$>> animate("sad")]They’re like, “Fashion? So what, you’re just playing dress up?”
 
-Sundance: But it’s not like that. And I’m going to show the world that fashion is JUST as serious of an art as acting, filmmaking, writing, painting, or anything that the world sees as “real art.”
+Sundance: But it’s not like that. [$>> animate("talking")]And I’m going to show the world that fashion is JUST as serious of an art as acting, filmmaking, writing, painting, or anything that the world sees as “real art.”
 
 Sundance: I want the world to take me seriously. And you’ve helped me get a start on that.
 
-Sundance: Thank you so much! Keep an eye out for me on the silver screen ;)
+Sundance: [$>> animate("smile")]Thank you so much! Keep an eye out for me on the silver screen ;)
 => END
 
 ~ post_photo_low
-Sundance: Oh, my followers will get a kick out of this!
+Sundance: [$>> animate("smile")]Oh, my followers will get a kick out of this!
 
-Sundance: You know I actually got my start in the fashion niche.
+Sundance: [$>> animate("talking")]You know I actually got my start in the fashion niche.
 
 Sundance: And don’t get me wrong, it’s SO fun and I have such an amazing community. But some people just WON’T take you seriously.
 
-Sundance: They’re like, “Fashion? So what, you’re just playing dress up?”
+Sundance: [$>> animate("sad")]They’re like, “Fashion? So what, you’re just playing dress up?”
 
-Sundance: But it’s not like that. And I’m going to show the world that fashion is JUST as serious of an art as acting, filmmaking, writing, painting, or anything that the world sees as “real art.”
+Sundance: But it’s not like that. [$>> animate("talking")]And I’m going to show the world that fashion is JUST as serious of an art as acting, filmmaking, writing, painting, or anything that the world sees as “real art.”
 
 Sundance: And this is a big step up from blurry-camera-Photoshop-gate.
 
-Sundance: Thank you so much! Keep an eye out for me on the silver screen ;)
+Sundance: [$>> animate("smile")]Thank you so much! Keep an eye out for me on the silver screen ;)
 => END
 
 ~ post_photo_naked
-Sundance: Oh, hm.
+Sundance: [$>> animate("sad")]Oh, hm.
 
 Sundance: So it's not quite that kind of movie that I'm auditioning for.
 
-Sundance: But you know what, you know what they say! Show off your assets!
+Sundance: [$>> animate("smile")]But you know what, you know what they say! Show off your assets!
 
 Sundance: Thank you!
 => END

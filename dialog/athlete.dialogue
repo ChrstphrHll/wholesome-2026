@@ -3,7 +3,7 @@ Peanut: Hey hey hey, I have 30 minutes before my next class but if you have an o
 
 Player: Alright, well, I have a slot open now if–
 
-Peanut: [shake rate=20.0 level=5 connected=1] ALL RIGHT! [/shake] Come on, boss, what are you waiting for?
+Peanut: [$>> animate("smile")][shake rate=20.0 level=5 connected=1] ALL RIGHT! [/shake] [$>> animate("talking")]Come on, boss, what are you waiting for?
 
 Player: Oh! Okay, let’s just…
 
@@ -13,27 +13,27 @@ Player: Ready?
 => END
 
 ~ athletic1
-Peanut: I love it! I feel like I could run FAST in this.
+Peanut: [$>> animate("smile")]I love it! I feel like I could run FAST in this.
 
 Player: Are you a runner?
 
-Peanut: Yep! Track and field, baby! Thank god for that scholarship!
+Peanut: [$>> animate("talking")]Yep! Track and field, baby! Thank god for that scholarship!
 => END
 
 ~ athletic4
-Peanut: My partner LOVES watching my races.
+Peanut: [$>> animate("talking")]My partner LOVES watching my races.
 
 Player: That’s so sweet!
 
-Peanut: My lucky charm is dedicated to my partner!
+Peanut: [$>> animate("smile")]My lucky charm is dedicated to my partner!
 => END
 
 ~ preppy1
-Peanut: [shake rate=30.0 level=5 connected=1] CAL POLY MUSTANGS BABYYYY [/shake]
+Peanut: [$>> animate("smile")][shake rate=30.0 level=5 connected=1] CAL POLY MUSTANGS BABYYYY [/shake]
 
 Player: Lot of school spirit!
 
-Peanut: Only because we’re the BEST.
+Peanut: Only because we’re the [$>> animate("talking")]BEST.
 => END
 
 ~ preppy4
@@ -41,11 +41,11 @@ Peanut: School can be hard, but at least I have a lucky charm for exams.
 
 Player: Oh wow, and for races too?
 
-Peanut: It’s the same one!
+Peanut: [$>> animate("smile")]It’s the same one!
 => END
 
 ~ chic1
-Peanut: …oh.
+Peanut: [$>> animate("sad")]…oh.
 
 Player: We can do something else.
 
@@ -53,7 +53,7 @@ Peanut: I just don’t know that it’s ME.
 => END
 
 ~ chic4
-Peanut: It’s just that it’s hard to run in this.
+Peanut: [$>> animate("sad")]It’s just that it’s hard to run in this.
 
 Player: Fair enough.
 
@@ -61,17 +61,17 @@ Peanut: I just wanna RUN sometimes, you know what I mean?
 => END
 
 ~ special_item
-Horse: [shake rate=50.0 level=7 connected=1] YESTHISISTHEONEHOLYMOLYSDLJFIJLIJF [/shake]
+Horse: [$>> animate("smile")][shake rate=50.0 level=7 connected=1] YESTHISISTHEONEHOLYMOLYSDLJFIJLIJF [/shake]
 
 Player: Whoa!
 
-Horse: I just get so excited. This looks JUST like my lucky charm for races. My partner gave it to me.
+Horse: I just get so excited. [$>> animate("talking")]This looks JUST like my lucky charm for races. My partner gave it to me.
 
 Player: Aww!
 => END
 
 ~ post_photo_best
-Peanut: [shake rate=20.0 level=5 connected=1] YEAHHHHHHH! [/shake] You know EXACTLY what’s up!
+Peanut: [$>> animate("smile")][shake rate=20.0 level=5 connected=1] YEAHHHHHHH! [/shake] You know EXACTLY what’s up!
 
 Peanut: A lot of the time people say I’m too hard to follow.
 
@@ -79,65 +79,65 @@ Peanut: I know I can talk really fast or interrupt or change the subject or forg
 
 Peanut: Sometimes people just let me leave them behind. Or leave me behind.
 
-Peanut: But I really do want people to know who I am!
+Peanut: [$>> animate("talking")]But I really do want people to know who I am!
 
 Peanut: And these photos are EXACTLY it!
 
-Peanut: Thank you SO much!!! okayimlateforclassnowbye
+Peanut: [$>> animate("smile")]Thank you SO much!!! okayimlateforclassnowbye
 => END
 
 ~ post_photo_high
-Peanut: YEAH baby, that’s what’s up!
+Peanut: [$>> animate("smile")]YEAH baby, that’s what’s up!
 
 Peanut: A lot of the time people say I’m too hard to follow.
 
 Peanut: I know I can talk really fast or interrupt or change the subject or forget things or run too fast and not notice.
 
-Peanut: Sometimes people just let me leave them behind. Or leave me behind.
+Peanut: [$>> animate("sad")]Sometimes people just let me leave them behind. Or leave me behind.
 
-Peanut: But I really do want people to know who I am!
+Peanut: [$>> animate("talking")]BBut I really do want people to know who I am!
 
 Peanut: And these photos feel like ME!
 
-Peanut: Thank you SO much!!! okayimlateforclassnowbye
+Peanut: [$>> animate("smile")]Thank you SO much!!! okayimlateforclassnowbye
 => END
 
 ~ post_photo_mid
-Peanut: Alright baby!! I like it!
+Peanut: [$>> animate("smile")]Alright baby!! I like it!
 
 Peanut: A lot of the time people say I’m too hard to follow.
 
 Peanut: I know I can talk really fast or interrupt or change the subject or forget things or run too fast and not notice.
 
-Peanut: Sometimes people just let me leave them behind. Or leave me behind.
+Peanut: [$>> animate("sad")]Sometimes people just let me leave them behind. Or leave me behind.
 
-Peanut: But I really do want people to know who I am!
+Peanut: [$>> animate("talking")]BBut I really do want people to know who I am!
 
 Peanut: And these photos are a good starting point!
 
-Peanut: Thank you SO much!!! okayimlateforclassnowbye
+Peanut: [$>> animate("smile")]Thank you SO much!!! okayimlateforclassnowbye
 => END
 
 ~ post_photo_low
-Peanut: Okay!!! I’ll trust the expert on this one.
+Peanut: [$>> animate("talking")]Okay!!! I’ll trust the expert on this one.
 
 Peanut: A lot of the time people say I’m too hard to follow.
 
 Peanut: I know I can talk really fast or interrupt or change the subject or forget things or run too fast and not notice.
 
-Peanut: Sometimes people just let me leave them behind. Or leave me behind.
+Peanut: [$>> animate("sad")]Sometimes people just let me leave them behind. Or leave me behind.
 
-Peanut: But I really do want people to know who I am!
+Peanut: [$>> animate("talking")]But I really do want people to know who I am!
 
 Peanut: And these photos give me an idea of what I want people to see.
 
-Peanut: Thank you!!! okayimlateforclassnowbye
+Peanut: [$>> animate("smile")]Thank you!!! okayimlateforclassnowbye
 => END
 
 ~ post_photo_naked
 Peanut: Oh........
 
-Peanut: [shake rate=20.0 level=5 connected=1]I LOVE IT![/shake]
+Peanut: [$>> animate("smile")][shake rate=20.0 level=5 connected=1]I LOVE IT![/shake]
 
 Peanut: [shake rate=20.0 level=5 connected=1]I can run so fast unencumbered like this!!![/shake]
 
