@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://dvuuvpnhobei3"]
+
+[ext_resource type="Script" uid="uid://6qkf8qtwxcap" path="res://resources/clothing.gd" id="1_0e0o4"]
+[ext_resource type="Texture2D" uid="uid://cxitjidohsnqv" path="res://assets/shoes_cutesy.png" id="1_hhqck"]
+
+[resource]
+script = ExtResource("1_0e0o4")
+name = "Shoes"
+image = ExtResource("1_hhqck")
+type = 3
+goth = 0.435
+chic = 0.665
+metadata/_custom_type_script = "uid://6qkf8qtwxcap"

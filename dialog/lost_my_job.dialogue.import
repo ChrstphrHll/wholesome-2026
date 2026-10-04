@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://d4mu6aiuwt8sm"
+path="res://.godot/imported/lost_my_job.dialogue-074e844038b3ad47655f972a7572d6b5.tres"
+
+[deps]
+
+source_file="res://dialog/lost_my_job.dialogue"
+dest_files=["res://.godot/imported/lost_my_job.dialogue-074e844038b3ad47655f972a7572d6b5.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dyi0vqkb7ki4"
+path="res://.godot/imported/generic_horse.dialogue-6668c16b050c13e2e3b94a56e67826d7.tres"
+
+[deps]
+
+source_file="res://dialog/generic_horse.dialogue"
+dest_files=["res://.godot/imported/generic_horse.dialogue-6668c16b050c13e2e3b94a56e67826d7.tres"]
+
+[params]
+
+defaults=true
