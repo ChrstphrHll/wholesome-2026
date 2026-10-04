@@ -228,7 +228,6 @@ func _select_clothing_item(item_id: int):
 	item.current_sprite = sprite
 	equipped_clothes[item.type] = item
 	check_item_dialog_triggers(item)
-	print("adding child to sprute")
 	print(dress_up_horse)
 	dress_up_horse.add_child(sprite)
 
