@@ -8,7 +8,7 @@ Montana: [$>> animate("sad")] Yeah… I just got laid off today, and I could use
 
 Player: Oh… I’m sorry to hear that. Well, let’s see what we can do.
 
-[$> StudioSetUp.play()]
+$>> test()
 
 Player: Ready? => END
 

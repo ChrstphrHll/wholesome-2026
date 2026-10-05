@@ -620,6 +620,7 @@ libraries/ = SubResource("AnimationLibrary_li27q")
 
 [node name="Main Music" type="AudioStreamPlayer" parent="." unique_id=1305032229]
 stream = ExtResource("21_le3en")
+autoplay = true
 
 [node name="Credits" type="Node2D" parent="." unique_id=1382025543]
 position = Vector2(25, 679)

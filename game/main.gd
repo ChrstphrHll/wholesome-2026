@@ -29,6 +29,8 @@ const POLAROID = preload("res://components/polaroid.tscn")
 @onready var pop_up_container = $Popups/CenterContainer
 @onready var pop_up_animation_player = $Popups/AnimationPlayer
 
+@onready var studio_set_up = %StudioSetUp
+
 
 enum Location { MENU, DESK, DRESS_UP, PHOTO_WALL, CREDITS }
 
@@ -106,7 +108,8 @@ func _move_screen(target_screen_name: Location):
 
 func test():
 	print("executed from dialog")
-	
+	studio_set_up.play()
+
 
 func animate(animation: String):
 	print("animating sad")
