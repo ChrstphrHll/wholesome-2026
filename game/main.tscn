@@ -202,6 +202,18 @@ animations = [{
 "speed": 17.0
 }]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0sjof"]
+bg_color = Color(0.9999855, 0.9960494, 1.0039216, 0.94509804)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.3446431, 0.6273353, 0.9669642, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
 [sub_resource type="Animation" id="Animation_dp3pf"]
 length = 0.001
 tracks/0/type = "value"
@@ -456,6 +468,7 @@ offset_left = 51.0
 offset_top = 90.0
 offset_right = 567.0
 offset_bottom = 555.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_0sjof")
 current_tab = 0
 
 [node name="Shirts" type="Control" parent="DressUp/TabContainer" unique_id=1293741375]
