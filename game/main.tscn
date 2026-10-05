@@ -638,11 +638,11 @@ stream = ExtResource("21_le3en")
 autoplay = true
 
 [node name="Credits" type="Node2D" parent="." unique_id=1382025543]
-position = Vector2(0, 647)
+position = Vector2(-1152.0114, -647.98456)
 
 [node name="ColorRect" type="ColorRect" parent="Credits" unique_id=1306414093]
 offset_right = 1155.0
-offset_bottom = 644.0
+offset_bottom = 646.98456
 
 [node name="CreditsTitle" type="RichTextLabel" parent="Credits" unique_id=1839422658]
 offset_left = 385.0
@@ -701,4 +701,4 @@ text = "Back To Work!"
 [connection signal="pressed" from="PhotoWall/ChangeOutfit" to="." method="_on_change_outfit_pressed"]
 [connection signal="pressed" from="PhotoWall/TakePhoto" to="." method="_on_take_photo_pressed"]
 [connection signal="pressed" from="DressUp/Done" to="." method="_on_dress_up_finished"]
-[connection signal="pressed" from="Credits/BackToDesk" to="." method="_move_screen" binds= [1]]
+[connection signal="pressed" from="Credits/BackToDesk" to="." method="_move_screen" binds= [0]]
