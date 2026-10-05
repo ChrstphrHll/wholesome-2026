@@ -4,11 +4,11 @@ Montana: …hello? [$>> animate("talking")] Is this the photo studio?
 
 Player: Sure is! Welcome to the Show Pony Studio. Can I get you started on a shoot?
 
-Montana: [$>> animate("sad")] Yeah… I just got laid off today, and I could use a win.
+Montana: [$>> animate("sad")]Yeah… I just got laid off today, and I could use a win.
 
 Player: Oh… I’m sorry to hear that. Well, let’s see what we can do.
 
-$>> test()
+Player: [studio setup noises] [$>> test()]
 
 Player: Ready? => END
 
