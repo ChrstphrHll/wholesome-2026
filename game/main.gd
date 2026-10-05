@@ -31,7 +31,6 @@ const POLAROID = preload("res://components/polaroid.tscn")
 
 @onready var studio_set_up = %StudioSetUp
 
-
 enum Location { MENU, DESK, DRESS_UP, PHOTO_WALL, CREDITS }
 
 # Horse Sprites
@@ -50,7 +49,6 @@ func _ready():
 	load_clients()
 	
 	DialogueManager.dialogue_ended.connect(reset_animations)
-
 
 
 func load_clients():
@@ -226,23 +224,36 @@ func get_closet_tab_container(item: ClothingItem):
 func populate_closet():
 	print("loading closet")
 	for clothing_item in all_clothing.values():
-		var button = Button.new()
-		var texture = TextureRect.new()
-		button.size_flags_horizontal = Control.SIZE_EXPAND
-		button.custom_minimum_size = Vector2(100, 100)
-		texture.custom_minimum_size = Vector2(100, 100)
-		texture.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		texture.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		if clothing_item.cropped_icon:
-			texture.texture = clothing_item.cropped_icon
-		else:
-			texture.texture = clothing_item.image
-		button.add_child(texture)
+		var button = get_clothing_button(clothing_item)
+
 		get_closet_tab_container(clothing_item).add_child(button)
+		button.pivot_offset = button.size / 2.0
+		
 		button.pressed.connect(_select_clothing_item.bind(clothing_item.id))
+		button.mouse_entered.connect(animate_button_hover.bind(true, button))
+		button.mouse_exited.connect(animate_button_hover.bind(false, button))
+
+
+func get_clothing_button(item: ClothingItem):
+	var button = TextureButton.new()
+	button.texture_normal = item.cropped_icon if item.cropped_icon else item.image
+	button.custom_minimum_size = Vector2(100, 100)
+	button.ignore_texture_size = true
+	button.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_CENTERED
+	button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	return button
+
+
+func animate_button_hover(entered: bool, button: TextureButton):
+	var tween = button.create_tween()
+	if entered:
+		tween.tween_property(button, "scale", Vector2(1.2, 1.2), 0.1)
+	else:
+		tween.tween_property(button, "scale", Vector2(1.0, 1.0), 0.1)
 
 
 func put_client_into_dressing_room(sprite: AnimatedSprite2D):
+	$DressUp/TabContainer.current_tab = 0
 	dress_up_horse = sprite
 	dress_up_horse.position = $DressUp/Marker2D.position
 	dress_up_horse.scale = DRESS_UP_SCALE
