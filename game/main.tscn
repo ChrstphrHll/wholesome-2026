@@ -623,33 +623,31 @@ stream = ExtResource("21_le3en")
 autoplay = true
 
 [node name="Credits" type="Node2D" parent="." unique_id=1382025543]
-position = Vector2(25, 679)
+position = Vector2(0, 647)
 
 [node name="ColorRect" type="ColorRect" parent="Credits" unique_id=1306414093]
-offset_left = -28.0
-offset_top = -31.0
-offset_right = 1127.0
-offset_bottom = 613.0
+offset_right = 1155.0
+offset_bottom = 644.0
 
 [node name="CreditsTitle" type="RichTextLabel" parent="Credits" unique_id=1839422658]
-offset_left = 360.0
-offset_top = -98.0
-offset_right = 793.0
-offset_bottom = 110.0
+offset_left = 385.0
+offset_top = -66.0
+offset_right = 818.0
+offset_bottom = 142.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 68
 bbcode_enabled = true
 text = "[wave amp=50.0 freq=5.0 connected=1][center]Credits[/center][/wave]"
 
 [node name="HorseGang" type="Sprite2D" parent="Credits" unique_id=1165093371]
-position = Vector2(700, 270)
+position = Vector2(725, 302)
 texture = ExtResource("21_rqwoc")
 
 [node name="CreditText" type="RichTextLabel" parent="Credits" unique_id=1145361287]
-offset_left = 16.0
-offset_top = 107.0
-offset_right = 666.0
-offset_bottom = 593.0
+offset_left = 41.0
+offset_top = 139.0
+offset_right = 691.0
+offset_bottom = 625.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 16
 bbcode_enabled = true
@@ -672,10 +670,10 @@ Sound effects sourced from Youtube: @soundeffectspublicdomain120, @soundfxtracks
 Godot Dialogue Manager by Nathan Hoad used under his MIT License"
 
 [node name="BackToDesk" type="Button" parent="Credits" unique_id=515707237]
-offset_left = 723.0
-offset_top = 474.0
-offset_right = 895.0
-offset_bottom = 551.0
+offset_left = 748.0
+offset_top = 506.0
+offset_right = 920.0
+offset_bottom = 583.0
 text = "Back To Work!"
 
 [connection signal="pressed" from="debug/HBoxContainer/Button" to="." method="_move_screen" binds= [0]]
