@@ -671,6 +671,13 @@ Sound effects sourced from Youtube: @soundeffectspublicdomain120, @soundfxtracks
 
 Godot Dialogue Manager by Nathan Hoad used under his MIT License"
 
+[node name="BackToDesk" type="Button" parent="Credits" unique_id=515707237]
+offset_left = 723.0
+offset_top = 474.0
+offset_right = 895.0
+offset_bottom = 551.0
+text = "Back To Work!"
+
 [connection signal="pressed" from="debug/HBoxContainer/Button" to="." method="_move_screen" binds= [0]]
 [connection signal="pressed" from="debug/HBoxContainer/Button2" to="." method="_move_screen" binds= [1]]
 [connection signal="pressed" from="debug/HBoxContainer/Button3" to="." method="_move_screen" binds= [2]]
@@ -681,3 +688,4 @@ Godot Dialogue Manager by Nathan Hoad used under his MIT License"
 [connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/ChangeOutfit" to="." method="_on_change_outfit_pressed"]
 [connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/TakePhoto" to="." method="_on_take_photo_pressed"]
 [connection signal="pressed" from="DressUp/Done" to="." method="_on_dress_up_finished"]
+[connection signal="pressed" from="Credits/BackToDesk" to="." method="_move_screen" binds= [1]]
