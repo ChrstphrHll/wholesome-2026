@@ -203,18 +203,6 @@ animations = [{
 "speed": 17.0
 }]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0sjof"]
-bg_color = Color(0.9999855, 0.9960494, 1.0039216, 0.94509804)
-border_width_left = 4
-border_width_top = 4
-border_width_right = 4
-border_width_bottom = 4
-border_color = Color(0.3446431, 0.6273353, 0.9669642, 1)
-corner_radius_top_left = 4
-corner_radius_top_right = 4
-corner_radius_bottom_right = 4
-corner_radius_bottom_left = 4
-
 [sub_resource type="Animation" id="Animation_dp3pf"]
 length = 0.001
 tracks/0/type = "value"
@@ -375,7 +363,7 @@ texture = ExtResource("8_yyxey")
 offset_left = 635.0
 offset_top = 72.0
 offset_right = 1108.0
-offset_bottom = 559.0
+offset_bottom = 441.0
 
 [node name="MarginContainer" type="MarginContainer" parent="PhotoWall/Panel" unique_id=635081197]
 layout_mode = 1
@@ -407,12 +395,18 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 columns = 4
 
-[node name="ChangeOutfit" type="Button" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2" unique_id=816284960]
-layout_mode = 2
+[node name="ChangeOutfit" type="Button" parent="PhotoWall" unique_id=816284960]
+offset_left = 636.0
+offset_top = 444.0
+offset_right = 1101.0
+offset_bottom = 521.0
 text = "Change Outfit"
 
-[node name="TakePhoto" type="Button" parent="PhotoWall/Panel/MarginContainer/VBoxContainer2" unique_id=18193390]
-layout_mode = 2
+[node name="TakePhoto" type="Button" parent="PhotoWall" unique_id=18193390]
+offset_left = 633.0
+offset_top = 526.0
+offset_right = 1098.0
+offset_bottom = 603.0
 text = "Say Apple!"
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="PhotoWall" unique_id=123339095]
@@ -467,10 +461,9 @@ frame_progress = 0.04970823
 
 [node name="TabContainer" type="TabContainer" parent="DressUp" unique_id=183496887]
 offset_left = 51.0
-offset_top = 90.0
+offset_top = 46.0
 offset_right = 567.0
-offset_bottom = 555.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_0sjof")
+offset_bottom = 515.0
 current_tab = 0
 
 [node name="Shirts" type="Control" parent="DressUp/TabContainer" unique_id=1293741375]
@@ -588,10 +581,10 @@ size_flags_horizontal = 3
 columns = 4
 
 [node name="Done" type="Button" parent="DressUp" unique_id=1067218762]
-offset_left = 58.0
-offset_top = 563.0
-offset_right = 542.0
-offset_bottom = 640.0
+offset_left = 52.0
+offset_top = 524.0
+offset_right = 561.0
+offset_bottom = 601.0
 text = "Done!"
 
 [node name="Marker2D" type="Marker2D" parent="DressUp" unique_id=1518708543]
@@ -696,7 +689,7 @@ text = "Back To Work!"
 [connection signal="pressed" from="Menu/Play" to="." method="_move_screen" binds= [1]]
 [connection signal="pressed" from="Menu/Credits" to="." method="_move_screen" binds= [4]]
 [connection signal="pressed" from="Desk/NextClient" to="." method="call_next_client"]
-[connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/ChangeOutfit" to="." method="_on_change_outfit_pressed"]
-[connection signal="pressed" from="PhotoWall/Panel/MarginContainer/VBoxContainer2/TakePhoto" to="." method="_on_take_photo_pressed"]
+[connection signal="pressed" from="PhotoWall/ChangeOutfit" to="." method="_on_change_outfit_pressed"]
+[connection signal="pressed" from="PhotoWall/TakePhoto" to="." method="_on_take_photo_pressed"]
 [connection signal="pressed" from="DressUp/Done" to="." method="_on_dress_up_finished"]
 [connection signal="pressed" from="Credits/BackToDesk" to="." method="_move_screen" binds= [1]]
