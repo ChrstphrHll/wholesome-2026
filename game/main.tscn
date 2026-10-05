@@ -607,12 +607,21 @@ texture = ExtResource("12_ioaqv")
 [node name="Popups" type="CanvasLayer" parent="." unique_id=1838509866]
 visible = false
 
+[node name="Darken" type="ColorRect" parent="Popups" unique_id=250696854]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.49411765)
+
 [node name="CenterContainer" type="CenterContainer" parent="Popups" unique_id=245752627]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1, 0.8799999)
 
 [node name="Flash" type="ColorRect" parent="Popups" unique_id=1055777457]
 anchors_preset = 15
