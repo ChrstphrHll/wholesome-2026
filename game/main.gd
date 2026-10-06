@@ -339,7 +339,8 @@ func put_client_into_photo_booth(sprite: AnimatedSprite2D):
 
 
 func _on_backdrop_pressed(id: int):
-	$%Backdrop.texture = backdrops[id].get_image()
+	$%Backdrop.sprite_frames = backdrops[id].get_frames()
+	$%Backdrop.play("default")
 	print("change backdrop to, ", backdrops[id].name)
 
 
