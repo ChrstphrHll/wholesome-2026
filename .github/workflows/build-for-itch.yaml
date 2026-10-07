@@ -10,9 +10,9 @@ on:
         options:
           - debug
           - release
-  push:
-    branches:
-      - main
+#  push:
+#    branches:
+#      - main
 
 concurrency:
   group: there-can-be-only-one-export
