@@ -604,18 +604,65 @@ unique_name_in_owner = true
 stream = ExtResource("15_rqwoc")
 
 [node name="Cork" type="Node2D" parent="." unique_id=1331599127]
+position = Vector2(-1151.8339, 647.7733)
+
+[node name="PhotoStudioBg" type="Sprite2D" parent="Cork" unique_id=369479466]
+position = Vector2(576, 323)
+texture = ExtResource("8_yyxey")
+
+[node name="CorkBoard" type="TextureRect" parent="Cork" unique_id=254801689]
+offset_left = 108.83392
+offset_top = 44.226685
+offset_right = 1051.834
+offset_bottom = 575.2267
+texture = ExtResource("12_ioaqv")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="PhotosContainer" type="HFlowContainer" parent="Cork/CorkBoard" unique_id=628869522]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 43.99994
+offset_top = 41.0
+offset_right = 934.99994
+offset_bottom = 508.0
 
 [node name="ColorRect" type="ColorRect" parent="Cork" unique_id=1588079676]
-offset_left = -1152.0
-offset_top = 647.0
-offset_right = 1.0
-offset_bottom = 1294.0
-color = Color(1, 1, 0.6156863, 1)
+offset_left = 1051.8339
+offset_top = 19.226685
+offset_right = 1117.0
+offset_bottom = 610.2267
+color = Color(0.22733736, 0.15939626, 0.042538784, 1)
 
-[node name="Cork339" type="Sprite2D" parent="Cork" unique_id=1242390642]
-position = Vector2(-679.75, 934.99994)
-scale = Vector2(1.0670575, 0.6562502)
-texture = ExtResource("12_ioaqv")
+[node name="ColorRect2" type="ColorRect" parent="Cork" unique_id=1730509455]
+offset_left = 72.83386
+offset_top = 16.226685
+offset_right = 138.0
+offset_bottom = 610.0
+color = Color(0.22733736, 0.15939626, 0.042538784, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Cork" unique_id=1021097381]
+offset_left = 73.83386
+offset_top = 633.2267
+offset_right = 139.0
+offset_bottom = 1678.291
+rotation = -1.5707964
+color = Color(0.22733736, 0.15939626, 0.042538784, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="Cork" unique_id=1869301989]
+offset_left = 72.35193
+offset_top = 75.226685
+offset_right = 137.51807
+offset_bottom = 1119.682
+rotation = -1.5707964
+color = Color(0.22733736, 0.15939626, 0.042538784, 1)
+
+[node name="CorkContinue" type="Button" parent="Cork" unique_id=107720532]
+offset_left = 968.83386
+offset_top = 513.2267
+offset_right = 1099.8339
+offset_bottom = 590.2267
+text = "Continue"
 
 [node name="Popups" type="CanvasLayer" parent="." unique_id=1838509866]
 visible = false
@@ -729,6 +776,11 @@ rotation = 0.22978938
 scale = Vector2(0.27474746, 0.76578265)
 color = Color(0, 1, 1, 1)
 
+[node name="PhotoStudioBg2" type="Sprite2D" parent="." unique_id=1351853394]
+position = Vector2(575, 972)
+texture = ExtResource("8_yyxey")
+flip_h = true
+
 [connection signal="pressed" from="debug/HBoxContainer/Button" to="." method="_move_screen" binds= [0]]
 [connection signal="pressed" from="debug/HBoxContainer/Button2" to="." method="_move_screen" binds= [1]]
 [connection signal="pressed" from="debug/HBoxContainer/Button3" to="." method="_move_screen" binds= [2]]
@@ -739,4 +791,5 @@ color = Color(0, 1, 1, 1)
 [connection signal="pressed" from="DressUp/Done" to="." method="_on_dress_up_finished"]
 [connection signal="pressed" from="PhotoWall/ChangeOutfit" to="." method="_on_change_outfit_pressed"]
 [connection signal="pressed" from="PhotoWall/TakePhoto" to="." method="_on_take_photo_pressed"]
+[connection signal="pressed" from="Cork/CorkContinue" to="." method="client_end_screen"]
 [connection signal="pressed" from="Credits/BackToDesk" to="." method="_move_screen" binds= [0]]

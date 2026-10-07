@@ -26,6 +26,7 @@ runtime/balloon_path="res://dialog/dress_up_bubble/dress_up_balloon.tscn"
 
 [display]
 
+window/size/always_on_top=true
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 

@@ -6,6 +6,8 @@ var equipped_clothes: Dictionary[ClothingItem.ClothingType, ClothingItem]
 var backdrops: Dictionary[int, Backdrop] = {}
 var activeBackdrop: Backdrop
 
+var photos: Array[Image]
+
 var client_queue: Array[Client] = []
 var active_client: Client
 
@@ -24,6 +26,7 @@ const POLAROID = preload("res://components/polaroid.tscn")
 @onready var photo_wall = $PhotoWall
 @onready var dress_up = $DressUp
 @onready var credits = $Credits
+@onready var cork = $Cork
 
 @onready var pop_up = $Popups
 @onready var pop_up_container = $Popups/CenterContainer
@@ -31,7 +34,7 @@ const POLAROID = preload("res://components/polaroid.tscn")
 
 @onready var studio_set_up = %StudioSetUp
 
-enum Location { MENU, DESK, DRESS_UP, PHOTO_WALL, CREDITS }
+enum Location { MENU, DESK, DRESS_UP, PHOTO_WALL, CREDITS, CORK }
 
 # Horse Sprites
 var dress_up_horse: AnimatedSprite2D
@@ -92,6 +95,8 @@ func get_screen(screen_name: Location):
 			return dress_up
 		Location.CREDITS:
 			return credits
+		Location.CORK:
+			return cork
 		_:
 			printerr("💣 NOT A VALID SCREEN NAME 💣")
 
@@ -341,12 +346,11 @@ func put_client_into_photo_booth(sprite: AnimatedSprite2D):
 func _on_backdrop_pressed(id: int):
 	$%Backdrop.sprite_frames = backdrops[id].get_frames()
 	$%Backdrop.play("default")
-	print("change backdrop to, ", backdrops[id].name)
 
 
 func _on_change_outfit_pressed():
 	_move_screen(Location.DRESS_UP)
-	await get_tree().create_timer(2).timeout
+	await get_tree().create_timer(0.5).timeout
 	photo_horse.queue_free()
 
 
@@ -358,7 +362,7 @@ func _on_take_photo_pressed():
 	var photoed_horse = photo_horse.duplicate()
 	var frame = $PhotoWall/SubViewportContainer/PhotoView
 	photoed_horse.position = Vector2(frame.size.x / 2, frame.size.y / 2.0)
-	photoed_horse.scale *= 0.7
+	photoed_horse.scale *= 0.75
 	frame.add_child(photoed_horse)
 	await RenderingServer.frame_post_draw
 	var image = frame.get_texture().get_image()
@@ -367,6 +371,7 @@ func _on_take_photo_pressed():
 	%TaDa.play()
 	photo.image = image
 	pop_up_container.add_child(photo)
+	photo.spin()
 	photoed_horse.queue_free()
 	dress_up_horse.queue_free()
 	
@@ -375,7 +380,17 @@ func _on_take_photo_pressed():
 	photo.queue_free()
 	
 	# TODO: Add photo somewhere and also save out the screenshot
-	client_end_screen()
-	
+	go_to_cork_board(image)
+	#client_end_screen()
+
+
+func go_to_cork_board(image: Image):
+	photos.append(image)
+	var photo = POLAROID.instantiate()
+	photo.image = image
+	var tilt = randi_range(-6, 6)
+	photo.rotation = tilt
+	$%PhotosContainer.add_child(photo)
+	_move_screen(Location.CORK)
 
 #endregion

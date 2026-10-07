@@ -2,11 +2,10 @@ extends Control
 
 
 @export var image: Image
-@export var caption: String
+@export var tilt = 0.0
 
 
-@onready var texture_rect = $TextureRect
-@onready var label = $Control/Label
+@onready var photo = $Photo
 
 
 signal animation_done
@@ -14,8 +13,15 @@ signal animation_done
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	texture_rect.texture = ImageTexture.create_from_image(image)
-	label.text = caption
+	photo.texture = ImageTexture.create_from_image(image)
+	rotation = tilt
+	pivot_offset = size / 2.0
+	
+
+
+func spin():
+	$AnimationPlayer.play("reveal")
+
 
 func animation_completed():
 	animation_done.emit()
